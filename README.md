@@ -22,7 +22,7 @@ In the following it is assumed that you use bash for all command line operations
 
 ### Check out the repository
 
-	> git clone <REPO_URL> <CHECKOUT_DIR>
+	> git clone https://github.com/GeoMetabolomics-ICBM/mcfNMR <CHECKOUT_DIR>
 	> cd <CHECKOUT_DIR>
 	> export MCFNMR_HOME="$PWD"
 
