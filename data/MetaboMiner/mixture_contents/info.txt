@@ -1,0 +1,12 @@
+The original information of compounds contained in each mixture was obtained from the supplemental material to [Xia et al. (2008) BMC Bioinformatics]:
+
+    https://static-content.springer.com/esm/art%3A10.1186%2F1471-2105-9-507/MediaObjects/12859_2008_2492_MOESM2_ESM.xls
+
+The compound names in this file were copied into the text files "<MIX-ID>.txt" and automatically converted to HMDB-ID lists ("<MIX-ID>_HMDB.txt") by running
+    
+    python map_to_HMDB_IDs.py
+
+in this directory. Note that this script requires the python package 'editdistance', which can be installed via
+
+   pip install editdistance
+

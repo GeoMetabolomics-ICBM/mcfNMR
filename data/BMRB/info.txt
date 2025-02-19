@@ -1,0 +1,9 @@
+When downloading the BMRB-library, 
+
+> source scripts/download_demodata.sh bmrb
+
+the downloaded NMR-STAR (.str) files 
+will be stored in a subdirectory 'downloads' and a library file BMRB.csv is generated, 
+that can be used as input to mcfNMR.
+
+See demodata.bmrb.prepareBMRB()

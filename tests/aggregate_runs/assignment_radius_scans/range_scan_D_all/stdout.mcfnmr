@@ -1,0 +1,2960 @@
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/aggregate_runs/assignment_radius_scans/range_scan_D_all
+
+config:
+{'ar': [0.02, 0.03, 0.04, 0.05, 0.06, 0.08, 0.1, 0.12, 0.15, 0.175, 0.2, 0.25],
+ 'lib': 'MetaboMiner',
+ 'mix': 'all',
+ 'nth': 51,
+ 'recompute': False,
+ 'setup': 'D',
+ 'task': 'scan',
+ 'th': [0.0, 0.05]}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/aggregate_runs/assignment_radius_scans/range_scan_D_all/output
+
+Data directory: /home/leo/repos/mcfnmr-release/data
+Loaded mix 'N926' content list of length 35
+Loaded mix 'N907' content list of length 35
+Loaded mix 'N987' content list of length 21
+Loaded mix 'N925' content list of length 27
+Loaded mix 'N988' content list of length 24
+Loaded mix 'N880' content list of length 27
+Loading MM lib 'Biofluid ( all )' containing 502 compounds...
+Removing duplicate entry for D-Lactic Acid (HMDB 1311)
+Loaded point spectrum for mix 'N926(dp)' with 2664 peaks.
+Loaded point spectrum for mix 'N907(dp)' with 1861 peaks.
+Loaded point spectrum for mix 'N907' with 591 peaks.
+Loaded point spectrum for mix 'N988' with 565 peaks.
+Loaded point spectrum for mix 'N880' with 1088 peaks.
+Loaded point spectrum for mix 'N926' with 728 peaks.
+Loaded point spectrum for mix 'N925' with 807 peaks.
+Loaded point spectrum for mix 'N987' with 597 peaks.
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_ar0.02.pickle'
+Total time for MCF: 0.00171888 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(peaklist)_lib_MetaboMiner_ar0.02.pickle'
+Total time for MCF: 0.00162747 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(peaklist)_lib_MetaboMiner_ar0.02.pickle'
+Total time for MCF: 0.00159897 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_ar0.03.pickle'
+Total time for MCF: 0.00172334 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(peaklist)_lib_MetaboMiner_ar0.03.pickle'
+Total time for MCF: 0.00162979 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(peaklist)_lib_MetaboMiner_ar0.03.pickle'
+Total time for MCF: 0.00153206 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_ar0.04.pickle'
+Total time for MCF: 0.00214324 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(peaklist)_lib_MetaboMiner_ar0.04.pickle'
+Total time for MCF: 0.00161849 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(peaklist)_lib_MetaboMiner_ar0.04.pickle'
+Total time for MCF: 0.0016342 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_ar0.05.pickle'
+Total time for MCF: 0.0017552 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(peaklist)_lib_MetaboMiner_ar0.05.pickle'
+Total time for MCF: 0.00177175 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(peaklist)_lib_MetaboMiner_ar0.05.pickle'
+Total time for MCF: 0.00160697 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_ar0.06.pickle'
+Total time for MCF: 0.00173744 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(peaklist)_lib_MetaboMiner_ar0.06.pickle'
+Total time for MCF: 0.00162428 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(peaklist)_lib_MetaboMiner_ar0.06.pickle'
+Total time for MCF: 0.00160267 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_ar0.08.pickle'
+Total time for MCF: 0.00172305 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(peaklist)_lib_MetaboMiner_ar0.08.pickle'
+Total time for MCF: 0.00162642 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(peaklist)_lib_MetaboMiner_ar0.08.pickle'
+Total time for MCF: 0.00156345 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_ar0.1.pickle'
+Total time for MCF: 0.00175127 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(peaklist)_lib_MetaboMiner_ar0.1.pickle'
+Total time for MCF: 0.00165121 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(peaklist)_lib_MetaboMiner_ar0.1.pickle'
+Total time for MCF: 0.00170583 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_ar0.12.pickle'
+Total time for MCF: 0.0018684 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(peaklist)_lib_MetaboMiner_ar0.12.pickle'
+Total time for MCF: 0.00181874 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(peaklist)_lib_MetaboMiner_ar0.12.pickle'
+Total time for MCF: 0.0017062 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_ar0.15.pickle'
+Total time for MCF: 0.00190548 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(peaklist)_lib_MetaboMiner_ar0.15.pickle'
+Total time for MCF: 0.00179895 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(peaklist)_lib_MetaboMiner_ar0.15.pickle'
+Total time for MCF: 0.00173673 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_ar0.175.pickle'
+Total time for MCF: 0.00184541 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(peaklist)_lib_MetaboMiner_ar0.175.pickle'
+Total time for MCF: 0.00182436 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(peaklist)_lib_MetaboMiner_ar0.175.pickle'
+Total time for MCF: 0.00171931 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_ar0.2.pickle'
+Total time for MCF: 0.00207214 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(peaklist)_lib_MetaboMiner_ar0.2.pickle'
+Total time for MCF: 0.00175623 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(peaklist)_lib_MetaboMiner_ar0.2.pickle'
+Total time for MCF: 0.045934 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_ar0.25.pickle'
+Total time for MCF: 0.00248001 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(peaklist)_lib_MetaboMiner_ar0.25.pickle'
+Total time for MCF: 0.00239773 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(peaklist)_lib_MetaboMiner_ar0.25.pickle'
+Total time for MCF: 0.00237707 secs
+
+
+ar=0.02
+th=0
+fscore=0.140351
+recall=0.0987654
+precision=0.242424
+th=0.001
+fscore=0.140351
+recall=0.0987654
+precision=0.242424
+th=0.002
+fscore=0.12963
+recall=0.0864198
+precision=0.259259
+th=0.003
+fscore=0.12963
+recall=0.0864198
+precision=0.259259
+th=0.004
+fscore=0.114286
+recall=0.0740741
+precision=0.25
+th=0.005
+fscore=0.114286
+recall=0.0740741
+precision=0.25
+th=0.006
+fscore=0.114286
+recall=0.0740741
+precision=0.25
+th=0.007
+fscore=0.114286
+recall=0.0740741
+precision=0.25
+th=0.008
+fscore=0.117647
+recall=0.0740741
+precision=0.285714
+th=0.009
+fscore=0.10101
+recall=0.0617284
+precision=0.277778
+th=0.01
+fscore=0.10101
+recall=0.0617284
+precision=0.277778
+th=0.011
+fscore=0.10101
+recall=0.0617284
+precision=0.277778
+th=0.012
+fscore=0.10101
+recall=0.0617284
+precision=0.277778
+th=0.013
+fscore=0.0833333
+recall=0.0493827
+precision=0.266667
+th=0.014
+fscore=0.0833333
+recall=0.0493827
+precision=0.266667
+th=0.015
+fscore=0.0645161
+recall=0.037037
+precision=0.25
+th=0.016
+fscore=0.0645161
+recall=0.037037
+precision=0.25
+th=0.017
+fscore=0.0645161
+recall=0.037037
+precision=0.25
+th=0.018
+fscore=0.0645161
+recall=0.037037
+precision=0.25
+th=0.019
+fscore=0.0645161
+recall=0.037037
+precision=0.25
+th=0.02
+fscore=0.0645161
+recall=0.037037
+precision=0.25
+th=0.021
+fscore=0.0645161
+recall=0.037037
+precision=0.25
+th=0.022
+fscore=0.0645161
+recall=0.037037
+precision=0.25
+th=0.023
+fscore=0.0645161
+recall=0.037037
+precision=0.25
+th=0.024
+fscore=0.0645161
+recall=0.037037
+precision=0.25
+th=0.025
+fscore=0.0444444
+recall=0.0246914
+precision=0.222222
+th=0.026
+fscore=0.0229885
+recall=0.0123457
+precision=0.166667
+th=0.027
+fscore=0
+recall=0
+precision=0
+th=0.028
+fscore=0
+recall=0
+precision=0
+th=0.029
+fscore=0
+recall=0
+precision=0
+th=0.03
+fscore=0
+recall=0
+precision=0
+th=0.031
+fscore=0
+recall=0
+precision=0
+th=0.032
+fscore=0
+recall=0
+precision=0
+th=0.033
+fscore=0
+recall=0
+precision=0
+th=0.034
+fscore=0
+recall=0
+precision=0
+th=0.035
+fscore=0
+recall=0
+precision=0
+th=0.036
+fscore=0
+recall=0
+precision=0
+th=0.037
+fscore=0
+recall=0
+precision=0
+th=0.038
+fscore=0
+recall=0
+precision=0
+th=0.039
+fscore=0
+recall=0
+precision=0
+th=0.04
+fscore=0
+recall=0
+precision=0
+th=0.041
+fscore=0
+recall=0
+precision=0
+th=0.042
+fscore=0
+recall=0
+precision=0
+th=0.043
+fscore=0
+recall=0
+precision=0
+th=0.044
+fscore=0
+recall=0
+precision=0
+th=0.045
+fscore=0
+recall=0
+precision=0
+th=0.046
+fscore=0
+recall=0
+precision=0
+th=0.047
+fscore=0
+recall=0
+precision=0
+th=0.048
+fscore=0
+recall=0
+precision=0
+th=0.049
+fscore=0
+recall=0
+precision=0
+th=0.05
+fscore=0
+recall=0
+precision=0
+
+ar=0.03
+th=0
+fscore=0.405556
+recall=0.305335
+precision=0.768519
+th=0.001
+fscore=0.419643
+recall=0.292989
+precision=0.891667
+th=0.002
+fscore=0.4125
+recall=0.280644
+precision=0.907051
+th=0.003
+fscore=0.4
+recall=0.266755
+precision=0.948718
+th=0.004
+fscore=0.4
+recall=0.266755
+precision=0.948718
+th=0.005
+fscore=0.387607
+recall=0.254409
+precision=0.944444
+th=0.006
+fscore=0.374561
+recall=0.242063
+precision=0.939394
+th=0.007
+fscore=0.356171
+recall=0.228175
+precision=0.939394
+th=0.008
+fscore=0.356171
+recall=0.228175
+precision=0.939394
+th=0.009
+fscore=0.34242
+recall=0.215829
+precision=0.933333
+th=0.01
+fscore=0.34242
+recall=0.215829
+precision=0.933333
+th=0.011
+fscore=0.308201
+recall=0.189594
+precision=0.925926
+th=0.012
+fscore=0.292857
+recall=0.177249
+precision=0.916667
+th=0.013
+fscore=0.276611
+recall=0.164903
+precision=0.904762
+th=0.014
+fscore=0.276611
+recall=0.164903
+precision=0.904762
+th=0.015
+fscore=0.251248
+recall=0.14903
+precision=0.904762
+th=0.016
+fscore=0.208874
+recall=0.120811
+precision=0.933333
+th=0.017
+fscore=0.18771
+recall=0.106922
+precision=0.933333
+th=0.018
+fscore=0.18771
+recall=0.106922
+precision=0.933333
+th=0.019
+fscore=0.18771
+recall=0.106922
+precision=0.933333
+th=0.02
+fscore=0.18771
+recall=0.106922
+precision=0.933333
+th=0.021
+fscore=0.18771
+recall=0.106922
+precision=0.933333
+th=0.022
+fscore=0.18771
+recall=0.106922
+precision=0.933333
+th=0.023
+fscore=0.18771
+recall=0.106922
+precision=0.933333
+th=0.024
+fscore=0.18771
+recall=0.106922
+precision=0.933333
+th=0.025
+fscore=0.148822
+recall=0.082231
+precision=0.888889
+th=0.026
+fscore=0.127366
+recall=0.0698854
+precision=0.833333
+th=0.027
+fscore=0.104377
+recall=0.0575397
+precision=0.666667
+th=0.028
+fscore=0.0512821
+recall=0.0277778
+precision=0.333333
+th=0.029
+fscore=0.0512821
+recall=0.0277778
+precision=0.333333
+th=0.03
+fscore=0.0512821
+recall=0.0277778
+precision=0.333333
+th=0.031
+fscore=0.0512821
+recall=0.0277778
+precision=0.333333
+th=0.032
+fscore=0.0512821
+recall=0.0277778
+precision=0.333333
+th=0.033
+fscore=0.0512821
+recall=0.0277778
+precision=0.333333
+th=0.034
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.035
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.036
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.037
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.038
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.039
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.04
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.041
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.042
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.043
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.044
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.045
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.046
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.047
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.048
+fscore=0.0266667
+recall=0.0138889
+precision=0.333333
+th=0.049
+fscore=0
+recall=0
+precision=0
+th=0.05
+fscore=0
+recall=0
+precision=0
+
+ar=0.04
+th=0
+fscore=0.654826
+recall=0.626102
+precision=0.698551
+th=0.001
+fscore=0.726557
+recall=0.626102
+precision=0.872054
+th=0.002
+fscore=0.717023
+recall=0.587522
+precision=0.920343
+th=0.003
+fscore=0.706865
+recall=0.561287
+precision=0.955556
+th=0.004
+fscore=0.694387
+recall=0.545414
+precision=0.955556
+th=0.005
+fscore=0.68316
+recall=0.533069
+precision=0.952381
+th=0.006
+fscore=0.671372
+recall=0.520723
+precision=0.948718
+th=0.007
+fscore=0.659992
+recall=0.506834
+precision=0.948718
+th=0.008
+fscore=0.64798
+recall=0.492945
+precision=0.948718
+th=0.009
+fscore=0.595183
+recall=0.438933
+precision=0.944444
+th=0.01
+fscore=0.581925
+recall=0.42306
+precision=0.944444
+th=0.011
+fscore=0.553728
+recall=0.396825
+precision=0.939394
+th=0.012
+fscore=0.510119
+recall=0.359788
+precision=0.916667
+th=0.013
+fscore=0.477744
+recall=0.333554
+precision=0.904762
+th=0.014
+fscore=0.463631
+recall=0.317681
+precision=0.904762
+th=0.015
+fscore=0.432485
+recall=0.285935
+precision=0.904762
+th=0.016
+fscore=0.363202
+recall=0.229497
+precision=0.916667
+th=0.017
+fscore=0.307664
+recall=0.185847
+precision=0.916667
+th=0.018
+fscore=0.307664
+recall=0.185847
+precision=0.916667
+th=0.019
+fscore=0.307664
+recall=0.185847
+precision=0.916667
+th=0.02
+fscore=0.307664
+recall=0.185847
+precision=0.916667
+th=0.021
+fscore=0.307664
+recall=0.185847
+precision=0.916667
+th=0.022
+fscore=0.307664
+recall=0.185847
+precision=0.916667
+th=0.023
+fscore=0.307664
+recall=0.185847
+precision=0.916667
+th=0.024
+fscore=0.287959
+recall=0.171958
+precision=0.916667
+th=0.025
+fscore=0.246349
+recall=0.143739
+precision=0.888889
+th=0.026
+fscore=0.224893
+recall=0.131393
+precision=0.833333
+th=0.027
+fscore=0.201905
+recall=0.119048
+precision=0.666667
+th=0.028
+fscore=0.157407
+recall=0.0892857
+precision=0.666667
+th=0.029
+fscore=0.157407
+recall=0.0892857
+precision=0.666667
+th=0.03
+fscore=0.134615
+recall=0.0753968
+precision=0.666667
+th=0.031
+fscore=0.134615
+recall=0.0753968
+precision=0.666667
+th=0.032
+fscore=0.134615
+recall=0.0753968
+precision=0.666667
+th=0.033
+fscore=0.134615
+recall=0.0753968
+precision=0.666667
+th=0.034
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.035
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.036
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.037
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.038
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.039
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.04
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.041
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.042
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.043
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.044
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.045
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.046
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.047
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.048
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.049
+fscore=0.030303
+recall=0.015873
+precision=0.333333
+th=0.05
+fscore=0.030303
+recall=0.015873
+precision=0.333333
+
+ar=0.05
+th=0
+fscore=0.628969
+recall=0.708333
+precision=0.575253
+th=0.001
+fscore=0.737491
+recall=0.695988
+precision=0.789422
+th=0.002
+fscore=0.739655
+recall=0.657407
+precision=0.845551
+th=0.003
+fscore=0.743089
+recall=0.631173
+precision=0.903704
+th=0.004
+fscore=0.747803
+recall=0.631173
+precision=0.918954
+th=0.005
+fscore=0.741096
+recall=0.6153
+precision=0.934524
+th=0.006
+fscore=0.720635
+recall=0.589065
+precision=0.931746
+th=0.007
+fscore=0.710379
+recall=0.575176
+precision=0.931746
+th=0.008
+fscore=0.699582
+recall=0.561287
+precision=0.931746
+th=0.009
+fscore=0.652638
+recall=0.505291
+precision=0.92674
+th=0.01
+fscore=0.652638
+recall=0.505291
+precision=0.92674
+th=0.011
+fscore=0.628151
+recall=0.479056
+precision=0.923077
+th=0.012
+fscore=0.615758
+recall=0.466711
+precision=0.918803
+th=0.013
+fscore=0.561256
+recall=0.414242
+precision=0.907692
+th=0.014
+fscore=0.548185
+recall=0.398369
+precision=0.905556
+th=0.015
+fscore=0.504996
+recall=0.354277
+precision=0.892593
+th=0.016
+fscore=0.425685
+recall=0.281966
+precision=0.896825
+th=0.017
+fscore=0.399696
+recall=0.254189
+precision=0.944444
+th=0.018
+fscore=0.382492
+recall=0.2403
+precision=0.944444
+th=0.019
+fscore=0.364101
+recall=0.226411
+precision=0.944444
+th=0.02
+fscore=0.364101
+recall=0.226411
+precision=0.944444
+th=0.021
+fscore=0.344158
+recall=0.210538
+precision=0.944444
+th=0.022
+fscore=0.306777
+recall=0.184303
+precision=0.933333
+th=0.023
+fscore=0.306777
+recall=0.184303
+precision=0.933333
+th=0.024
+fscore=0.266795
+recall=0.158069
+precision=0.916667
+th=0.025
+fscore=0.225185
+recall=0.12985
+precision=0.888889
+th=0.026
+fscore=0.203729
+recall=0.117504
+precision=0.833333
+th=0.027
+fscore=0.180741
+recall=0.105159
+precision=0.666667
+th=0.028
+fscore=0.157407
+recall=0.0892857
+precision=0.666667
+th=0.029
+fscore=0.157407
+recall=0.0892857
+precision=0.666667
+th=0.03
+fscore=0.134615
+recall=0.0753968
+precision=0.666667
+th=0.031
+fscore=0.134615
+recall=0.0753968
+precision=0.666667
+th=0.032
+fscore=0.134615
+recall=0.0753968
+precision=0.666667
+th=0.033
+fscore=0.134615
+recall=0.0753968
+precision=0.666667
+th=0.034
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.035
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.036
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.037
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.038
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.039
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.04
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.041
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.042
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.043
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.044
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.045
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.046
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.047
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.048
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.049
+fscore=0.030303
+recall=0.015873
+precision=0.333333
+th=0.05
+fscore=0.030303
+recall=0.015873
+precision=0.333333
+
+ar=0.06
+th=0
+fscore=0.626389
+recall=0.766314
+precision=0.534254
+th=0.001
+fscore=0.750662
+recall=0.766314
+precision=0.737634
+th=0.002
+fscore=0.767705
+recall=0.729277
+precision=0.812121
+th=0.003
+fscore=0.774149
+recall=0.703042
+precision=0.862963
+th=0.004
+fscore=0.778774
+recall=0.703042
+precision=0.876121
+th=0.005
+fscore=0.779954
+recall=0.687169
+precision=0.905229
+th=0.006
+fscore=0.765926
+recall=0.660935
+precision=0.919118
+th=0.007
+fscore=0.756635
+recall=0.647046
+precision=0.919118
+th=0.008
+fscore=0.753991
+recall=0.633157
+precision=0.9375
+th=0.009
+fscore=0.710548
+recall=0.575617
+precision=0.936111
+th=0.01
+fscore=0.699843
+recall=0.563272
+precision=0.933333
+th=0.011
+fscore=0.664815
+recall=0.524691
+precision=0.926496
+th=0.012
+fscore=0.640781
+recall=0.496473
+precision=0.920635
+th=0.013
+fscore=0.601592
+recall=0.456349
+precision=0.915584
+th=0.014
+fscore=0.589267
+recall=0.440476
+precision=0.913753
+th=0.015
+fscore=0.562445
+recall=0.412257
+precision=0.905556
+th=0.016
+fscore=0.507274
+recall=0.35582
+precision=0.919048
+th=0.017
+fscore=0.483373
+recall=0.326058
+precision=0.952381
+th=0.018
+fscore=0.452093
+recall=0.29828
+precision=0.952381
+th=0.019
+fscore=0.416498
+recall=0.270503
+precision=0.952381
+th=0.02
+fscore=0.399256
+recall=0.25463
+precision=0.952381
+th=0.021
+fscore=0.364101
+recall=0.226411
+precision=0.944444
+th=0.022
+fscore=0.32672
+recall=0.200176
+precision=0.933333
+th=0.023
+fscore=0.32672
+recall=0.200176
+precision=0.933333
+th=0.024
+fscore=0.286738
+recall=0.173942
+precision=0.916667
+th=0.025
+fscore=0.266795
+recall=0.158069
+precision=0.916667
+th=0.026
+fscore=0.225268
+recall=0.133377
+precision=0.833333
+th=0.027
+fscore=0.202279
+recall=0.121032
+precision=0.666667
+th=0.028
+fscore=0.180741
+recall=0.105159
+precision=0.666667
+th=0.029
+fscore=0.157407
+recall=0.0892857
+precision=0.666667
+th=0.03
+fscore=0.134615
+recall=0.0753968
+precision=0.666667
+th=0.031
+fscore=0.134615
+recall=0.0753968
+precision=0.666667
+th=0.032
+fscore=0.134615
+recall=0.0753968
+precision=0.666667
+th=0.033
+fscore=0.134615
+recall=0.0753968
+precision=0.666667
+th=0.034
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.035
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.036
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.037
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.038
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.039
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.04
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.041
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.042
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.043
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.044
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.045
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.046
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.047
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.048
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.049
+fscore=0.030303
+recall=0.015873
+precision=0.333333
+th=0.05
+fscore=0.030303
+recall=0.015873
+precision=0.333333
+
+ar=0.08
+th=0
+fscore=0.545563
+recall=0.836199
+precision=0.40873
+th=0.001
+fscore=0.710254
+recall=0.823854
+precision=0.625657
+th=0.002
+fscore=0.76688
+recall=0.799162
+precision=0.739487
+th=0.003
+fscore=0.764383
+recall=0.759039
+precision=0.771465
+th=0.004
+fscore=0.760163
+recall=0.73082
+precision=0.796429
+th=0.005
+fscore=0.766667
+recall=0.73082
+precision=0.810464
+th=0.006
+fscore=0.7646
+recall=0.704586
+precision=0.845411
+th=0.007
+fscore=0.76879
+recall=0.690697
+precision=0.872222
+th=0.008
+fscore=0.759981
+recall=0.676808
+precision=0.871345
+th=0.009
+fscore=0.730212
+recall=0.619268
+precision=0.898284
+th=0.01
+fscore=0.725917
+recall=0.606922
+precision=0.91634
+th=0.011
+fscore=0.722234
+recall=0.593034
+precision=0.934722
+th=0.012
+fscore=0.711006
+recall=0.580688
+precision=0.931548
+th=0.013
+fscore=0.663905
+recall=0.523148
+precision=0.930159
+th=0.014
+fscore=0.640476
+recall=0.494929
+precision=0.924908
+th=0.015
+fscore=0.615758
+recall=0.466711
+precision=0.918803
+th=0.016
+fscore=0.588797
+recall=0.434965
+precision=0.914141
+th=0.017
+fscore=0.511448
+recall=0.354277
+precision=0.925926
+th=0.018
+fscore=0.5
+recall=0.340388
+precision=0.958333
+th=0.019
+fscore=0.45098
+recall=0.300265
+precision=0.952381
+th=0.02
+fscore=0.434888
+recall=0.284392
+precision=0.952381
+th=0.021
+fscore=0.417647
+recall=0.268519
+precision=0.952381
+th=0.022
+fscore=0.382619
+recall=0.242284
+precision=0.944444
+th=0.023
+fscore=0.344396
+recall=0.212522
+precision=0.944444
+th=0.024
+fscore=0.305556
+recall=0.186287
+precision=0.933333
+th=0.025
+fscore=0.305556
+recall=0.186287
+precision=0.933333
+th=0.026
+fscore=0.286738
+recall=0.173942
+precision=0.916667
+th=0.027
+fscore=0.286738
+recall=0.173942
+precision=0.916667
+th=0.028
+fscore=0.266795
+recall=0.158069
+precision=0.916667
+th=0.029
+fscore=0.225185
+recall=0.12985
+precision=0.888889
+th=0.03
+fscore=0.17906
+recall=0.100088
+precision=0.888889
+th=0.031
+fscore=0.17906
+recall=0.100088
+precision=0.888889
+th=0.032
+fscore=0.17906
+recall=0.100088
+precision=0.888889
+th=0.033
+fscore=0.157604
+recall=0.0877425
+precision=0.833333
+th=0.034
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.035
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.036
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.037
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.038
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.039
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.04
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.041
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.042
+fscore=0.107626
+recall=0.0579806
+precision=0.833333
+th=0.043
+fscore=0.107626
+recall=0.0579806
+precision=0.833333
+th=0.044
+fscore=0.107626
+recall=0.0579806
+precision=0.833333
+th=0.045
+fscore=0.107626
+recall=0.0579806
+precision=0.833333
+th=0.046
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.047
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.048
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.049
+fscore=0.0569697
+recall=0.0297619
+precision=0.666667
+th=0.05
+fscore=0.0569697
+recall=0.0297619
+precision=0.666667
+
+ar=0.1
+th=0
+fscore=0.478283
+recall=0.833113
+precision=0.336828
+th=0.001
+fscore=0.595645
+recall=0.796076
+precision=0.476915
+th=0.002
+fscore=0.691143
+recall=0.767857
+precision=0.628485
+th=0.003
+fscore=0.709764
+recall=0.741623
+precision=0.681013
+th=0.004
+fscore=0.718876
+recall=0.727734
+precision=0.711884
+th=0.005
+fscore=0.740079
+recall=0.715388
+precision=0.771825
+th=0.006
+fscore=0.747983
+recall=0.701499
+precision=0.806061
+th=0.007
+fscore=0.749622
+recall=0.68761
+precision=0.830702
+th=0.008
+fscore=0.739961
+recall=0.675265
+precision=0.827778
+th=0.009
+fscore=0.731241
+recall=0.645503
+precision=0.853572
+th=0.01
+fscore=0.740375
+recall=0.633157
+precision=0.89951
+th=0.011
+fscore=0.730212
+recall=0.619268
+precision=0.898284
+th=0.012
+fscore=0.70469
+recall=0.579145
+precision=0.910913
+th=0.013
+fscore=0.658085
+recall=0.523148
+precision=0.902381
+th=0.014
+fscore=0.658085
+recall=0.523148
+precision=0.902381
+th=0.015
+fscore=0.622331
+recall=0.479056
+precision=0.895299
+th=0.016
+fscore=0.59537
+recall=0.44731
+precision=0.890637
+th=0.017
+fscore=0.574012
+recall=0.419092
+precision=0.911111
+th=0.018
+fscore=0.532702
+recall=0.382055
+precision=0.892593
+th=0.019
+fscore=0.52296
+recall=0.368166
+precision=0.925
+th=0.02
+fscore=0.468222
+recall=0.312169
+precision=0.952381
+th=0.021
+fscore=0.434343
+recall=0.283951
+precision=0.944444
+th=0.022
+fscore=0.40101
+recall=0.256173
+precision=0.944444
+th=0.023
+fscore=0.364101
+recall=0.226411
+precision=0.944444
+th=0.024
+fscore=0.344396
+recall=0.212522
+precision=0.944444
+th=0.025
+fscore=0.303289
+recall=0.18276
+precision=0.944444
+th=0.026
+fscore=0.303289
+recall=0.18276
+precision=0.944444
+th=0.027
+fscore=0.262821
+recall=0.156526
+precision=0.933333
+th=0.028
+fscore=0.244003
+recall=0.14418
+precision=0.916667
+th=0.029
+fscore=0.222465
+recall=0.128307
+precision=0.916667
+th=0.03
+fscore=0.174516
+recall=0.098545
+precision=0.916667
+th=0.031
+fscore=0.154444
+recall=0.0861993
+precision=0.888889
+th=0.032
+fscore=0.154444
+recall=0.0861993
+precision=0.888889
+th=0.033
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.034
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.035
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.036
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.037
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.038
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.039
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.04
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.041
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.042
+fscore=0.107626
+recall=0.0579806
+precision=0.833333
+th=0.043
+fscore=0.107626
+recall=0.0579806
+precision=0.833333
+th=0.044
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.045
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.046
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.047
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.048
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.049
+fscore=0.0569697
+recall=0.0297619
+precision=0.666667
+th=0.05
+fscore=0.0569697
+recall=0.0297619
+precision=0.666667
+
+ar=0.12
+th=0
+fscore=0.457941
+recall=0.862875
+precision=0.313732
+th=0.001
+fscore=0.5734
+recall=0.83664
+precision=0.436703
+th=0.002
+fscore=0.658234
+recall=0.782187
+precision=0.568393
+th=0.003
+fscore=0.677183
+recall=0.755952
+precision=0.61432
+th=0.004
+fscore=0.709587
+recall=0.743607
+precision=0.680133
+th=0.005
+fscore=0.726308
+recall=0.727734
+precision=0.72525
+th=0.006
+fscore=0.751888
+recall=0.727734
+precision=0.77814
+th=0.007
+fscore=0.749051
+recall=0.701499
+precision=0.806349
+th=0.008
+fscore=0.730504
+recall=0.675265
+precision=0.8
+th=0.009
+fscore=0.705665
+recall=0.635141
+precision=0.803704
+th=0.01
+fscore=0.729528
+recall=0.635141
+precision=0.864924
+th=0.011
+fscore=0.70264
+recall=0.589506
+precision=0.875
+th=0.012
+fscore=0.680824
+recall=0.563272
+precision=0.869444
+th=0.013
+fscore=0.657901
+recall=0.537037
+precision=0.863095
+th=0.014
+fscore=0.646445
+recall=0.507275
+precision=0.900794
+th=0.015
+fscore=0.64125
+recall=0.491402
+precision=0.924603
+th=0.016
+fscore=0.607911
+recall=0.44731
+precision=0.948718
+th=0.017
+fscore=0.607911
+recall=0.44731
+precision=0.948718
+th=0.018
+fscore=0.539153
+recall=0.382055
+precision=0.925926
+th=0.019
+fscore=0.539153
+recall=0.382055
+precision=0.925926
+th=0.02
+fscore=0.49906
+recall=0.338404
+precision=0.958333
+th=0.021
+fscore=0.447613
+recall=0.294312
+precision=0.952381
+th=0.022
+fscore=0.432462
+recall=0.280423
+precision=0.952381
+th=0.023
+fscore=0.364101
+recall=0.226411
+precision=0.944444
+th=0.024
+fscore=0.344396
+recall=0.212522
+precision=0.944444
+th=0.025
+fscore=0.344396
+recall=0.212522
+precision=0.944444
+th=0.026
+fscore=0.324453
+recall=0.196649
+precision=0.944444
+th=0.027
+fscore=0.280497
+recall=0.168871
+precision=0.944444
+th=0.028
+fscore=0.262821
+recall=0.156526
+precision=0.933333
+th=0.029
+fscore=0.262821
+recall=0.156526
+precision=0.933333
+th=0.03
+fscore=0.217949
+recall=0.12478
+precision=0.933333
+th=0.031
+fscore=0.193333
+recall=0.110891
+precision=0.933333
+th=0.032
+fscore=0.193333
+recall=0.110891
+precision=0.933333
+th=0.033
+fscore=0.174516
+recall=0.098545
+precision=0.916667
+th=0.034
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.035
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.036
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.037
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.038
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.039
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.04
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.041
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.042
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.043
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.044
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.045
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.046
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.047
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.048
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.049
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.05
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+
+ar=0.15
+th=0
+fscore=0.390543
+recall=0.848986
+precision=0.255761
+th=0.001
+fscore=0.489421
+recall=0.833113
+precision=0.347283
+th=0.002
+fscore=0.566951
+recall=0.804894
+precision=0.437825
+th=0.003
+fscore=0.590447
+recall=0.740079
+precision=0.491661
+th=0.004
+fscore=0.625702
+recall=0.713845
+precision=0.557143
+th=0.005
+fscore=0.643013
+recall=0.701499
+precision=0.594967
+th=0.006
+fscore=0.649424
+recall=0.685626
+precision=0.617778
+th=0.007
+fscore=0.657323
+recall=0.671737
+precision=0.643979
+th=0.008
+fscore=0.647449
+recall=0.633157
+precision=0.664141
+th=0.009
+fscore=0.663127
+recall=0.619268
+precision=0.716056
+th=0.01
+fscore=0.689659
+recall=0.606922
+precision=0.799966
+th=0.011
+fscore=0.669346
+recall=0.564815
+precision=0.825
+th=0.012
+fscore=0.669346
+recall=0.564815
+precision=0.825
+th=0.013
+fscore=0.643003
+recall=0.521164
+precision=0.846581
+th=0.014
+fscore=0.634921
+recall=0.507275
+precision=0.861111
+th=0.015
+fscore=0.641799
+recall=0.507275
+precision=0.881746
+th=0.016
+fscore=0.616402
+recall=0.475529
+precision=0.877778
+th=0.017
+fscore=0.598413
+recall=0.450838
+precision=0.895299
+th=0.018
+fscore=0.558208
+recall=0.410273
+precision=0.878788
+th=0.019
+fscore=0.519256
+recall=0.368166
+precision=0.892593
+th=0.02
+fscore=0.474501
+recall=0.328042
+precision=0.883333
+th=0.021
+fscore=0.428596
+recall=0.283951
+precision=0.902778
+th=0.022
+fscore=0.428596
+recall=0.283951
+precision=0.902778
+th=0.023
+fscore=0.394405
+recall=0.254189
+precision=0.896825
+th=0.024
+fscore=0.35881
+recall=0.226411
+precision=0.896825
+th=0.025
+fscore=0.35881
+recall=0.226411
+precision=0.896825
+th=0.026
+fscore=0.35881
+recall=0.226411
+precision=0.896825
+th=0.027
+fscore=0.339105
+recall=0.212522
+precision=0.896825
+th=0.028
+fscore=0.321429
+recall=0.200176
+precision=0.885714
+th=0.029
+fscore=0.302028
+recall=0.184303
+precision=0.877778
+th=0.03
+fscore=0.258072
+recall=0.156526
+precision=0.877778
+th=0.031
+fscore=0.212564
+recall=0.126764
+precision=0.866667
+th=0.032
+fscore=0.212564
+recall=0.126764
+precision=0.866667
+th=0.033
+fscore=0.212564
+recall=0.126764
+precision=0.866667
+th=0.034
+fscore=0.212564
+recall=0.126764
+precision=0.866667
+th=0.035
+fscore=0.173675
+recall=0.102072
+precision=0.822222
+th=0.036
+fscore=0.173675
+recall=0.102072
+precision=0.822222
+th=0.037
+fscore=0.173675
+recall=0.102072
+precision=0.822222
+th=0.038
+fscore=0.152219
+recall=0.0897266
+precision=0.766667
+th=0.039
+fscore=0.156322
+recall=0.0897266
+precision=0.833333
+th=0.04
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.041
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.042
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.043
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.044
+fscore=0.11
+recall=0.0615079
+precision=0.666667
+th=0.045
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.046
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.047
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.048
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.049
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+th=0.05
+fscore=0.0846377
+recall=0.0456349
+precision=0.666667
+
+ar=0.175
+th=0
+fscore=0.356383
+recall=0.83157
+precision=0.227527
+th=0.001
+fscore=0.457448
+recall=0.806878
+precision=0.319957
+th=0.002
+fscore=0.527027
+recall=0.77866
+precision=0.399208
+th=0.003
+fscore=0.564569
+recall=0.752425
+precision=0.453617
+th=0.004
+fscore=0.58439
+recall=0.727734
+precision=0.491763
+th=0.005
+fscore=0.599351
+recall=0.703042
+precision=0.529096
+th=0.006
+fscore=0.623191
+recall=0.690697
+precision=0.573278
+th=0.007
+fscore=0.599078
+recall=0.636684
+precision=0.572797
+th=0.008
+fscore=0.619107
+recall=0.636684
+precision=0.60997
+th=0.009
+fscore=0.626146
+recall=0.622795
+precision=0.637576
+th=0.01
+fscore=0.641181
+recall=0.622795
+precision=0.669192
+th=0.011
+fscore=0.645354
+recall=0.591049
+precision=0.722906
+th=0.012
+fscore=0.659647
+recall=0.591049
+precision=0.765362
+th=0.013
+fscore=0.627012
+recall=0.547399
+precision=0.756614
+th=0.014
+fscore=0.618519
+recall=0.519621
+precision=0.787037
+th=0.015
+fscore=0.618519
+recall=0.519621
+precision=0.787037
+th=0.016
+fscore=0.576527
+recall=0.459656
+precision=0.79085
+th=0.017
+fscore=0.576145
+recall=0.44731
+precision=0.81891
+th=0.018
+fscore=0.524238
+recall=0.392857
+precision=0.797619
+th=0.019
+fscore=0.519318
+recall=0.378968
+precision=0.83683
+th=0.02
+fscore=0.490613
+recall=0.35075
+precision=0.822222
+th=0.021
+fscore=0.411276
+recall=0.27888
+precision=0.795455
+th=0.022
+fscore=0.39958
+recall=0.266534
+precision=0.805556
+th=0.023
+fscore=0.366667
+recall=0.236772
+precision=0.821429
+th=0.024
+fscore=0.366667
+recall=0.236772
+precision=0.821429
+th=0.025
+fscore=0.315296
+recall=0.196649
+precision=0.849206
+th=0.026
+fscore=0.294132
+recall=0.18276
+precision=0.849206
+th=0.027
+fscore=0.294132
+recall=0.18276
+precision=0.849206
+th=0.028
+fscore=0.256173
+recall=0.154541
+precision=0.822222
+th=0.029
+fscore=0.256173
+recall=0.154541
+precision=0.822222
+th=0.03
+fscore=0.256173
+recall=0.154541
+precision=0.822222
+th=0.031
+fscore=0.211538
+recall=0.12478
+precision=0.8
+th=0.032
+fscore=0.211538
+recall=0.12478
+precision=0.8
+th=0.033
+fscore=0.186923
+recall=0.110891
+precision=0.8
+th=0.034
+fscore=0.19
+recall=0.110891
+precision=0.85
+th=0.035
+fscore=0.151111
+recall=0.0861993
+precision=0.805556
+th=0.036
+fscore=0.129655
+recall=0.0738536
+precision=0.75
+th=0.037
+fscore=0.129655
+recall=0.0738536
+precision=0.75
+th=0.038
+fscore=0.129655
+recall=0.0738536
+precision=0.75
+th=0.039
+fscore=0.132989
+recall=0.0738536
+precision=0.833333
+th=0.04
+fscore=0.107626
+recall=0.0579806
+precision=0.833333
+th=0.041
+fscore=0.107626
+recall=0.0579806
+precision=0.833333
+th=0.042
+fscore=0.107626
+recall=0.0579806
+precision=0.833333
+th=0.043
+fscore=0.107626
+recall=0.0579806
+precision=0.833333
+th=0.044
+fscore=0.0799582
+recall=0.0421076
+precision=0.833333
+th=0.045
+fscore=0.0799582
+recall=0.0421076
+precision=0.833333
+th=0.046
+fscore=0.0799582
+recall=0.0421076
+precision=0.833333
+th=0.047
+fscore=0.0799582
+recall=0.0421076
+precision=0.833333
+th=0.048
+fscore=0.0799582
+recall=0.0421076
+precision=0.833333
+th=0.049
+fscore=0.0799582
+recall=0.0421076
+precision=0.833333
+th=0.05
+fscore=0.0799582
+recall=0.0421076
+precision=0.833333
+
+ar=0.2
+th=0
+fscore=0.35581
+recall=0.820767
+precision=0.227972
+th=0.001
+fscore=0.425471
+recall=0.806878
+precision=0.290094
+th=0.002
+fscore=0.492842
+recall=0.791005
+precision=0.359081
+th=0.003
+fscore=0.535794
+recall=0.740079
+precision=0.420627
+th=0.004
+fscore=0.553139
+recall=0.727734
+precision=0.447738
+th=0.005
+fscore=0.562061
+recall=0.701499
+precision=0.471406
+th=0.006
+fscore=0.585035
+recall=0.689153
+precision=0.510417
+th=0.007
+fscore=0.589275
+recall=0.659392
+precision=0.534483
+th=0.008
+fscore=0.590243
+recall=0.643519
+precision=0.547619
+th=0.009
+fscore=0.576263
+recall=0.615741
+precision=0.543719
+th=0.01
+fscore=0.562144
+recall=0.575617
+precision=0.554487
+th=0.011
+fscore=0.567466
+recall=0.559744
+precision=0.581083
+th=0.012
+fscore=0.588587
+recall=0.559744
+precision=0.630848
+th=0.013
+fscore=0.54832
+recall=0.489418
+precision=0.638889
+th=0.014
+fscore=0.557489
+recall=0.489418
+precision=0.668627
+th=0.015
+fscore=0.553632
+recall=0.475529
+precision=0.686508
+th=0.016
+fscore=0.529029
+recall=0.443783
+precision=0.669799
+th=0.017
+fscore=0.457283
+recall=0.364638
+precision=0.635495
+th=0.018
+fscore=0.435936
+recall=0.33642
+precision=0.645299
+th=0.019
+fscore=0.423953
+recall=0.320547
+precision=0.64359
+th=0.02
+fscore=0.41044
+recall=0.306658
+precision=0.637179
+th=0.021
+fscore=0.36855
+recall=0.263007
+precision=0.631481
+th=0.022
+fscore=0.319648
+recall=0.222884
+precision=0.599206
+th=0.023
+fscore=0.306932
+recall=0.210538
+precision=0.597944
+th=0.024
+fscore=0.306932
+recall=0.210538
+precision=0.597944
+th=0.025
+fscore=0.277224
+recall=0.182319
+precision=0.608466
+th=0.026
+fscore=0.264176
+recall=0.16843
+precision=0.681481
+th=0.027
+fscore=0.243651
+recall=0.154541
+precision=0.664815
+th=0.028
+fscore=0.224834
+recall=0.142196
+precision=0.648148
+th=0.029
+fscore=0.20491
+recall=0.126323
+precision=0.625
+th=0.03
+fscore=0.207373
+recall=0.126323
+precision=0.642857
+th=0.031
+fscore=0.165181
+recall=0.0965608
+precision=0.694444
+th=0.032
+fscore=0.16708
+recall=0.0965608
+precision=0.716667
+th=0.033
+fscore=0.16708
+recall=0.0965608
+precision=0.716667
+th=0.034
+fscore=0.144516
+recall=0.082672
+precision=0.75
+th=0.035
+fscore=0.146738
+recall=0.082672
+precision=0.805556
+th=0.036
+fscore=0.126667
+recall=0.0703263
+precision=0.777778
+th=0.037
+fscore=0.126667
+recall=0.0703263
+precision=0.777778
+th=0.038
+fscore=0.126667
+recall=0.0703263
+precision=0.777778
+th=0.039
+fscore=0.129082
+recall=0.0703263
+precision=0.888889
+th=0.04
+fscore=0.101414
+recall=0.0544533
+precision=0.888889
+th=0.041
+fscore=0.101414
+recall=0.0544533
+precision=0.888889
+th=0.042
+fscore=0.101414
+recall=0.0544533
+precision=0.888889
+th=0.043
+fscore=0.101414
+recall=0.0544533
+precision=0.888889
+th=0.044
+fscore=0.101414
+recall=0.0544533
+precision=0.888889
+th=0.045
+fscore=0.101414
+recall=0.0544533
+precision=0.888889
+th=0.046
+fscore=0.101414
+recall=0.0544533
+precision=0.888889
+th=0.047
+fscore=0.101414
+recall=0.0544533
+precision=0.888889
+th=0.048
+fscore=0.101414
+recall=0.0544533
+precision=0.888889
+th=0.049
+fscore=0.101414
+recall=0.0544533
+precision=0.888889
+th=0.05
+fscore=0.101414
+recall=0.0544533
+precision=0.888889
+
+ar=0.25
+th=0
+fscore=0.312749
+recall=0.752425
+precision=0.19774
+th=0.001
+fscore=0.372463
+recall=0.740079
+precision=0.24907
+th=0.002
+fscore=0.431852
+recall=0.703042
+precision=0.312379
+th=0.003
+fscore=0.455506
+recall=0.676808
+precision=0.344838
+th=0.004
+fscore=0.477737
+recall=0.664462
+precision=0.374101
+th=0.005
+fscore=0.482515
+recall=0.622354
+precision=0.395107
+th=0.006
+fscore=0.479565
+recall=0.59612
+precision=0.403595
+th=0.007
+fscore=0.486826
+recall=0.582231
+precision=0.422427
+th=0.008
+fscore=0.497956
+recall=0.582231
+precision=0.440162
+th=0.009
+fscore=0.497627
+recall=0.53858
+precision=0.46808
+th=0.01
+fscore=0.490476
+recall=0.512346
+precision=0.478261
+th=0.011
+fscore=0.484768
+recall=0.484127
+precision=0.491515
+th=0.012
+fscore=0.491506
+recall=0.484127
+precision=0.505231
+th=0.013
+fscore=0.499747
+recall=0.484127
+precision=0.521739
+th=0.014
+fscore=0.511387
+recall=0.470238
+precision=0.567948
+th=0.015
+fscore=0.480435
+recall=0.426587
+precision=0.555921
+th=0.016
+fscore=0.458057
+recall=0.382496
+precision=0.575
+th=0.017
+fscore=0.433211
+recall=0.35075
+precision=0.568254
+th=0.018
+fscore=0.433211
+recall=0.35075
+precision=0.568254
+th=0.019
+fscore=0.41388
+recall=0.324515
+precision=0.575092
+th=0.02
+fscore=0.41388
+recall=0.324515
+precision=0.575092
+th=0.021
+fscore=0.388626
+recall=0.294753
+precision=0.571096
+th=0.022
+fscore=0.394766
+recall=0.294753
+precision=0.60373
+th=0.023
+fscore=0.383071
+recall=0.282407
+precision=0.613831
+th=0.024
+fscore=0.383071
+recall=0.282407
+precision=0.613831
+th=0.025
+fscore=0.335381
+recall=0.2403
+precision=0.575
+th=0.026
+fscore=0.313977
+recall=0.212522
+precision=0.606481
+th=0.027
+fscore=0.278287
+recall=0.184303
+precision=0.57672
+th=0.028
+fscore=0.267569
+recall=0.171958
+precision=0.628571
+th=0.029
+fscore=0.229948
+recall=0.142196
+precision=0.638889
+th=0.03
+fscore=0.210256
+recall=0.126323
+precision=0.7
+th=0.031
+fscore=0.210256
+recall=0.126323
+precision=0.7
+th=0.032
+fscore=0.189567
+recall=0.112434
+precision=0.666667
+th=0.033
+fscore=0.167619
+recall=0.0965608
+precision=0.666667
+th=0.034
+fscore=0.167619
+recall=0.0965608
+precision=0.666667
+th=0.035
+fscore=0.167619
+recall=0.0965608
+precision=0.666667
+th=0.036
+fscore=0.145641
+recall=0.082672
+precision=0.666667
+th=0.037
+fscore=0.145641
+recall=0.082672
+precision=0.666667
+th=0.038
+fscore=0.124951
+recall=0.0703263
+precision=0.666667
+th=0.039
+fscore=0.127174
+recall=0.0703263
+precision=0.722222
+th=0.04
+fscore=0.102947
+recall=0.0544533
+precision=1
+th=0.041
+fscore=0.102947
+recall=0.0544533
+precision=1
+th=0.042
+fscore=0.102947
+recall=0.0544533
+precision=1
+th=0.043
+fscore=0.102947
+recall=0.0544533
+precision=1
+th=0.044
+fscore=0.102947
+recall=0.0544533
+precision=1
+th=0.045
+fscore=0.102947
+recall=0.0544533
+precision=1
+th=0.046
+fscore=0.102947
+recall=0.0544533
+precision=1
+th=0.047
+fscore=0.102947
+recall=0.0544533
+precision=1
+th=0.048
+fscore=0.102947
+recall=0.0544533
+precision=1
+th=0.049
+fscore=0.102947
+recall=0.0544533
+precision=1
+th=0.05
+fscore=0.102947
+recall=0.0544533
+precision=1
+
+### Maximal fscore: 0.779954 (at: ar=0.06, th=0.005)
+    recall: 0.687169, precision: 0.905229
+  mix N925:
+      recall: 0.555556
+      precision: 0.833333
+      fscore: 0.666667
+  mix N987:
+      recall: 0.714286
+      precision: 0.882353
+      fscore: 0.789474
+  mix N988:
+      recall: 0.791667
+      precision: 1
+      fscore: 0.883721
+Saved fig '/home/leo/repos/mcfnmr-release/output/figs/classification MM/mixes['N925', 'N987', 'N988'](pt), lib metabominer(jointfit).png'
+Saved fig '/home/leo/repos/mcfnmr-release/output/figs/classification MM/mixes['N925', 'N987', 'N988'](pt), lib metabominer(jointfit).svg'
+
+ Total run time: 7.413753509521484 secs

@@ -1,0 +1,8 @@
+# Task to perform. Can be either "quantification", "classification", "scan", 
+# "comparison_classification", or "comparison_quantification"
+task = "plasma_sample_analysis"
+lib = "metabominer"
+# Use results of previous runs if available
+recompute=false
+plot=true
+

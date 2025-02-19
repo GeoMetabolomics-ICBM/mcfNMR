@@ -1,0 +1,164 @@
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+675 rows, 525 cols, 668 nonzeros
+28 rows, 82 cols, 137 nonzeros
+21 rows, 70 cols, 111 nonzeros
+21 rows, 69 cols, 109 nonzeros
+Presolve : Reductions: rows 21(-1436); columns 69(-5020); elements 109(-6250)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(2.63104e+10) 0s
+         30     1.3496451695e+14 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 30
+Objective value     :  1.3496451695e+14
+HiGHS run time      :          0.01
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/classification/setupD_opt/N988/opt_radius_and_thresh
+
+config:
+{'ar': 0.06,
+ 'lib': 'MetaboMiner',
+ 'mix': 'N988',
+ 'setup': 'D',
+ 'task': 'classification',
+ 'th': 0.005}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/classification/setupD_opt/N988/opt_radius_and_thresh/output
+
+Data directory: /home/leo/repos/mcfnmr-release/data
+Loaded mix 'N926' content list of length 35
+Loaded mix 'N907' content list of length 35
+Loaded mix 'N987' content list of length 21
+Loaded mix 'N925' content list of length 27
+Loaded mix 'N988' content list of length 24
+Loaded mix 'N880' content list of length 27
+Loading MM lib 'Biofluid ( all )' containing 502 compounds...
+Removing duplicate entry for D-Lactic Acid (HMDB 1311)
+Loaded point spectrum for mix 'N926(dp)' with 2664 peaks.
+Loaded point spectrum for mix 'N907(dp)' with 1861 peaks.
+Loaded point spectrum for mix 'N907' with 591 peaks.
+Loaded point spectrum for mix 'N988' with 565 peaks.
+Loaded point spectrum for mix 'N880' with 1088 peaks.
+Loaded point spectrum for mix 'N926' with 728 peaks.
+Loaded point spectrum for mix 'N925' with 807 peaks.
+Loaded point spectrum for mix 'N987' with 597 peaks.
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Making dist list for ar=0.06 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 1241
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N988(peaklist)_MetaboMiner_ar0.06.pickle'
+makeDistList() took 0.170965 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N988(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N988(peaklist)_region_ix.pickle
+Containment checking took 0.062067 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 329
+Total target weight: 2.0555e+08
+
+Generated flowNet:
+ DiGraph with 4178 nodes and 5089 edges
+Generation took 0.0836941 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 458 / 501
+   took 0.0709937 secs
+Constructing A_ub...
+Estimated number of inequalities: 329 (nr of connected target nodes).
+True number of inequalities is 329.
+   took 0.0174896 secs
+Running linprog()...
+   took 0.00856152 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.104097 secs
+Collecting stats...
+Total absorbed flow: 1.34965e+08
+Total flows:
+   absorbed: 1.34965e+08
+   assigned: 7.05856e+07
+Total costs:
+ assignment: 1.95084e+06
+ absorption: 1.34965e+14
+      total: 1.34965e+14
+Stats collection took 0.0100413 secs
+
+
+Timings (at nX=3486, nY=565):
+distList: 0.170965 secs
+containmentCheck: 0.062067 secs
+flowNetGeneration: 0.0836941 secs
+minCostFlow: 0.104097 secs
+statsCollection: 0.0100413 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(peaklist)_lib_MetaboMiner_ar0.06.pickle'
+Total time for MCF: 0.444231 secs
+
+Classification results:
+{'N988': {'classification': {'FN': ['158', '182', '195', '72', '875'],
+                             'FP': [],
+                             'TP': ['108',
+                                    '134',
+                                    '162',
+                                    '167',
+                                    '172',
+                                    '177',
+                                    '190',
+                                    '208',
+                                    '211',
+                                    '214',
+                                    '357',
+                                    '43',
+                                    '448',
+                                    '62',
+                                    '641',
+                                    '8',
+                                    '812',
+                                    '883',
+                                    '97'],
+                             'compound_df':     compound target  ... intensity scaling  expected concentration factor
+0          1   N988  ...              None                           None
+1        101   N988  ...              None                           None
+2       1044   N988  ...              None                           None
+3       1046   N988  ...              None                           None
+4       1049   N988  ...              None                           None
+..       ...    ...  ...               ...                            ...
+496       97   N988  ...              None                           None
+497      975   N988  ...              None                           None
+498       98   N988  ...              None                           None
+499       99   N988  ...              None                           None
+500      995   N988  ...              None                           None
+
+[501 rows x 15 columns],
+                             'fscore': 0.8837209302325582,
+                             'precision': 1.0,
+                             'recall': 0.7916666666666666},
+          'classificationThreshold': 0.005}}
+
+ Total run time: 0.5488185882568359 secs

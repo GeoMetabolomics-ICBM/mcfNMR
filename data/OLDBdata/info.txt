@@ -1,0 +1,11 @@
+The tests expect to find our inhouse dataset in this directory. It consists of the full spectra of all OLDB mixtures
+in the subdirectory 'fullspectra', an example 1D spectrum in the folder 'test1D' and a database of peak lists for 
+individual compound spectra. The dataset can be downloaded at: https://zenodo.org/records/14864750
+
+This can be automated by running 
+
+> source scripts/download_demodata.sh oldb
+
+in the MCFNMR_HOME directory.
+
+See demodata/oldbdata.py

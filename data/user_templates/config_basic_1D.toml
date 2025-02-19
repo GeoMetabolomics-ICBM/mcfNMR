@@ -1,0 +1,14 @@
+# mcfNMR configuration example
+# See README.md for specification
+lib = "lib_1D.csv"
+target = "target_1D.csv"
+assignment_radius = 0.2
+detection_threshold = 0.1
+isolated_fit = false
+incremental_fit = false
+output_dir = "./cache"
+load = false
+name = "test"
+plot = false
+show_plot = false
+gfxformat = "svg"

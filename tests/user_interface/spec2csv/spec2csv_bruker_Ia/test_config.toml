@@ -1,0 +1,8 @@
+# Task to perform
+task = "spec2csv"
+# target spectrum file
+target = "data/OLDBdata/fullspectra/nmr_Ia_01.txt.gz"
+# resolution for serialized file
+bindims = "64,32"
+# output
+outfile = "target.csv"

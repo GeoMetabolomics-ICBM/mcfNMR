@@ -1,0 +1,20 @@
+# Setup A for different combinations of detection threshold and assignment radius
+setupA_more_cases
+
+# Setup A for optimal detection threshold and assignment radius (mean across all mixes) 
+setupA_opt
+
+# Setup B (A + isolated fit) for optimal detection threshold and assignment radius (mean across all mixes) 
+setupB_opt
+
+# Setup C (A + incremental fit) for optimal detection threshold and assignment radius (mean across all mixes) 
+setupC_opt
+
+# Setup D (A + peak list) for optimal detection threshold and assignment radius (mean across all mixes) 
+setupD_opt
+
+# Setup E (A + incremental fit + peak list) for optimal detection threshold and assignment radius (mean across all mixes) 
+setupE
+
+# Setup F (A + isolated fit + peak list) for optimal detection threshold and assignment radius (mean across all mixes) 
+setupF

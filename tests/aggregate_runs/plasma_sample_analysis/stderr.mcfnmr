@@ -1,0 +1,63 @@
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/utils/plotting.py:235: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  ax.legend(loc=2, ncols=4)
+/home/leo/repos/mcfnmr/mcfnmr/utils/plotting.py:288: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  ax.legend(loc=2).remove()
+/home/leo/repos/mcfnmr/mcfnmr/utils/plotting.py:235: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  ax.legend(loc=2, ncols=4)
+/home/leo/repos/mcfnmr/mcfnmr/utils/plotting.py:288: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  ax.legend(loc=2).remove()
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(
+/home/leo/repos/mcfnmr/mcfnmr/routines/analysis_plasma_samples.py:235: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  df = pd.concat(
+/home/leo/repos/mcfnmr/mcfnmr/routines/comparison_classification.py:61: UserWarning: The palette list has more values (9) than needed (8), which may not be intended.
+  sns.barplot(df, y="mixID", x=var, hue="method", palette=pal, ax=ax)
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(

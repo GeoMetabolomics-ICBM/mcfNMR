@@ -1,0 +1,555 @@
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/aggregate_runs/comparison_classification
+
+config:
+{'ar': {'A': 0.06, 'B': 0.05, 'C': 0.08, 'D': 0.06},
+ 'lib': 'MetaboMiner',
+ 'mix': 'all',
+ 'recompute': False,
+ 'task': 'comparison_classification',
+ 'th': {'A': 0.003, 'B': 0.003, 'C': 0.003, 'D': 0.005}}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/aggregate_runs/comparison_classification/output
+
+Data directory: /home/leo/repos/mcfnmr-release/data
+
+#   setup A
+Loaded mix 'N926' content list of length 35
+Loaded mix 'N907' content list of length 35
+Loaded mix 'N987' content list of length 21
+Loaded mix 'N925' content list of length 27
+Loaded mix 'N988' content list of length 24
+Loaded mix 'N880' content list of length 27
+Loading MM lib 'Biofluid ( all )' containing 502 compounds...
+Removing duplicate entry for D-Lactic Acid (HMDB 1311)
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Converting raster to peaks, nbin=(2, 4), signal-to-noise threshold=None)
+   (original raster dimensions: (1024, 2048))
+   (binned grid dimensions: (512, 512))
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Converting raster to peaks, nbin=(1, 2), signal-to-noise threshold=None)
+   (original raster dimensions: (512, 1024))
+   (binned grid dimensions: (512, 512))
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Converting raster to peaks, nbin=(1, 2), signal-to-noise threshold=None)
+   (original raster dimensions: (256, 1024))
+   (binned grid dimensions: (256, 512))
+runMetaboMinerFits(): Binning for mix N925: (2, 4)
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(raster, (2x4)-bins)_lib_Biofluid ( all )_ar0.06.pickle'
+Total time for MCF: 0.0024897 secs
+
+runMetaboMinerFits(): Binning for mix N987: (1, 2)
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(raster, (1x2)-bins)_lib_Biofluid ( all )_ar0.06.pickle'
+Total time for MCF: 0.00286396 secs
+
+runMetaboMinerFits(): Binning for mix N988: (1, 2)
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(raster, (1x2)-bins)_lib_Biofluid ( all )_ar0.06.pickle'
+Total time for MCF: 0.00208325 secs
+
+
+#   setup B
+Loaded mix 'N926' content list of length 35
+Loaded mix 'N907' content list of length 35
+Loaded mix 'N987' content list of length 21
+Loaded mix 'N925' content list of length 27
+Loaded mix 'N988' content list of length 24
+Loaded mix 'N880' content list of length 27
+Loading MM lib 'Biofluid ( all )' containing 502 compounds...
+Removing duplicate entry for D-Lactic Acid (HMDB 1311)
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Converting raster to peaks, nbin=(2, 4), signal-to-noise threshold=None)
+   (original raster dimensions: (1024, 2048))
+   (binned grid dimensions: (512, 512))
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Converting raster to peaks, nbin=(1, 2), signal-to-noise threshold=None)
+   (original raster dimensions: (512, 1024))
+   (binned grid dimensions: (512, 512))
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Converting raster to peaks, nbin=(1, 2), signal-to-noise threshold=None)
+   (original raster dimensions: (256, 1024))
+   (binned grid dimensions: (256, 512))
+runMetaboMinerFits(): Binning for mix N925: (2, 4)
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_isolated_in_N925(raster, (2x4)-bins)_lib_Biofluid ( all )_ar0.05.pickle'
+Total time for MCF: 0.00245147 secs
+
+runMetaboMinerFits(): Binning for mix N987: (1, 2)
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_isolated_in_N987(raster, (1x2)-bins)_lib_Biofluid ( all )_ar0.05.pickle'
+Total time for MCF: 0.00216741 secs
+
+runMetaboMinerFits(): Binning for mix N988: (1, 2)
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_isolated_in_N988(raster, (1x2)-bins)_lib_Biofluid ( all )_ar0.05.pickle'
+Total time for MCF: 0.00330906 secs
+
+
+#   setup C
+Loaded mix 'N926' content list of length 35
+Loaded mix 'N907' content list of length 35
+Loaded mix 'N987' content list of length 21
+Loaded mix 'N925' content list of length 27
+Loaded mix 'N988' content list of length 24
+Loaded mix 'N880' content list of length 27
+Loading MM lib 'Biofluid ( all )' containing 502 compounds...
+Removing duplicate entry for D-Lactic Acid (HMDB 1311)
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Converting raster to peaks, nbin=(2, 4), signal-to-noise threshold=None)
+   (original raster dimensions: (1024, 2048))
+   (binned grid dimensions: (512, 512))
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Converting raster to peaks, nbin=(1, 2), signal-to-noise threshold=None)
+   (original raster dimensions: (512, 1024))
+   (binned grid dimensions: (512, 512))
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Converting raster to peaks, nbin=(1, 2), signal-to-noise threshold=None)
+   (original raster dimensions: (256, 1024))
+   (binned grid dimensions: (256, 512))
+runMetaboMinerFits(): Binning for mix N925: (2, 4)
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(raster, (2x4)-bins)_lib_Biofluid ( all )_0.02on[].pickle'
+Total time for MCF: 0.0025949 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(raster, (2x4)-bins)_lib_Biofluid ( all )_0.03on[0.02].pickle'
+Total time for MCF: 0.00265157 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(raster, (2x4)-bins)_lib_Biofluid ( all )_0.04on[0.02,0.03].pickle'
+Total time for MCF: 0.00261103 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(raster, (2x4)-bins)_lib_Biofluid ( all )_0.05on[0.02,0.03,0.04].pickle'
+Total time for MCF: 0.00280579 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(raster, (2x4)-bins)_lib_Biofluid ( all )_0.06on[0.02,0.03,0.04,0.05].pickle'
+Total time for MCF: 0.00261793 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(raster, (2x4)-bins)_lib_Biofluid ( all )_0.08on[0.02,0.03,0.04,0.05,0.06].pickle'
+Total time for MCF: 0.0076047 secs
+
+runMetaboMinerFits(): Binning for mix N987: (1, 2)
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(raster, (1x2)-bins)_lib_Biofluid ( all )_0.02on[].pickle'
+Total time for MCF: 0.00264763 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(raster, (1x2)-bins)_lib_Biofluid ( all )_0.03on[0.02].pickle'
+Total time for MCF: 0.00268548 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(raster, (1x2)-bins)_lib_Biofluid ( all )_0.04on[0.02,0.03].pickle'
+Total time for MCF: 0.00257829 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(raster, (1x2)-bins)_lib_Biofluid ( all )_0.05on[0.02,0.03,0.04].pickle'
+Total time for MCF: 0.00266451 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(raster, (1x2)-bins)_lib_Biofluid ( all )_0.06on[0.02,0.03,0.04,0.05].pickle'
+Total time for MCF: 0.00279777 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(raster, (1x2)-bins)_lib_Biofluid ( all )_0.08on[0.02,0.03,0.04,0.05,0.06].pickle'
+Total time for MCF: 0.00760069 secs
+
+runMetaboMinerFits(): Binning for mix N988: (1, 2)
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(raster, (1x2)-bins)_lib_Biofluid ( all )_0.02on[].pickle'
+Total time for MCF: 0.00270477 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(raster, (1x2)-bins)_lib_Biofluid ( all )_0.03on[0.02].pickle'
+Total time for MCF: 0.00266183 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(raster, (1x2)-bins)_lib_Biofluid ( all )_0.04on[0.02,0.03].pickle'
+Total time for MCF: 0.00248973 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(raster, (1x2)-bins)_lib_Biofluid ( all )_0.05on[0.02,0.03,0.04].pickle'
+Total time for MCF: 0.0027332 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(raster, (1x2)-bins)_lib_Biofluid ( all )_0.06on[0.02,0.03,0.04,0.05].pickle'
+Total time for MCF: 0.00261871 secs
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(raster, (1x2)-bins)_lib_Biofluid ( all )_0.08on[0.02,0.03,0.04,0.05,0.06].pickle'
+Total time for MCF: 0.00513368 secs
+
+
+#   setup D
+Loaded mix 'N926' content list of length 35
+Loaded mix 'N907' content list of length 35
+Loaded mix 'N987' content list of length 21
+Loaded mix 'N925' content list of length 27
+Loaded mix 'N988' content list of length 24
+Loaded mix 'N880' content list of length 27
+Loading MM lib 'Biofluid ( all )' containing 502 compounds...
+Removing duplicate entry for D-Lactic Acid (HMDB 1311)
+Loaded point spectrum for mix 'N926(dp)' with 2664 peaks.
+Loaded point spectrum for mix 'N907(dp)' with 1861 peaks.
+Loaded point spectrum for mix 'N907' with 591 peaks.
+Loaded point spectrum for mix 'N988' with 565 peaks.
+Loaded point spectrum for mix 'N880' with 1088 peaks.
+Loaded point spectrum for mix 'N926' with 728 peaks.
+Loaded point spectrum for mix 'N925' with 807 peaks.
+Loaded point spectrum for mix 'N987' with 597 peaks.
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_Biofluid ( all )_ar0.06.pickle'
+Total time for MCF: 0.00330927 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(peaklist)_lib_Biofluid ( all )_ar0.06.pickle'
+Total time for MCF: 0.00309038 secs
+
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N988.pickle'
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N988(peaklist)_lib_Biofluid ( all )_ar0.06.pickle'
+Total time for MCF: 0.00247806 secs
+
+         Method Sample  Cmpds  TP  FN  FP  Precision  Recall  F-score     
+0   SMART-Miner   N925     27  19   8   8       0.70    0.70     0.70     
+1   COLMAR-HSQC   N925     27  18   9   3       0.86    0.67     0.75     
+2   SpinAssigna   N925     27  17   9  73       0.19    0.65     0.29     
+3   Metabominer   N925     27  15  12   8       0.65    0.56     0.60     
+4          HMDB   N925     27   8  19  19       0.30    0.30     0.30     
+5          BMRB   N925     27   6  21  21       0.22    0.22     0.22     
+6   SMART-Miner   N987     21  14   7   5       0.74    0.67     0.70     
+7   COLMAR-HSQC   N987     21   9  12   1       0.90    0.43     0.58     
+8   SpinAssigna   N987     21   8  13  31       0.21    0.38     0.27     
+9   Metabominer   N987     21   9  12   0       1.00    0.43     0.60     
+10        HMDBb   N987     21   1  20  20       0.05    0.05     0.05     
+11        BMRBb   N987     21   1  20  20       0.05    0.05     0.05     
+12  SMART-Miner   N988     24  15   9   7       0.68    0.63     0.65     
+13  COLMAR-HSQC   N988     24  10  14   0       1.00    0.42     0.59     
+14  SpinAssigna   N988     24   9  15  28       0.24    0.38     0.30     
+15  Metabominer   N988     24  16   8   3       0.84    0.67     0.74     
+16         HMDB   N988     24   9  15  15       0.38    0.38     0.38     
+17         BMRB   N988     24   3  21  21       0.13    0.13     0.13  NaN
+Skipping method 'SpinAssigna'
+Skipping method 'HMDB'
+Skipping method 'BMRB'
+Skipping method 'SpinAssigna'
+Skipping method 'HMDBb'
+Skipping method 'BMRBb'
+Skipping method 'SpinAssigna'
+Skipping method 'HMDB'
+Skipping method 'BMRB'
+Method: COLMAR-HSQC
+mixes: ['N925', 'N987', 'N988', 'all']
+avg. fscore: 0.64
+avg. recall: 0.5066666666666667
+avg. precision: 0.9199999999999999
+   mixID: N925
+     fscore: [0.75]
+     recall: [0.67]
+     precision: [0.86]
+     TP (18): [18]
+     FN (9): [9]
+     FP (3): [3]
+   mixID: N987
+     fscore: [0.58]
+     recall: [0.43]
+     precision: [0.9]
+     TP (9): [9]
+     FN (12): [12]
+     FP (1): [1]
+   mixID: N988
+     fscore: [0.59]
+     recall: [0.42]
+     precision: [1.0]
+     TP (10): [10]
+     FN (14): [14]
+     FP (0): [0]
+   mixID: all
+     fscore: [0.64]
+     recall: [0.5066666666666667]
+     precision: [0.9199999999999999]
+     TP (None): [None]
+     FN (None): [None]
+     FP (None): [None]
+Method: MCF (setup A)
+mixes: ['N925', 'N987', 'N988', 'all']
+avg. fscore: 0.8100842601954836
+avg. recall: 0.7872574955908288
+avg. precision: 0.8372859025032938
+   mixID: N925
+     fscore: [0.68]
+     recall: [0.6296296296296297]
+     precision: [0.7391304347826086]
+     TP (17): [['122', '159', '161', '162', '167', '182', '190', '191', '214', '43', '517', '62', '687', '696', '883', '929', '97']]
+     FN (10): [['108', '158', '172', '177', '195', '300', '357', '641', '72', '812']]
+     FP (6): [['251', '258', '4110', '45', '473', '508']]
+   mixID: N987
+     fscore: [0.8372093023255814]
+     recall: [0.8571428571428571]
+     precision: [0.8181818181818182]
+     TP (18): [['108', '112', '162', '167', '182', '1844', '211', '214', '42', '45', '660', '687', '696', '714', '8', '812', '875', '904']]
+     FN (3): [['142', '201', '883']]
+     FP (4): [['1414', '175', '473', '943']]
+   mixID: N988
+     fscore: [0.9130434782608695]
+     recall: [0.875]
+     precision: [0.9545454545454546]
+     TP (21): [['108', '134', '162', '167', '172', '177', '182', '190', '195', '208', '211', '214', '357', '43', '448', '62', '641', '72', '8', '883', '97']]
+     FN (3): [['158', '812', '875']]
+     FP (1): [['473']]
+   mixID: all
+     fscore: [0.8100842601954836]
+     recall: [0.7872574955908288]
+     precision: [0.8372859025032938]
+     TP (None): [None]
+     FN (None): [None]
+     FP (None): [None]
+Method: MCF (setup B)
+mixes: ['N925', 'N987', 'N988', 'all']
+avg. fscore: 0.799697656840514
+avg. recall: 0.7610229276895945
+avg. precision: 0.8455988455988456
+   mixID: N925
+     fscore: [0.6530612244897959]
+     recall: [0.5925925925925926]
+     precision: [0.7272727272727273]
+     TP (16): [['122', '159', '161', '162', '167', '182', '190', '191', '214', '43', '517', '62', '687', '696', '883', '97']]
+     FN (11): [['108', '158', '172', '177', '195', '300', '357', '641', '72', '812', '929']]
+     FP (6): [['251', '258', '45', '473', '508', '60']]
+   mixID: N987
+     fscore: [0.8571428571428571]
+     recall: [0.8571428571428571]
+     precision: [0.8571428571428571]
+     TP (18): [['108', '112', '162', '167', '182', '1844', '211', '214', '42', '45', '660', '687', '696', '714', '8', '812', '875', '904']]
+     FN (3): [['142', '201', '883']]
+     FP (3): [['1414', '473', '943']]
+   mixID: N988
+     fscore: [0.888888888888889]
+     recall: [0.8333333333333334]
+     precision: [0.9523809523809523]
+     TP (20): [['134', '162', '167', '172', '177', '182', '190', '195', '208', '211', '214', '357', '43', '448', '62', '641', '72', '8', '883', '97']]
+     FN (4): [['108', '158', '812', '875']]
+     FP (1): [['473']]
+   mixID: all
+     fscore: [0.799697656840514]
+     recall: [0.7610229276895945]
+     precision: [0.8455988455988456]
+     TP (None): [None]
+     FN (None): [None]
+     FP (None): [None]
+Method: MCF (setup C)
+mixes: ['N925', 'N987', 'N988', 'all']
+avg. fscore: 0.8264206226775718
+avg. recall: 0.8134920634920634
+avg. precision: 0.8415678524374176
+   mixID: N925
+     fscore: [0.7058823529411765]
+     recall: [0.6666666666666666]
+     precision: [0.75]
+     TP (18): [['122', '159', '161', '162', '167', '182', '190', '191', '214', '43', '517', '62', '687', '696', '812', '883', '929', '97']]
+     FN (9): [['108', '158', '172', '177', '195', '300', '357', '641', '72']]
+     FP (6): [['175', '251', '258', '4110', '45', '473']]
+   mixID: N987
+     fscore: [0.8372093023255814]
+     recall: [0.8571428571428571]
+     precision: [0.8181818181818182]
+     TP (18): [['108', '112', '162', '167', '182', '1844', '211', '214', '42', '45', '660', '687', '696', '714', '8', '812', '875', '904']]
+     FN (3): [['142', '201', '883']]
+     FP (4): [['1414', '4110', '828', '943']]
+   mixID: N988
+     fscore: [0.9361702127659574]
+     recall: [0.9166666666666666]
+     precision: [0.9565217391304348]
+     TP (22): [['108', '134', '162', '167', '172', '177', '182', '190', '195', '208', '211', '214', '357', '43', '448', '62', '641', '72', '8', '812', '883', '97']]
+     FN (2): [['158', '875']]
+     FP (1): [['473']]
+   mixID: all
+     fscore: [0.8264206226775718]
+     recall: [0.8134920634920634]
+     precision: [0.8415678524374176]
+     TP (None): [None]
+     FN (None): [None]
+     FP (None): [None]
+Method: MCF (setup D)
+mixes: ['N925', 'N987', 'N988', 'all']
+avg. fscore: 0.7799537603699171
+avg. recall: 0.6871693121693121
+avg. precision: 0.9052287581699346
+   mixID: N925
+     fscore: [0.6666666666666667]
+     recall: [0.5555555555555556]
+     precision: [0.8333333333333334]
+     TP (15): [['122', '161', '162', '167', '182', '190', '214', '43', '517', '62', '687', '696', '883', '929', '97']]
+     FN (12): [['108', '158', '159', '172', '177', '191', '195', '300', '357', '641', '72', '812']]
+     FP (3): [['251', '258', '4110']]
+   mixID: N987
+     fscore: [0.7894736842105262]
+     recall: [0.7142857142857143]
+     precision: [0.8823529411764706]
+     TP (15): [['108', '112', '162', '167', '182', '1844', '211', '214', '660', '687', '696', '714', '8', '875', '904']]
+     FN (6): [['142', '201', '42', '45', '812', '883']]
+     FP (2): [['175', '828']]
+   mixID: N988
+     fscore: [0.8837209302325582]
+     recall: [0.7916666666666666]
+     precision: [1.0]
+     TP (19): [['108', '134', '162', '167', '172', '177', '190', '208', '211', '214', '357', '43', '448', '62', '641', '8', '812', '883', '97']]
+     FN (5): [['158', '182', '195', '72', '875']]
+     FP (0): [[]]
+   mixID: all
+     fscore: [0.7799537603699171]
+     recall: [0.6871693121693121]
+     precision: [0.9052287581699346]
+     TP (None): [None]
+     FN (None): [None]
+     FP (None): [None]
+Method: MetaboMiner
+mixes: ['N925', 'N987', 'N988', 'all']
+avg. fscore: 0.6466666666666666
+avg. recall: 0.5533333333333333
+avg. precision: 0.83
+   mixID: N925
+     fscore: [0.6]
+     recall: [0.56]
+     precision: [0.65]
+     TP (15): [15]
+     FN (12): [12]
+     FP (8): [8]
+   mixID: N987
+     fscore: [0.6]
+     recall: [0.43]
+     precision: [1.0]
+     TP (9): [9]
+     FN (12): [12]
+     FP (0): [0]
+   mixID: N988
+     fscore: [0.74]
+     recall: [0.67]
+     precision: [0.84]
+     TP (16): [16]
+     FN (8): [8]
+     FP (3): [3]
+   mixID: all
+     fscore: [0.6466666666666666]
+     recall: [0.5533333333333333]
+     precision: [0.83]
+     TP (None): [None]
+     FN (None): [None]
+     FP (None): [None]
+Method: SMART-Miner
+mixes: ['N925', 'N987', 'N988', 'all']
+avg. fscore: 0.6833333333333332
+avg. recall: 0.6666666666666666
+avg. precision: 0.7066666666666667
+   mixID: N925
+     fscore: [0.7]
+     recall: [0.7]
+     precision: [0.7]
+     TP (19): [19]
+     FN (8): [8]
+     FP (8): [8]
+   mixID: N987
+     fscore: [0.7]
+     recall: [0.67]
+     precision: [0.74]
+     TP (14): [14]
+     FN (7): [7]
+     FP (5): [5]
+   mixID: N988
+     fscore: [0.65]
+     recall: [0.63]
+     precision: [0.68]
+     TP (15): [15]
+     FN (9): [9]
+     FP (7): [7]
+   mixID: all
+     fscore: [0.6833333333333332]
+     recall: [0.6666666666666666]
+     precision: [0.7066666666666667]
+     TP (None): [None]
+     FN (None): [None]
+     FP (None): [None]
+
+Saved figure '/home/leo/repos/mcfnmr-release/output/figs/Comparison MetaboMiner-MCF with lib 'Biofluid ( all )', mixes: 'SMART-Miner', ar: ['0.003', '0.003', '0.003', '0.005'], th: ['0.06', '0.05', '0.08', '0.06']_fscores.svg'
+
+ Total run time: 21.36439061164856 secs

@@ -1,0 +1,5 @@
+These are files describing the regions of the different raster 
+spectra, which should be taken into account for the matching.
+This allows to filter out artifacts such as resonance stripes 
+from the spectrum, which would unnecessarily blow up the total 
+spectral mass thereby distorting the detection threshold

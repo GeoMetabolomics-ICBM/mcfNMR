@@ -1,0 +1,20 @@
+# Compound library ID (can be "MetaboMiner" or "InHouse")
+lib="MetaboMiner"
+# Mixture ID (can be "N925", "N987", or "N988" for the Metabominer data
+# or "[I|II|III][a|b|c]" for the inhouse-mixtures)
+mix="N987"
+# Method setup. This is a shortcut for the variant of the algorithm 
+# to use, specifying 
+#		- the optimization scope: simultaneous vs independent; 
+#		- the target representation: peaklist vs grid
+#		- the assignment strategy: single pass vs incremental
+# Can be one of A, B, C, or D (see Table 1 of the manuscript)
+setup="E"
+# Task to perform. Can be either "quantification" or "classification"
+task="classification"
+# Assignment radius
+ar=0.08
+# detection threshold (only relevant for classification task)
+th=0.003
+
+

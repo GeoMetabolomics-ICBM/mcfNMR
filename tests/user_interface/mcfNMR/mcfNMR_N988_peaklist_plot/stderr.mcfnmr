@@ -1,0 +1,3 @@
+/home/leo/repos/mcfnmr/mcfnmr/demodata/loading.py:149: UserWarning: 
+Duplicate entry for 'Malic acid'! Using smaller ID (156) and discarding '744'
+  warn(

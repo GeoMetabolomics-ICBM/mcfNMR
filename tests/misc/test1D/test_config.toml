@@ -1,0 +1,2 @@
+# No cfg used for test1D, see routines.test1D.main()
+task = "test1D"

@@ -1,0 +1,3 @@
+# Task to perform
+task = "spec2csv"
+help = true

@@ -1,0 +1,26 @@
+# Tests the minimal lib and target files from data/user_templates
+minimal_example
+
+# Tests the minimal 1D lib and target files from data/user_templates
+minimal_example_1D
+
+# Tests the metabominer lib and gridded N988-csv target file
+mcfNMR_N988_grid
+
+# Tests the metabominer lib and gridded N988-csv target file  with plot==True
+mcfNMR_N988_grid_plot
+
+# Tests the metabominer lib and gridded N988-csv target file
+mcfNMR_N988_grid_incremental
+
+# Tests the metabominer lib and N988 peaklist target file
+mcfNMR_N988_peaklist
+
+# Tests the metabominer lib and N988 peaklist target file with plot==True
+mcfNMR_N988_peaklist_plot
+
+# Tests the metabominer lib and N988 peaklist target file
+mcfNMR_N988_peaklist_incremental
+
+# Tests the help output for mcfNMR
+help

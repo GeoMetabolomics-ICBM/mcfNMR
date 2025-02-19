@@ -1,0 +1,92 @@
+# Full path to the System Under Test (or Java Main Class name)
+executable:${TEXTTEST_ROOT}/test_runner.py
+
+# Naming scheme to use for files for stdin,stdout and stderr
+filename_convention_scheme:standard
+
+# Expanded name to use for application
+full_name:MCFNMR
+
+# Config file
+link_test_path:test_config.toml
+test_data_require:test_config.toml
+
+[collate_file]
+target_csv:output/target.csv
+mcfresult_csv:output/mcfresult_test.csv
+
+[run_dependent_text]
+stdout:(Data directory: [/a-zA-Zä_.0-9 ()-]+/data){REPLACE Data directory: <DATADIR>}
+stdout:([a-zA-Z ]+: )([.a-zA-Z0-9ä_/-]+)(mcfnmr/[.a-zäA-Z0-9_/ (),-]+){REPLACE \1<TMP_DIR>/\3}
+stdout:(Saved indices to )([/a-zA-Zä_,.0-9 ()-]+)(/output/cache/mcf/[a-zA-Z0-9_(), -]+_region_ix.pickle){REPLACE \1<MCFNMR_HOME>\3}
+stdout:([-()a-zA-Z_ ]+ took )([0-9e.-]+)( secs){REPLACE \1<SECONDS>\3}
+stdout:([a-zA-Z ]: )([0-9.e-]+)( secs){REPLACE \1<SECONDS>\3}
+
+stdout:(Loading spectrum from ')([/a-zA-Z_.0-9 ()-]+)(/[a-zA-Z_,.0-9 \[\]()-]+.pickle' ...){REPLACE \1<SPECTRUM_DIR>\3}
+stdout:(Loaded data from ')([/a-zA-Z_.0-9 ()-]+)(/[a-zA-Z_,.0-9 \[\]()-]+.pickle'){REPLACE \1<SPECTRUM_DIR>\3}
+stdout:(Saved MCF result to ')([/a-zA-Z_.0-9 ()-]+)(/[a-zA-Z_,.0-9 \[\]()-]+.pickle'){REPLACE \1<CACHE_DIR>\3}
+stdout:(Saved updated result to ')([/a-zA-Z_.0-9 ()-]+)(/[a-zA-Z_,.0-9 \[\]()-]+.pickle'){REPLACE \1<CACHE_DIR>\3}
+
+stdout:(Written data to )([/a-zA-Zä_.,0-9 ()-]+)(/target.csv.){REPLACE \1<TMP_DIR>\3}
+stdout:(Saved results table to ')([/a-zA-Zä_.0-9 ()-]+)(output/mcfresult_test.csv'){REPLACE \1<TMP_DIR>\3}
+stdout:(Saved figure ')([/a-zA-Zä_.,0-9 ()-]+)(output/mcfresult_test_detections.svg'){REPLACE \1<TMP_DIR>\3}
+
+stdout:(Time:[\s]+)([0-9]+:[0-9]+:[0-9]+)([\s :a-zA-Z0-9.-]+){REPLACE \1<TIME>\3}
+stderr:([/a-zA-Zä_.0-9 ()-]+)(scipy/stats/_axis_nan_policy.py:)([0-9]+)(: UserWarning: `kurtosistest` p-value may be inaccurate with fewer than 20 observations; only n=[0-9]+ observations were given.){REPLACE <site-packages DIR>\2<LINE>\4}
+stderr:([/a-zA-Zä_.0-9 ()-]+)(mcfnmr/demodata/loading.py:)([0-9]+)(: UserWarning: ){REPLACE <MCFNMR_HOME>/\2<LINE>\4}
+stderr:([/a-zA-Zä_.0-9 ()-]+)(mcfnmr/routines/comparison_classification.py:)([0-9]+)(: UserWarning: ){REPLACE <MCFNMR_HOME>/\2<LINE>\4}
+
+stdout:([{]*'[Iabc_01]+': PosixPath\(')([/a-zA-Zä_.0-9 ()-]+)(/data/OLDBdata/fullspectra/nmr_[Iabc_01]+.txt.gz'\))([,]*[}]*){REPLACE \1<MCFNMR_HOME>\3}
+stdout:(Saved fig )([/a-zA-Zä_.0-9 ()-]+)(/output/figs/[[]A-Za-z0-1_(,) .]+){REPLACE \1<MCFNMR_HOME>\3}
+stdout:(Saved distlists to ')([/a-zA-Zä_.0-9 ()-]+)(/output/cache/mcf/dist_list_[A-Za-z0-9,_() -]+_ar[0-9.]+.pickle'){REPLACE \1<MCFNMR_HOME>\3}
+stdout:(Saved fig )(['/a-zA-Zä_.0-9 ()-]+)(/output/figs/[a-zA-Z0-9_()\[\].:,' \-]+){REPLACE \1<MCFNMR_HOME>\3}
+stdout:(Saved figure )(['/a-zA-Zä_.0-9 ()-]+)(/output/figs/[a-zA-Z0-9_()\[\].:,' \-]+){REPLACE \1<MCFNMR_HOME>\3}
+stdout:(Saved  ')([/a-zA-Zä_,.0-9 ()-]+)(/output/cache/[a-zA-Z0-9_(), ]+_smooth0_libOLDBcompoundLib\([a-z]+\)_ar\[[0-9., ]+\].pickle'){REPLACE \1<MCFNMR_HOME>\3}
+stdout:(Saved ')([/a-zA-Zä_,.0-9 ()-]+)(/tmp/MCFNMR_comp_df_lib_MetaboMiner-plasma-common.pickle'){REPLACE \1<MCFNMR_HOME>\3}
+stdout:(Loaded ')([/a-zA-Zä_,.0-9 ()-]+)(/tmp/MCFNMR_comp_df_lib_MetaboMiner-plasma-common.pickle'){REPLACE \1<MCFNMR_HOME>\3}
+stdout:(Loaded MCF result from ')([/a-zA-Zä_,.0-9 ()-]+)(/output/cache[/0-9a-z_]*/mcfResult_[A-Za-z0-9,_().\[\] -]+.pickle'){REPLACE \1<MCFNMR_HOME>\3}
+stdout:(Saved all_dfCompounds to ')([/a-zA-Zä_,.0-9 ()-]+)(/output/tmp/[a-zA-Z0-9_(), ]+.pickle'){REPLACE \1<MCFNMR_HOME>\3}
+
+Date:                Mon, 11 Nov 2024   Prob (F-statistic):                    4.64e-13
+stdout:(Date:)([a-zA-Z0-9 ,]+)(Prob \(F-statistic\):[ ]+[0-9e-.]+){REPLACE \1<DATE>\3}
+stdout:Found [0-9]+ full spectrum files
+
+# HiGHS output
+stdout:(HiGHS run time      :)([ 0-9.]+){REPLACE \1    <TIME>}
+stdout:([ ]+[0-9]+[ ]+[0-9.e+]+[ ]+Pr: [0-9]+\([0-9.e\+]+\);[ ]+Du:[ ]+[0-9]\([0-9\.e-]+\))[ ]+([0-9]+s)
+stdout:[ ]+[0-9]+[ ]+[0-9.e+]+[ ]+Pr: [0-9]+\([0-9.e\+\-]+\)[ ]+[0-9]+s
+stdout:[ ]+[0-9]+[ ]+[0-9.e+]+[ ]+[0-9]+s
+
+#stdout:([ ]+[0-9]+[ ]+[0-9.e+]+[ ]+Pr: [0-9]+\([0-9.e\+]+\);[ ]+Du:[ ]+[0-9]\([0-9\.e-]+\))[ ]+([0-9]+s){REPLACE \1 <TIME>s}
+#stdout:([ ]+[0-9]+[ ]+[0-9.e+]+[ ]+Pr: [0-9]+\([0-9.e\+]+\);[ ]+Du:[ ]+[0-9]\([0-9\.e-]+\))[ ]+([0-9]+s){REPLACE        <ITER>    <OBJECTIVE>    Pr: <INFEASIBILITIES> <TIME>s}
+#stdout:[ ]+[0-9]+[ ]+[0-9.e+]+[ ]+Pr: [0-9]+\([0-9.e\+]+\)[ ]+[0-9]+s{REPLACE        <ITER>    <OBJECTIVE>    Pr: <INFEASIBILITIES> <TIME>s}
+
+
+stderr:([/a-zA-Z_.0-9 ()-]+)(/mcfnmr/routines/comparison_classification.py:)([0-9]+)(: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.){REPLACE <MCFNMR_HOME>\2<LINE_NR>\4}
+
+stderr:([/a-zA-Z_.0-9 ()-]+)(/mcfnmr/utils/plotting.py:)([0-9]+)(: UserWarning: .+){REPLACE <MCFNMR_HOME>\2<LINE>\4}
+stderr:([/a-zA-Z_.0-9 ()-]+)(/mcfnmr/routines/analysis_plasma_samples.py:)([0-9]+)(: UserWarning: .+){REPLACE <MCFNMR_HOME>\2<LINE>\4}
+stderr:([/a-zA-Z_.0-9 ()-]+)(/mcfnmr/routines/analysis_plasma_samples.py:)([0-9]+)(: FutureWarning: .+){REPLACE <MCFNMR_HOME>\2<LINE>\4}
+
+[unordered_text]
+stdout:Using EKK primal simplex solver
+stdout:makeDistList()
+stdout:Checking containment...
+stdout:runMetaboMinerFits()
+stdout:Converting raster to peaks
+stdout:   (original raster dimensions:
+stdout:Compound [0-9]+ has [0-9]+ connected target nodes.
+stdout:Running HiGHS
+stdout:Copyright (c) 2022 ERGO-Code under MIT licence terms
+stdout:Presolving model
+stdout:[0-9]+ rows, [0-9]+ cols, [0-9]+ nonzeros
+stdout:Presolve :
+stdout:Solving the presolved LP
+stdout:Using EKK dual simplex solver - serial
+stdout:  Iteration        Objective     Infeasibilities num(sum)
+stdout:Solving the original LP from the solution after postsolve
+stdout:Model   status      :
+stdout:Simplex   iterations:
+stdout:Objective value     :
+stdout:HiGHS run time      :
+

@@ -1,0 +1,865 @@
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+38 rows, 42 cols, 47 nonzeros
+2 rows, 15 cols, 17 nonzeros
+2 rows, 15 cols, 17 nonzeros
+Presolve : Reductions: rows 2(-310); columns 15(-400); elements 17(-583)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(2.41265e+08) 0s
+          2     2.3753841480e+14 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 2
+Objective value     :  2.3753841480e+14
+HiGHS run time      :          0.00
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+231 rows, 597 cols, 913 nonzeros
+188 rows, 515 cols, 868 nonzeros
+186 rows, 507 cols, 859 nonzeros
+Presolve : Reductions: rows 186(-788); columns 507(-427); elements 859(-1164)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(3.80061e+09) 0s
+        201     1.9261955860e+14 Pr: 0(0); Du: 0(1.40009e-09) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 201
+Objective value     :  1.9261955860e+14
+HiGHS run time      :          0.01
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.19Feb141932.5822/mcfnmr/quantification/setupC_opt/Ia_opt_radius
+
+config:
+{'ar': 0.25,
+ 'lib': 'InHouse',
+ 'mix': 'I.a',
+ 'setup': 'C',
+ 'task': 'quantification'}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.19Feb141932.5822/mcfnmr/quantification/setupC_opt/Ia_opt_radius/output
+
+Data directory: /home/leo/repos/mcfnmr-release/data
+Loading data 'peaklists_compounds' ...
+{'IIIa_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_IIIa_01.txt.gz'),
+ 'IIIb_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_IIIb_01.txt.gz'),
+ 'IIIc_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_IIIc_01.txt.gz'),
+ 'IIa_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_IIa_01.txt.gz'),
+ 'IIb_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_IIb_01.txt.gz'),
+ 'IIc_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_IIc_01.txt.gz'),
+ 'Ia_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_Ia_01.txt.gz'),
+ 'Ib_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_Ib_01.txt.gz'),
+ 'Ic_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_Ic_01.txt.gz')}
+ACD.2DNMR ASCII
+Version = 1.00
+
+======================== Parameters ========================
+Title = HSQCETGPSIWT DMSO /opt/topspin4.0.3/data/save/nmr nmr {4  D6 - 444} Reference-1D    : undefined Signal-to-noise : No reference --> 2D STARTED Solvent(s)      : 1 Off-resonance @ 2.498ppm with SR = 0.00Hz
+Comment = HSQCETGPSIWT DMSO /opt/topspin4.0.3/data/save/nmr nmr {4  D6 - 444} Reference-1D    : undefined Signal-to-noise : No reference --> 2D STARTED Solvent(s)      : 1 Off-resonance @ 2.498ppm with SR = 0.00Hz
+Solvent = DMSO-d6
+Date = 18 Apr 2022 15:13:14
+DateStamp = 
+PulseSequence = hsqcetgpsiwt
+Origin = Avance NEO 600
+Owner = nmr
+ExpCount = 8
+Temperature = 2.5E+1
+Transposed = 0
+Reversed = 0 0
+PointsCount = 1024 1024
+OriginalPointsCount = 1024 256
+SweepWidth = 9.6059951171875E+3 2.5615984375E+4
+Frequency = 6.0025E+2 1.50932983398438E+2
+Offset = 1.51544909667969E+3 1.2291234375E+4
+AcquisitionTime = 1.06495998799801E-1 9.98399965465069E-3
+DwellTime = 1.03999998827931E-4 3.89999986509793E-5
+Nucleus = 1H 13C
+Dataset = P-RR-RI-IR-II
+DataType = FT-t2-t1
+
+Loaded header data for 'nmr_Ia_01.txt.gz'
+Loaded spectrum data for 'nmr_Ia_01.txt.gz'
+Original grid dimension: (1024, 1024)
+Noise Std before processing: 443.004
+Noise Std after processing: 443.004
+   Total avg point intensity: 1.31715e+08
+   Max point intensity: 866353
+   Noise std: 443.004
+   Signal to noise: 1955.63
+
+Converting raster to peaks, nbin=(2, 4), signal-to-noise threshold=None)
+   (original raster dimensions: (1024, 1024))
+   (binned grid dimensions: (512, 256))
+
+Incremental fit:
+   total reserved capacity: 0
+    min/max: 0/0
+
+Making dist list for ar=0.025 ...
+len(distList): 190
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_Ia_01(raster, (2x4)-bins)_OLDBcompoundLib_ar0.025.pickle'
+makeDistList() took 0.245446 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib OLDBcompoundLib in Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Containment checking took 5.92671 secs
+Generating flow net...
+
+Total connected target nodes: 179
+Total target weight: 2.41265e+08
+
+Generated flowNet:
+ DiGraph with 405 nodes and 415 edges
+Generation took 0.151445 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 23 / 34
+   took 0.0184103 secs
+Constructing A_ub...
+Estimated number of inequalities: 179 (nr of connected target nodes).
+True number of inequalities is 179.
+   took 0.0790895 secs
+Running linprog()...
+   took 0.00486653 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.103685 secs
+Collecting stats...
+Total absorbed flow: 2.37538e+08
+Total flows:
+   absorbed: 2.37538e+08
+   assigned: 3.72634e+06
+Total costs:
+ assignment: 60283.1
+ absorption: 2.37538e+14
+      total: 2.37538e+14
+Stats collection took 0.380626 secs
+
+
+Timings (at nX=190, nY=131072):
+distList: 0.245446 secs
+containmentCheck: 5.92671 secs
+flowNetGeneration: 0.151445 secs
+minCostFlow: 0.103685 secs
+statsCollection: 0.380626 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.025on[].pickle'
+Total time for MCF: 6.98145 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.025on[].pickle'
+
+Incremental fit:
+   total reserved capacity: 3.72634e+06
+    min/max: 0/547530
+
+Making dist list for ar=0.05 ...
+len(distList): 709
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_Ia_01(raster, (2x4)-bins)_OLDBcompoundLib_ar0.05.pickle'
+makeDistList() took 0.240571 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib OLDBcompoundLib in Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Containment checking took 6.11906 secs
+Generating flow net...
+
+Total connected target nodes: 593
+Total target weight: 2.37538e+08
+
+Generated flowNet:
+ DiGraph with 819 nodes and 934 edges
+Generation took 0.184072 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 0 / 34
+   took 0.045218 secs
+Constructing A_ub...
+Estimated number of inequalities: 593 (nr of connected target nodes).
+True number of inequalities is 593.
+   took 0.127027 secs
+Running linprog()...
+   took 0.0111648 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.186077 secs
+Collecting stats...
+Total absorbed flow: 1.9262e+08
+Total flows:
+   absorbed: 1.9262e+08
+   assigned: 4.49189e+07
+Total costs:
+ assignment: 1.17479e+06
+ absorption: 1.9262e+14
+      total: 1.9262e+14
+Stats collection took 0.288277 secs
+
+
+Timings (at nX=190, nY=131072):
+distList: 0.240571 secs
+containmentCheck: 6.11906 secs
+flowNetGeneration: 0.184072 secs
+minCostFlow: 0.186077 secs
+statsCollection: 0.288277 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.05on[0.025].pickle'
+Total time for MCF: 7.21292 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.05on[0.025].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.025on[].pickle'
+
+Incremental fit:
+   total reserved capacity: 4.86452e+07
+    min/max: 0/1.51521e+06
+
+Making dist list for ar=0.075 ...
+len(distList): 1620
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_Ia_01(raster, (2x4)-bins)_OLDBcompoundLib_ar0.075.pickle'
+makeDistList() took 0.237113 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib OLDBcompoundLib in Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Containment checking took 5.83812 secs
+Generating flow net...
+
+Total connected target nodes: 1203
+Total target weight: 1.9262e+08
+
+Generated flowNet:
+ DiGraph with 1429 nodes and 1845 edges
+Generation took 0.233768 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 0 / 34
+   took 0.0497566 secs
+Constructing A_ub...
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+390 rows, 1103 cols, 1769 nonzeros
+337 rows, 994 cols, 1717 nonzeros
+Presolve : Reductions: rows 337(-1247); columns 994(-851); elements 1717(-2128)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(6.16383e+09) 0s
+        256     1.5952648497e+14 Pr: 0(0); Du: 0(6.02062e-10) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 256
+Objective value     :  1.5952648497e+14
+HiGHS run time      :          0.01
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+405 rows, 1251 cols, 2013 nonzeros
+362 rows, 1098 cols, 1853 nonzeros
+Presolve : Reductions: rows 362(-1926); columns 1098(-2000); elements 1853(-4498)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(2.04194e+10) 0s
+        212     1.5099456175e+14 Pr: 0(0); Du: 0(1.71466e-10) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 212
+Objective value     :  1.5099456175e+14
+HiGHS run time      :          0.02
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+612 rows, 1987 cols, 3384 nonzeros
+552 rows, 1820 cols, 3213 nonzeros
+Presolve : Reductions: rows 552(-2518); columns 1820(-2907); elements 3213(-6396)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(9.66365e+09) 0s
+        372     1.4100719274e+14 Pr: 0(0); Du: 0(5.14741e-09) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 372
+Objective value     :  1.4100719274e+14
+HiGHS run time      :          0.02
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+717 rows, 2404 cols, 4116 nonzeros
+672 rows, 2288 cols, 4039 nonzeros
+Presolve : Reductions: rows 672(-3196); columns 2288(-4430); elements 4039(-9552)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(2.25612e+09) 0s
+        311     1.3693291879e+14 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 311
+Objective value     :  1.3693291879e+14
+HiGHS run time      :          0.03
+Estimated number of inequalities: 1203 (nr of connected target nodes).
+True number of inequalities is 1203.
+   took 0.189103 secs
+Running linprog()...
+   took 0.0168138 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.260816 secs
+Collecting stats...
+Total absorbed flow: 1.59526e+08
+Total flows:
+   absorbed: 1.59526e+08
+   assigned: 3.30931e+07
+Total costs:
+ assignment: 1.38121e+06
+ absorption: 1.59526e+14
+      total: 1.59526e+14
+Stats collection took 0.305524 secs
+
+
+Timings (at nX=190, nY=131072):
+distList: 0.237113 secs
+containmentCheck: 5.83812 secs
+flowNetGeneration: 0.233768 secs
+minCostFlow: 0.260816 secs
+statsCollection: 0.305524 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.075on[0.025,0.05].pickle'
+Total time for MCF: 7.04215 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.075on[0.025,0.05].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.05on[0.025].pickle'
+
+Incremental fit:
+   total reserved capacity: 8.17383e+07
+    min/max: 0/1.51521e+06
+
+Making dist list for ar=0.1 ...
+len(distList): 2873
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_Ia_01(raster, (2x4)-bins)_OLDBcompoundLib_ar0.1.pickle'
+makeDistList() took 0.250106 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib OLDBcompoundLib in Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Containment checking took 6.32207 secs
+Generating flow net...
+
+Total connected target nodes: 1907
+Total target weight: 1.59526e+08
+
+Generated flowNet:
+ DiGraph with 2133 nodes and 3098 edges
+Generation took 0.172531 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 0 / 34
+   took 0.0478594 secs
+Constructing A_ub...
+Estimated number of inequalities: 1907 (nr of connected target nodes).
+True number of inequalities is 1907.
+   took 0.293976 secs
+Running linprog()...
+   took 0.0215837 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.372228 secs
+Collecting stats...
+Total absorbed flow: 1.50995e+08
+Total flows:
+   absorbed: 1.50995e+08
+   assigned: 8.53192e+06
+Total costs:
+ assignment: 493941
+ absorption: 1.50995e+14
+      total: 1.50995e+14
+Stats collection took 0.307643 secs
+
+
+Timings (at nX=190, nY=131072):
+distList: 0.250106 secs
+containmentCheck: 6.32207 secs
+flowNetGeneration: 0.172531 secs
+minCostFlow: 0.372228 secs
+statsCollection: 0.307643 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.1on[0.025,0.05,0.075].pickle'
+Total time for MCF: 7.60314 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.1on[0.025,0.05,0.075].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.075on[0.025,0.05].pickle'
+
+Incremental fit:
+   total reserved capacity: 9.02702e+07
+    min/max: 0/1.51521e+06
+
+Making dist list for ar=0.125 ...
+len(distList): 4502
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_Ia_01(raster, (2x4)-bins)_OLDBcompoundLib_ar0.125.pickle'
+makeDistList() took 0.251086 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib OLDBcompoundLib in Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Containment checking took 6.12508 secs
+Generating flow net...
+
+Total connected target nodes: 2689
+Total target weight: 1.50995e+08
+
+Generated flowNet:
+ DiGraph with 2915 nodes and 4727 edges
+Generation took 0.209818 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 0 / 34
+   took 0.0483741 secs
+Constructing A_ub...
+Estimated number of inequalities: 2689 (nr of connected target nodes).
+True number of inequalities is 2689.
+   took 0.355748 secs
+Running linprog()...
+   took 0.0295489 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.446206 secs
+Collecting stats...
+Total absorbed flow: 1.41007e+08
+Total flows:
+   absorbed: 1.41007e+08
+   assigned: 9.98737e+06
+Total costs:
+ assignment: 733391
+ absorption: 1.41007e+14
+      total: 1.41007e+14
+Stats collection took 0.324083 secs
+
+
+Timings (at nX=190, nY=131072):
+distList: 0.251086 secs
+containmentCheck: 6.12508 secs
+flowNetGeneration: 0.209818 secs
+minCostFlow: 0.446206 secs
+statsCollection: 0.324083 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.125on[0.025,0.05,0.075,0.1].pickle'
+Total time for MCF: 7.52096 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.125on[0.025,0.05,0.075,0.1].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.1on[0.025,0.05,0.075].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.00258e+08
+    min/max: 0/1.51521e+06
+
+Making dist list for ar=0.15 ...
+len(distList): 6493
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_Ia_01(raster, (2x4)-bins)_OLDBcompoundLib_ar0.15.pickle'
+makeDistList() took 0.275833 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib OLDBcompoundLib in Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Containment checking took 6.51674 secs
+Generating flow net...
+
+Total connected target nodes: 3487
+Total target weight: 1.41007e+08
+
+Generated flowNet:
+ DiGraph with 3713 nodes and 6718 edges
+Generation took 0.220454 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 0 / 34
+   took 0.0537384 secs
+Constructing A_ub...
+Estimated number of inequalities: 3487 (nr of connected target nodes).
+True number of inequalities is 3487.
+   took 0.584798 secs
+Running linprog()...
+   took 0.0373586 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.695063 secs
+Collecting stats...
+Total absorbed flow: 1.36933e+08
+Total flows:
+   absorbed: 1.36933e+08
+   assigned: 4.07427e+06
+Total costs:
+ assignment: 395023
+ absorption: 1.36933e+14
+      total: 1.36933e+14
+Stats collection took 0.415481 secs
+
+
+Timings (at nX=190, nY=131072):
+distList: 0.275833 secs
+containmentCheck: 6.51674 secs
+flowNetGeneration: 0.220454 secs
+minCostFlow: 0.695063 secs
+statsCollection: 0.415481 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.15on[0.025,0.05,0.075,0.1,0.125].pickle'
+Total time for MCF: 8.30742 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.15on[0.025,0.05,0.075,0.1,0.125].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.125on[0.025,0.05,0.075,0.1].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.04332e+08
+    min/max: 0/1.51521e+06
+
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+826 rows, 2947 cols, 5102 nonzeros
+767 rows, 2697 cols, 4807 nonzeros
+Presolve : Reductions: rows 767(-3910); columns 2697(-6332); elements 4807(-13406)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(8.76371e+09) 0s
+        325     1.3270857045e+14 Pr: 0(0); Du: 0(7.10087e-11) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 325
+Objective value     :  1.3270857045e+14
+HiGHS run time      :          0.03
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+1015 rows, 3594 cols, 6368 nonzeros
+950 rows, 3355 cols, 6051 nonzeros
+Presolve : Reductions: rows 950(-4518); columns 3355(-8416); elements 6051(-17646)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(8.49335e+09) 0s
+        436     1.2818931626e+14 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 436
+Objective value     :  1.2818931626e+14
+HiGHS run time      :          0.05
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+931 rows, 3492 cols, 5993 nonzeros
+888 rows, 3327 cols, 5808 nonzeros
+Presolve : Reductions: rows 888(-5391); columns 3327(-11496); elements 5808(-23993)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(4.10206e+09) 0s
+        310     1.2637075996e+14 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 310
+Objective value     :  1.2637075996e+14
+HiGHS run time      :          0.05
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+1248 rows, 4734 cols, 8555 nonzeros
+1221 rows, 4617 cols, 8498 nonzeros
+Presolve : Reductions: rows 1221(-5819); columns 4617(-13624); elements 8498(-28139)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(8.08773e+09) 0s
+        893     1.2216539131e+14 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 893
+Objective value     :  1.2216539131e+14
+HiGHS run time      :          0.10
+Making dist list for ar=0.175 ...
+len(distList): 8804
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_Ia_01(raster, (2x4)-bins)_OLDBcompoundLib_ar0.175.pickle'
+makeDistList() took 0.365503 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib OLDBcompoundLib in Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Containment checking took 5.81767 secs
+Generating flow net...
+
+Total connected target nodes: 4296
+Total target weight: 1.36933e+08
+
+Generated flowNet:
+ DiGraph with 4522 nodes and 9029 edges
+Generation took 0.310683 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 0 / 34
+   took 0.0573571 secs
+Constructing A_ub...
+Estimated number of inequalities: 4296 (nr of connected target nodes).
+True number of inequalities is 4296.
+   took 0.602116 secs
+Running linprog()...
+   took 0.0418402 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.7258 secs
+Collecting stats...
+Total absorbed flow: 1.32709e+08
+Total flows:
+   absorbed: 1.32709e+08
+   assigned: 4.22435e+06
+Total costs:
+ assignment: 378669
+ absorption: 1.32709e+14
+      total: 1.32709e+14
+Stats collection took 0.335503 secs
+
+
+Timings (at nX=190, nY=131072):
+distList: 0.365503 secs
+containmentCheck: 5.81767 secs
+flowNetGeneration: 0.310683 secs
+minCostFlow: 0.7258 secs
+statsCollection: 0.335503 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.175on[0.025,0.05,0.075,0.1,0.125,0.15].pickle'
+Total time for MCF: 7.74493 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.175on[0.025,0.05,0.075,0.1,0.125,0.15].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.15on[0.025,0.05,0.075,0.1,0.125].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.08556e+08
+    min/max: 0/1.51521e+06
+
+Making dist list for ar=0.2 ...
+len(distList): 11546
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_Ia_01(raster, (2x4)-bins)_OLDBcompoundLib_ar0.2.pickle'
+makeDistList() took 0.336575 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib OLDBcompoundLib in Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Containment checking took 6.30593 secs
+Generating flow net...
+
+Total connected target nodes: 5087
+Total target weight: 1.32709e+08
+
+Generated flowNet:
+ DiGraph with 5313 nodes and 11771 edges
+Generation took 0.233565 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 0 / 34
+   took 0.0559533 secs
+Constructing A_ub...
+Estimated number of inequalities: 5087 (nr of connected target nodes).
+True number of inequalities is 5087.
+   took 0.725498 secs
+Running linprog()...
+   took 0.0587639 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.870136 secs
+Collecting stats...
+Total absorbed flow: 1.28189e+08
+Total flows:
+   absorbed: 1.28189e+08
+   assigned: 4.51925e+06
+Total costs:
+ assignment: 540102
+ absorption: 1.28189e+14
+      total: 1.28189e+14
+Stats collection took 0.353544 secs
+
+
+Timings (at nX=190, nY=131072):
+distList: 0.336575 secs
+containmentCheck: 6.30593 secs
+flowNetGeneration: 0.233565 secs
+minCostFlow: 0.870136 secs
+statsCollection: 0.353544 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.2on[0.025,0.05,0.075,0.1,0.125,0.15,0.175].pickle'
+Total time for MCF: 8.29612 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.2on[0.025,0.05,0.075,0.1,0.125,0.15,0.175].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.175on[0.025,0.05,0.075,0.1,0.125,0.15].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.13075e+08
+    min/max: 0/1.51521e+06
+
+Making dist list for ar=0.225 ...
+len(distList): 14598
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_Ia_01(raster, (2x4)-bins)_OLDBcompoundLib_ar0.225.pickle'
+makeDistList() took 0.373342 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib OLDBcompoundLib in Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Containment checking took 6.13048 secs
+Generating flow net...
+
+Total connected target nodes: 5898
+Total target weight: 1.28189e+08
+
+Generated flowNet:
+ DiGraph with 6124 nodes and 14823 edges
+Generation took 0.272459 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 0 / 34
+   took 0.059606 secs
+Constructing A_ub...
+Estimated number of inequalities: 5898 (nr of connected target nodes).
+True number of inequalities is 5898.
+   took 0.786226 secs
+Running linprog()...
+   took 0.0645936 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.951384 secs
+Collecting stats...
+Total absorbed flow: 1.26371e+08
+Total flows:
+   absorbed: 1.26371e+08
+   assigned: 1.81856e+06
+Total costs:
+ assignment: 242123
+ absorption: 1.26371e+14
+      total: 1.26371e+14
+Stats collection took 0.445198 secs
+
+
+Timings (at nX=190, nY=131072):
+distList: 0.373342 secs
+containmentCheck: 6.13048 secs
+flowNetGeneration: 0.272459 secs
+minCostFlow: 0.951384 secs
+statsCollection: 0.445198 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.225on[0.025,0.05,0.075,0.1,0.125,0.15,0.175,0.2].pickle'
+Total time for MCF: 8.3309 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.225on[0.025,0.05,0.075,0.1,0.125,0.15,0.175,0.2].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.2on[0.025,0.05,0.075,0.1,0.125,0.15,0.175].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.14894e+08
+    min/max: 0/1.51521e+06
+
+Making dist list for ar=0.25 ...
+len(distList): 18016
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_Ia_01(raster, (2x4)-bins)_OLDBcompoundLib_ar0.25.pickle'
+makeDistList() took 0.304977 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib OLDBcompoundLib in Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/Ia_01(raster, (2x4)-bins)_region_ix.pickle
+Containment checking took 6.2914 secs
+Generating flow net...
+
+Total connected target nodes: 6659
+Total target weight: 1.26371e+08
+
+Generated flowNet:
+ DiGraph with 6885 nodes and 18241 edges
+Generation took 0.273804 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 0 / 34
+   took 0.067835 secs
+Constructing A_ub...
+Estimated number of inequalities: 6659 (nr of connected target nodes).
+True number of inequalities is 6659.
+   took 0.959938 secs
+Running linprog()...
+   took 0.113305 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 1.18936 secs
+Collecting stats...
+Total absorbed flow: 1.22165e+08
+Total flows:
+   absorbed: 1.22165e+08
+   assigned: 4.20537e+06
+Total costs:
+ assignment: 660754
+ absorption: 1.22165e+14
+      total: 1.22165e+14
+Stats collection took 0.393696 secs
+
+
+Timings (at nX=190, nY=131072):
+distList: 0.304977 secs
+containmentCheck: 6.2914 secs
+flowNetGeneration: 0.273804 secs
+minCostFlow: 1.18936 secs
+statsCollection: 0.393696 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.25on[0.025,0.05,0.075,0.1,0.125,0.15,0.175,0.2,0.225].pickle'
+Total time for MCF: 8.61136 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.25on[0.025,0.05,0.075,0.1,0.125,0.15,0.175,0.2,0.225].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_joint_in_Ia_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_0.225on[0.025,0.05,0.075,0.1,0.125,0.15,0.175,0.2].pickle'
+Loading data 'peaklists_compounds' ...
+
+
+#### Ia_01((2, 4),rst)incrFit_smooth0_libOLDBcompoundLib(joint)_ar[0.025, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175, 0.2, 0.225, 0.25] ####
+
+Assignment Radius 0.25:
+    totalWeightY = 241264759.4778549
+    totalExpected = 3017598000000.0
+    totalDetected = 2596272181061.955
+CinA: cf/ex = 1.249
+Bnz3: cf/ex = 1.08743
+Bnz4: cf/ex = 0.947142
+HBz: cf/ex = 1.14601
+HCin: cf/ex = 1.06254
+PheB: cf/ex = 0.879064
+AntCx: cf/ex = 1.10141
+Ant: cf/ex = 1.00375
+Bnz: cf/ex = 1.14531
+Bio: cf/ex = 0.916428
+Cit: cf/ex = 1.08616
+Gluc: cf/ex = 1.07894
+Man: cf/ex = 1.28876
+Xyl: cf/ex = 1.03253
+Cys: cf/ex = 1.07887
+GluA: cf/ex = 1.17534
+Glu: cf/ex = 0.686028
+ILeu: cf/ex = 0.923418
+LLeu: cf/ex = 0.688768
+Met: cf/ex = 0.818056
+PheA: cf/ex = 0.824324
+Pro: cf/ex = 0.649421
+Rha: cf/ex = 0.972471
+Tar: cf/ex = 1.01554
+Try: cf/ex = 0.982216
+Tyr: cf/ex = 0.85913
+Mal: cf/ex = 0.922962
+Nic: cf/ex = 0.761737
+Oct: cf/ex = 0.748415
+Pim: cf/ex = 1.51584
+Raf: cf/ex = 0.330925
+Suc: cf/ex = 0.792719
+TDec: cf/ex = 0.376622
+Van: cf/ex = 0.830762
+Saved fig /home/leo/repos/mcfnmr-release/output/figs/assignment and prediction_err Ia_01((2, 4),rst)incrFit_smooth0_libOLDBcompoundLib(joint)_ar[0.025, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175, 0.2, 0.225, 0.25].svg
+Saved fig /home/leo/repos/mcfnmr-release/output/figs/compoundAssignment to expected Ia_01((2, 4),rst)incrFit_smooth0_libOLDBcompoundLib(joint)_ar[0.025, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175, 0.2, 0.225, 0.25].svg
+error_stats["Ia_01"] = \
+{'assignment radius': [0.25],
+ 'false positives': [0],
+ 'matching': ['joint incr. fit'],
+ 'mean relative error': [0.18108282849721719],
+ 'mixture': ['Ia_01'],
+ 'percentage mid range': [94.11764705882354],
+ 'std(err)': [0.2348216696688388]}
+Saved  '/home/leo/repos/mcfnmr-release/output/cache/Ia_01((2, 4),rst)incrFit_smooth0_libOLDBcompoundLib(joint)_ar[0.025, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175, 0.2, 0.225, 0.25].pickle'
+
+ Total run time: 86.16316437721252 secs

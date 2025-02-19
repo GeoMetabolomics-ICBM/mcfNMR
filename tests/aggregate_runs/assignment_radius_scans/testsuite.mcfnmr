@@ -1,0 +1,62 @@
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup A (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_A_all
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup B (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_B_all
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup c (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_C_all
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup D (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_D_all
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup E (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_E_all
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup A and only mix N925  (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_A_N925
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup B and only mix N925  (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_B_N925
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup C and only mix N925  (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_C_N925
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup D and only mix N925  (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_D_N925
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup E and only mix N925  (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_E_N925
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup F and only mix N925  (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_F_N925
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup A and only mix N987  (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_A_N987
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup A and only mix N988  (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_A_N988
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup A and only mix N926. Reduced ar-range to max 0.2, since at ar=0.25, the computation time explodes...  (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_A_N926
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup A and only mix N926 pre-smoothing the raster target spectrum with radius 0.5. Reduced ar-range to max 0.2, since at ar=0.25, the computation time explodes... (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_A_N926_smooth0.5
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup A and only mix N926 pre-smoothing the raster target spectrum with radius 1.0. Reduced ar-range to max 0.2, since at ar=0.25, the computation time explodes... (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_A_N926_smooth1
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup B and only mix N926  (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_B_N926
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup C and only mix N926 with library "plasma-common"  (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_C_N926
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup D and only mix N926  (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_D_N926
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup E and only mix N926  (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_E_N926
+
+# Scanning performance over all MetaboMiner mixes for detection threshold and assignment radius range with setup F and only mix N926  (should be run twice since the first run generates the results if needed. To force generation, set recompute=true in config)
+range_scan_F_N926

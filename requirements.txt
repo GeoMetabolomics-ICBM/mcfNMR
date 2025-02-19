@@ -1,0 +1,13 @@
+numpy==2.0.0
+scipy==1.14.0
+statsmodels==0.14.2
+shapely==2.0.5
+networkx==3.3
+svglib==1.5.1
+reportlab==4.2.2
+toml==0.10.2
+pandas==2.2.2
+matplotlib==3.9.2
+seaborn==0.13.2
+editdistance==0.8.1
+bs4==0.0.2

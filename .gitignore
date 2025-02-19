@@ -1,0 +1,34 @@
+.pydevproject
+.project
+.settings
+.mcfnmr_env
+.build_env
+.env
+.vscode
+**.pyc
+**.pickle
+output
+tmp
+dist
+mcfNMR.egg-info
+
+# Downloaded data files
+data/MetaboMiner/sparky-linux2.6-64bit.tar.gz
+data/MetaboMiner/sparky
+data/MetaboMiner/ucsf.zip
+data/MetaboMiner/ucsf
+data/MetaboMiner/csv
+data/MetaboMiner/*_tmp
+data/MetaboMiner/metabominer.zip
+data/MetaboMiner/metabominer
+data/MetaboMiner/examples.zip
+data/MetaboMiner/examples
+data/MetaboMiner/processedUCSF
+data/COLMAR/archived compound reports
+data/BMRB/downloads
+data/BMRB/BMRBlib.csv
+data/OLDBdata/fullspectra/
+data/OLDBdata/test1D/
+data/OLDBdata/peaks/
+data/user_templates/cache
+data/user_templates/MetaboMiner - Biofluid ( all ).csv

@@ -1,0 +1,254 @@
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+746 rows, 465 cols, 522 nonzeros
+2 rows, 52 cols, 53 nonzeros
+2 rows, 52 cols, 53 nonzeros
+Presolve : Reductions: rows 2(-3697); columns 52(-7234); elements 53(-9051)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(1.01957e+07) 0s
+          2     1.0117959606e+13 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 2
+Objective value     :  1.0117959606e+13
+HiGHS run time      :          0.02
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+678 rows, 1498 cols, 2476 nonzeros
+421 rows, 1130 cols, 2099 nonzeros
+347 rows, 955 cols, 1740 nonzeros
+346 rows, 953 cols, 1734 nonzeros
+Presolve : Reductions: rows 346(-11871); columns 953(-16115); elements 1734(-32579)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(3.23775e+08) 0s
+        375     8.8810197958e+12 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Using EKK primal simplex solver
+  Iteration        Objective     Infeasibilities num(sum)
+        375     8.8810197958e+12 Pr: 0(0); Du: 1(1.06192e-06) 0s
+        376     8.8810197958e+12 Pr: 0(0); Du: 0(3.3583e-07) 0s
+Model   status      : Optimal
+Simplex   iterations: 376
+Objective value     :  8.8810197958e+12
+HiGHS run time      :          0.16
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+2381 rows, 5579 cols, 10362 nonzeros
+1956 rows, 4885 cols, 9891 nonzeros
+Presolve : Reductions: rows 1956(-14095); columns 4885(-28590); elements 9891(-55326)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(2.84193e+08) 0s
+       1748     7.9772261154e+12 Pr: 0(0) 0s
+       1748     7.9772261154e+12 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 1748
+Objective value     :  7.9772261154e+12
+HiGHS run time      :          0.21
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_incremental
+
+config:
+{'assignment_radius': [0.02, 0.04, 0.06],
+ 'config': 'data/user_templates/config_basic.toml',
+ 'detection_threshold': 0.003,
+ 'incremental_fit': True,
+ 'isolated_fit': False,
+ 'lib': '../MetaboMiner/csv/MetaboMiner - Biofluid ( all ).csv',
+ 'name': 'test',
+ 'target': '../MetaboMiner/csv/N988(1x2).csv.gz',
+ 'task': 'mcfNMR'}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_incremental/output
+
+Data directory: /home/leo/repos/mcfnmr/data
+
+MCFNMR, version 0.1.0
+
+Option '--outdir' given. Overrides config entry 'output_dir'.
+Setting 68194 negative peak weights to zero.
+Found 501 compounds in library MetaboMiner - Biofluid ( all )
+
+Incremental fit:
+   total reserved capacity: 0
+    min/max: 0/0
+
+Making dist list for ar=0.02 ...
+len(distList): 3298
+Saved distlists to '/home/leo/repos/mcfnmr/output/cache/mcf/dist_list_N988(1x2)_lib_501cpds_ar0.02.pickle'
+makeDistList() took 0.657971 secs
+Checking containment...
+Containment checking took 0.000115061 secs
+Generating flow net...
+
+Total connected target nodes: 2302
+Total target weight: 1.01957e+07
+
+Generated flowNet:
+ DiGraph with 6291 nodes and 7286 edges
+Generation took 0.193448 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 400 / 501
+   took 0.419162 secs
+Constructing A_ub...
+Estimated number of inequalities: 2302 (nr of connected target nodes).
+True number of inequalities is 2302.
+   took 0.24541 secs
+Running linprog()...
+   took 0.0222679 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.703677 secs
+Collecting stats...
+Total absorbed flow: 1.0118e+07
+Total flows:
+   absorbed: 1.0118e+07
+   assigned: 77753.5
+Total costs:
+ assignment: 1071.55
+ absorption: 1.0118e+13
+      total: 1.0118e+13
+Stats collection took 0.248696 secs
+
+
+Timings (at nX=3486, nY=131072):
+distList: 0.657971 secs
+containmentCheck: 0.000115061 secs
+flowNetGeneration: 0.193448 secs
+minCostFlow: 0.703677 secs
+statsCollection: 0.248696 secs
+Saved MCF result to '/home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_incremental/output/mcfresult_test_ar0.02on[].pickle'
+Total time for MCF: 2.00608 secs
+
+Saved updated result to '/home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_incremental/output/mcfresult_test_ar0.02on[].pickle'
+
+Incremental fit:
+   total reserved capacity: 77753.5
+    min/max: 0/6723.81
+
+Making dist list for ar=0.04 ...
+len(distList): 13080
+Saved distlists to '/home/leo/repos/mcfnmr/output/cache/mcf/dist_list_N988(1x2)_lib_501cpds_ar0.04.pickle'
+makeDistList() took 0.735143 secs
+Checking containment...
+Containment checking took 7.3627e-05 secs
+Generating flow net...
+
+Total connected target nodes: 6278
+Total target weight: 1.0118e+07
+
+Generated flowNet:
+ DiGraph with 10267 nodes and 17068 edges
+Generation took 0.266618 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 75 / 501
+   took 0.832799 secs
+Constructing A_ub...
+Estimated number of inequalities: 6278 (nr of connected target nodes).
+True number of inequalities is 6278.
+   took 0.77539 secs
+Running linprog()...
+   took 0.18334 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 1.83801 secs
+Collecting stats...
+Total absorbed flow: 8.88102e+06
+Total flows:
+   absorbed: 8.88102e+06
+   assigned: 1.23694e+06
+Total costs:
+ assignment: 28786.3
+ absorption: 8.88102e+12
+      total: 8.88102e+12
+Stats collection took 0.396013 secs
+
+
+Timings (at nX=3486, nY=131072):
+distList: 0.735143 secs
+containmentCheck: 7.3627e-05 secs
+flowNetGeneration: 0.266618 secs
+minCostFlow: 1.83801 secs
+statsCollection: 0.396013 secs
+Saved MCF result to '/home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_incremental/output/mcfresult_test_ar0.04on[0.02].pickle'
+Total time for MCF: 3.41961 secs
+
+Saved updated result to '/home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_incremental/output/mcfresult_test_ar0.04on[0.02].pickle'
+Saved updated result to '/home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_incremental/output/mcfresult_test_ar0.02on[].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.31469e+06
+    min/max: 0/49625.8
+
+Making dist list for ar=0.06 ...
+len(distList): 29487
+Saved distlists to '/home/leo/repos/mcfnmr/output/cache/mcf/dist_list_N988(1x2)_lib_501cpds_ar0.06.pickle'
+makeDistList() took 1.0027 secs
+Checking containment...
+Containment checking took 8.1372e-05 secs
+Generating flow net...
+
+Total connected target nodes: 10054
+Total target weight: 8.88102e+06
+
+Generated flowNet:
+ DiGraph with 14043 nodes and 33475 edges
+Generation took 0.408237 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 70 / 501
+   took 0.74113 secs
+Constructing A_ub...
+Estimated number of inequalities: 10054 (nr of connected target nodes).
+True number of inequalities is 10054.
+   took 1.24416 secs
+Running linprog()...
+   took 0.22516 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 2.28546 secs
+Collecting stats...
+Total absorbed flow: 7.97723e+06
+Total flows:
+   absorbed: 7.97723e+06
+   assigned: 903794
+Total costs:
+ assignment: 32070.4
+ absorption: 7.97723e+12
+      total: 7.97723e+12
+Stats collection took 0.350669 secs
+
+
+Timings (at nX=3486, nY=131072):
+distList: 1.0027 secs
+containmentCheck: 8.1372e-05 secs
+flowNetGeneration: 0.408237 secs
+minCostFlow: 2.28546 secs
+statsCollection: 0.350669 secs
+Saved MCF result to '/home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_incremental/output/mcfresult_test_ar0.06on[0.02,0.04].pickle'
+Total time for MCF: 4.27934 secs
+
+Saved updated result to '/home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_incremental/output/mcfresult_test_ar0.06on[0.02,0.04].pickle'
+Saved updated result to '/home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_incremental/output/mcfresult_test_ar0.04on[0.02].pickle'
+Saved results table to '/home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_incremental/output/mcfresult_test.csv'
+
+ Total run time: 11.241735935211182 secs

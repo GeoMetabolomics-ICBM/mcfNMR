@@ -1,0 +1,18 @@
+# Attention: If a first pass, where new data is generated, fails. Run these tests a second time - approved results assume existing data.
+assignment_radius_scans
+
+# Runs the comparison of MCF method setups A, B, C, and D with MM, COLMAR, and SMART-Miner.
+# Results for the MCF should be generated first via assignment_range_scans.
+comparison_classification
+
+# Runs the comparison of MCF method setups A, B, and C for the different experiments
+comparison_quantification_full
+
+# Runs the comparison of MCF method setups A, B, and C for the different experiments and plot out the barplots comparing expected and detected concentrations for each experiment at radii 0.05, 0.1 and 0.2
+comparison_quantification_plot_single_stats
+
+# Runs the comparison of different methods on the plasma samples N926 and N907
+plasma_sample_analysis
+
+# Runs the comparison of different methods on the plasma samples N926 and N907 using the smaller lib "plasma (common)" from the MetaboMiner suite
+plasma_sample_analysis_lib_plasmacommon

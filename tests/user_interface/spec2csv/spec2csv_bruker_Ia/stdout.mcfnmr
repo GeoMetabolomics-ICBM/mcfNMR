@@ -1,0 +1,62 @@
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.19Feb141932.5822/mcfnmr/user_interface/spec2csv/spec2csv_bruker_Ia
+
+config:
+{'bindims': '64,32',
+ 'outfile': 'target.csv',
+ 'target': 'data/OLDBdata/fullspectra/nmr_Ia_01.txt.gz',
+ 'task': 'spec2csv'}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.19Feb141932.5822/mcfnmr/user_interface/spec2csv/spec2csv_bruker_Ia/output
+
+Data directory: /home/leo/repos/mcfnmr-release/data
+ACD.2DNMR ASCII
+Version = 1.00
+
+======================== Parameters ========================
+Title = HSQCETGPSIWT DMSO /opt/topspin4.0.3/data/save/nmr nmr {4  D6 - 444} Reference-1D    : undefined Signal-to-noise : No reference --> 2D STARTED Solvent(s)      : 1 Off-resonance @ 2.498ppm with SR = 0.00Hz
+Comment = HSQCETGPSIWT DMSO /opt/topspin4.0.3/data/save/nmr nmr {4  D6 - 444} Reference-1D    : undefined Signal-to-noise : No reference --> 2D STARTED Solvent(s)      : 1 Off-resonance @ 2.498ppm with SR = 0.00Hz
+Solvent = DMSO-d6
+Date = 18 Apr 2022 15:13:14
+DateStamp = 
+PulseSequence = hsqcetgpsiwt
+Origin = Avance NEO 600
+Owner = nmr
+ExpCount = 8
+Temperature = 2.5E+1
+Transposed = 0
+Reversed = 0 0
+PointsCount = 1024 1024
+OriginalPointsCount = 1024 256
+SweepWidth = 9.6059951171875E+3 2.5615984375E+4
+Frequency = 6.0025E+2 1.50932983398438E+2
+Offset = 1.51544909667969E+3 1.2291234375E+4
+AcquisitionTime = 1.06495998799801E-1 9.98399965465069E-3
+DwellTime = 1.03999998827931E-4 3.89999986509793E-5
+Nucleus = 1H 13C
+Dataset = P-RR-RI-IR-II
+DataType = FT-t2-t1
+
+Loaded header data for 'nmr_Ia_01.txt.gz'
+Loaded spectrum data for 'nmr_Ia_01.txt.gz'
+Original grid dimension: (1024, 1024)
+Noise Std before processing: 443.004
+Noise Std after processing: 443.004
+   Total avg point intensity: 1.31715e+08
+   Max point intensity: 866353
+   Noise std: 443.004
+   Signal to noise: 1955.63
+
+Converting raster to peaks, nbin=[64 32], signal-to-noise threshold=None)
+   (original raster dimensions: (1024, 1024))
+   (binned grid dimensions: (16, 32))
+
+Written data to /home/leo/.texttest/tmp/mcfnmr.19Feb141932.5822/mcfnmr/user_interface/spec2csv/spec2csv_bruker_Ia/output/target.csv.
+
+
+ Total run time: 0.4865436553955078 secs

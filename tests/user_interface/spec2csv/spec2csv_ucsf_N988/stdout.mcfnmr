@@ -1,0 +1,33 @@
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.04Aug202233.61468/mcfnmr/user_interface/spec2csv/spec2csv_ucsf_N988
+
+config:
+{'bindims': '16,32',
+ 'outfile': 'target.csv',
+ 'target': 'data/MetaboMiner/ucsf/N988_hsqc.ucsf',
+ 'task': 'spec2csv'}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.04Aug202233.61468/mcfnmr/user_interface/spec2csv/spec2csv_ucsf_N988/output
+
+Data directory: /home/leo/repos/mcfnmr/data
+Original grid dimension: (256, 1024)
+Noise Std before processing: 14.4437
+Noise Std after processing: 14.4437
+   Total avg point intensity: 5.37125e+06
+   Max point intensity: 141848
+   Noise std: 14.4437
+   Signal to noise: 9820.77
+
+Converting raster to peaks, nbin=[16 32], signal-to-noise threshold=None)
+   (original raster dimensions: (256, 1024))
+   (binned grid dimensions: (16, 32))
+
+Written data to /home/leo/.texttest/tmp/mcfnmr.04Aug202233.61468/mcfnmr/user_interface/spec2csv/spec2csv_ucsf_N988/output/target.csv.
+
+
+ Total run time: 0.1437668800354004 secs

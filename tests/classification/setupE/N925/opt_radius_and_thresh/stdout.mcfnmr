@@ -1,0 +1,846 @@
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+544 rows, 471 cols, 510 nonzeros
+6 rows, 23 cols, 28 nonzeros
+Presolve : Reductions: rows 6(-1299); columns 23(-4221); elements 28(-5337)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(2.80618e+11) 0s
+          7     3.6976206205e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 7
+Objective value     :  3.6976206205e+15
+HiGHS run time      :          0.00
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+607 rows, 465 cols, 497 nonzeros
+5 rows, 21 cols, 25 nonzeros
+Presolve : Reductions: rows 5(-1441); columns 21(-4626); elements 25(-5811)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(4.73295e+11) 0s
+          6     3.3450035264e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 6
+Objective value     :  3.3450035264e+15
+HiGHS run time      :          0.00
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+663 rows, 462 cols, 527 nonzeros
+10 rows, 24 cols, 41 nonzeros
+10 rows, 24 cols, 41 nonzeros
+Presolve : Reductions: rows 10(-1606); columns 24(-5111); elements 41(-6454)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(4.2816e+11) 0s
+         11     3.1757901069e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 11
+Objective value     :  3.1757901069e+15
+HiGHS run time      :          0.00
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/classification/setupE/N925/opt_radius_and_thresh
+
+config:
+{'ar': 0.15,
+ 'lib': 'MetaboMiner',
+ 'mix': 'N925',
+ 'setup': 'E',
+ 'task': 'classification',
+ 'th': 0.007}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/classification/setupE/N925/opt_radius_and_thresh/output
+
+Data directory: /home/leo/repos/mcfnmr-release/data
+Loaded mix 'N926' content list of length 35
+Loaded mix 'N907' content list of length 35
+Loaded mix 'N987' content list of length 21
+Loaded mix 'N925' content list of length 27
+Loaded mix 'N988' content list of length 24
+Loaded mix 'N880' content list of length 27
+Loaded point spectrum for mix 'N926(dp)' with 2664 peaks.
+Loaded point spectrum for mix 'N907(dp)' with 1861 peaks.
+Loaded point spectrum for mix 'N907' with 591 peaks.
+Loaded point spectrum for mix 'N988' with 565 peaks.
+Loaded point spectrum for mix 'N880' with 1088 peaks.
+Loaded point spectrum for mix 'N926' with 728 peaks.
+Loaded point spectrum for mix 'N925' with 807 peaks.
+Loaded point spectrum for mix 'N987' with 597 peaks.
+Loading MM lib 'Biofluid ( all )' containing 502 compounds...
+Removing duplicate entry for D-Lactic Acid (HMDB 1311)
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+
+Incremental fit:
+   total reserved capacity: 0
+    min/max: 0/0
+
+Making dist list for ar=0.02 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 398
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.02.pickle'
+makeDistList() took 0.207628 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0650564 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 237
+Total target weight: 4.38465e+09
+
+Generated flowNet:
+ DiGraph with 4084 nodes and 4244 edges
+Generation took 0.0786099 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 490 / 501
+   took 0.0683068 secs
+Constructing A_ub...
+Estimated number of inequalities: 237 (nr of connected target nodes).
+True number of inequalities is 237.
+   took 0.010927 secs
+Running linprog()...
+   took 0.00708206 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.0916701 secs
+Collecting stats...
+Total absorbed flow: 3.69762e+09
+Total flows:
+   absorbed: 3.69762e+09
+   assigned: 6.87029e+08
+Total costs:
+ assignment: 7.49813e+06
+ absorption: 3.69762e+15
+      total: 3.69762e+15
+Stats collection took 0.00765231 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.207628 secs
+containmentCheck: 0.0650564 secs
+flowNetGeneration: 0.0786099 secs
+minCostFlow: 0.0916701 secs
+statsCollection: 0.00765231 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.02on[].pickle'
+Total time for MCF: 0.463706 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.02on[].pickle'
+
+Incremental fit:
+   total reserved capacity: 6.87029e+08
+    min/max: 0/3.70305e+07
+
+Making dist list for ar=0.03 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 801
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.03.pickle'
+makeDistList() took 0.206507 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0640105 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 346
+Total target weight: 3.69762e+09
+
+Generated flowNet:
+ DiGraph with 4193 nodes and 4647 edges
+Generation took 0.0314603 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 483 / 501
+   took 0.126388 secs
+Constructing A_ub...
+Estimated number of inequalities: 346 (nr of connected target nodes).
+True number of inequalities is 346.
+   took 0.0169667 secs
+Running linprog()...
+   took 0.00592989 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.154405 secs
+Collecting stats...
+Total absorbed flow: 3.345e+09
+Total flows:
+   absorbed: 3.345e+09
+   assigned: 3.52617e+08
+Total costs:
+ assignment: 5.44446e+06
+ absorption: 3.345e+15
+      total: 3.345e+15
+Stats collection took 0.00825954 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.206507 secs
+containmentCheck: 0.0640105 secs
+flowNetGeneration: 0.0314603 secs
+minCostFlow: 0.154405 secs
+statsCollection: 0.00825954 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.03on[0.02].pickle'
+Total time for MCF: 0.477545 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.03on[0.02].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.02on[].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.03965e+09
+    min/max: 0/3.70305e+07
+
+Making dist list for ar=0.04 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 1289
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.04.pickle'
+makeDistList() took 0.20517 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0644649 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 430
+Total target weight: 3.345e+09
+
+Generated flowNet:
+ DiGraph with 4277 nodes and 5135 edges
+Generation took 0.0316603 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 467 / 501
+   took 0.0686839 secs
+Constructing A_ub...
+Estimated number of inequalities: 430 (nr of connected target nodes).
+True number of inequalities is 430.
+   took 0.0217931 secs
+Running linprog()...
+   took 0.00660315 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.103473 secs
+Collecting stats...
+Total absorbed flow: 3.17579e+09
+Total flows:
+   absorbed: 3.17579e+09
+   assigned: 1.69213e+08
+Total costs:
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+745 rows, 489 cols, 585 nonzeros
+18 rows, 44 cols, 71 nonzeros
+11 rows, 38 cols, 52 nonzeros
+Presolve : Reductions: rows 11(-1728); columns 38(-5772); elements 52(-7262)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(2.03251e+11) 0s
+         14     2.9416213553e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 14
+Objective value     :  2.9416213553e+15
+HiGHS run time      :          0.00
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+785 rows, 474 cols, 557 nonzeros
+7 rows, 25 cols, 35 nonzeros
+7 rows, 25 cols, 35 nonzeros
+Presolve : Reductions: rows 7(-1819); columns 25(-6542); elements 35(-8190)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(3.76528e+11) 0s
+          9     2.8099102079e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 9
+Objective value     :  2.8099102079e+15
+HiGHS run time      :          0.01
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+978 rows, 822 cols, 1342 nonzeros
+153 rows, 358 cols, 754 nonzeros
+137 rows, 321 cols, 676 nonzeros
+Presolve : Reductions: rows 137(-1873); columns 321(-8332); elements 676(-10197)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(1.79834e+11) 0s
+        117     2.5299235694e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 117
+Objective value     :  2.5299235694e+15
+HiGHS run time      :          0.01
+ assignment: 4.15707e+06
+ absorption: 3.17579e+15
+      total: 3.17579e+15
+Stats collection took 0.00944219 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.20517 secs
+containmentCheck: 0.0644649 secs
+flowNetGeneration: 0.0316603 secs
+minCostFlow: 0.103473 secs
+statsCollection: 0.00944219 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.04on[0.02,0.03].pickle'
+Total time for MCF: 0.426826 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.04on[0.02,0.03].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.03on[0.02].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.20886e+09
+    min/max: 0/4.40182e+07
+
+Making dist list for ar=0.05 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 1964
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.05.pickle'
+makeDistList() took 0.207708 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0651505 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 511
+Total target weight: 3.17579e+09
+
+Generated flowNet:
+ DiGraph with 4358 nodes and 5810 edges
+Generation took 0.0909699 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 454 / 501
+   took 0.0733524 secs
+Constructing A_ub...
+Estimated number of inequalities: 511 (nr of connected target nodes).
+True number of inequalities is 511.
+   took 0.0268836 secs
+Running linprog()...
+   took 0.00712509 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.114396 secs
+Collecting stats...
+Total absorbed flow: 2.94162e+09
+Total flows:
+   absorbed: 2.94162e+09
+   assigned: 2.34169e+08
+Total costs:
+ assignment: 6.57596e+06
+ absorption: 2.94162e+15
+      total: 2.94162e+15
+Stats collection took 0.0106938 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.207708 secs
+containmentCheck: 0.0651505 secs
+flowNetGeneration: 0.0909699 secs
+minCostFlow: 0.114396 secs
+statsCollection: 0.0106938 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.05on[0.02,0.03,0.04].pickle'
+Total time for MCF: 0.502187 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.05on[0.02,0.03,0.04].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.04on[0.02,0.03].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.44303e+09
+    min/max: 0/4.94419e+07
+
+Making dist list for ar=0.06 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 2721
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.06.pickle'
+makeDistList() took 0.207736 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0644736 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 570
+Total target weight: 2.94162e+09
+
+Generated flowNet:
+ DiGraph with 4417 nodes and 6567 edges
+Generation took 0.0350556 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 448 / 501
+   took 0.135004 secs
+Constructing A_ub...
+Estimated number of inequalities: 570 (nr of connected target nodes).
+True number of inequalities is 570.
+   took 0.0312587 secs
+Running linprog()...
+   took 0.00798086 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.181847 secs
+Collecting stats...
+Total absorbed flow: 2.80991e+09
+Total flows:
+   absorbed: 2.80991e+09
+   assigned: 1.31711e+08
+Total costs:
+ assignment: 5.15316e+06
+ absorption: 2.80991e+15
+      total: 2.80991e+15
+Stats collection took 0.0121204 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.207736 secs
+containmentCheck: 0.0644736 secs
+flowNetGeneration: 0.0350556 secs
+minCostFlow: 0.181847 secs
+statsCollection: 0.0121204 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.06on[0.02,0.03,0.04,0.05].pickle'
+Total time for MCF: 0.514436 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.06on[0.02,0.03,0.04,0.05].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.05on[0.02,0.03,0.04].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.57474e+09
+    min/max: 0/4.94419e+07
+
+Making dist list for ar=0.08 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 4807
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.08.pickle'
+makeDistList() took 0.206146 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0645989 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 652
+Total target weight: 2.80991e+09
+
+Generated flowNet:
+ DiGraph with 4499 nodes and 8653 edges
+Generation took 0.0402542 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 427 / 501
+   took 0.131025 secs
+Constructing A_ub...
+Estimated number of inequalities: 652 (nr of connected target nodes).
+True number of inequalities is 652.
+   took 0.0481199 secs
+Running linprog()...
+   took 0.012402 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.202124 secs
+Collecting stats...
+Total absorbed flow: 2.52992e+09
+Total flows:
+   absorbed: 2.52992e+09
+   assigned: 2.79987e+08
+Total costs:
+ assignment: 1.31958e+07
+ absorption: 2.52992e+15
+      total: 2.52992e+15
+Stats collection took 0.0169995 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.206146 secs
+containmentCheck: 0.0645989 secs
+flowNetGeneration: 0.0402542 secs
+minCostFlow: 0.202124 secs
+statsCollection: 0.0169995 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.08on[0.02,0.03,0.04,0.05,0.06].pickle'
+Total time for MCF: 0.543805 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.08on[0.02,0.03,0.04,0.05,0.06].pickle'
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+956 rows, 872 cols, 1445 nonzeros
+121 rows, 314 cols, 639 nonzeros
+111 rows, 291 cols, 587 nonzeros
+Presolve : Reductions: rows 111(-2025); columns 291(-10804); elements 587(-13366)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(1.61915e+11) 0s
+         82     2.3516380235e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 82
+Objective value     :  2.3516380235e+15
+HiGHS run time      :          0.01
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+934 rows, 950 cols, 1624 nonzeros
+182 rows, 482 cols, 987 nonzeros
+168 rows, 449 cols, 914 nonzeros
+Presolve : Reductions: rows 168(-2137); columns 449(-13541); elements 914(-17001)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(1.50505e+11) 0s
+        131     2.1435100369e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 131
+Objective value     :  2.1435100369e+15
+HiGHS run time      :          0.01
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+894 rows, 965 cols, 1699 nonzeros
+209 rows, 544 cols, 1186 nonzeros
+186 rows, 485 cols, 1076 nonzeros
+Presolve : Reductions: rows 186(-2317); columns 485(-18734); elements 1076(-23897)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(1.37185e+11) 0s
+        176     1.8434494446e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 176
+Objective value     :  1.8434494446e+15
+HiGHS run time      :          0.02
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.06on[0.02,0.03,0.04,0.05].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.85473e+09
+    min/max: 0/4.94419e+07
+
+Making dist list for ar=0.1 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 7249
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.1.pickle'
+makeDistList() took 0.209118 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0643808 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 710
+Total target weight: 2.52992e+09
+
+Generated flowNet:
+ DiGraph with 4557 nodes and 11095 edges
+Generation took 0.0446764 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 415 / 501
+   took 0.0837364 secs
+Constructing A_ub...
+Estimated number of inequalities: 710 (nr of connected target nodes).
+True number of inequalities is 710.
+   took 0.0428387 secs
+Running linprog()...
+   took 0.0132022 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.152745 secs
+Collecting stats...
+Total absorbed flow: 2.35164e+09
+Total flows:
+   absorbed: 2.35164e+09
+   assigned: 1.78286e+08
+Total costs:
+ assignment: 1.00194e+07
+ absorption: 2.35164e+15
+      total: 2.35164e+15
+Stats collection took 0.0205397 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.209118 secs
+containmentCheck: 0.0643808 secs
+flowNetGeneration: 0.0446764 secs
+minCostFlow: 0.152745 secs
+statsCollection: 0.0205397 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.1on[0.02,0.03,0.04,0.05,0.06,0.08].pickle'
+Total time for MCF: 0.504653 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.1on[0.02,0.03,0.04,0.05,0.06,0.08].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.08on[0.02,0.03,0.04,0.05,0.06].pickle'
+
+Incremental fit:
+   total reserved capacity: 2.03301e+09
+    min/max: 0/5.31818e+07
+
+Making dist list for ar=0.12 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 10144
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.12.pickle'
+makeDistList() took 0.209705 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0644611 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 747
+Total target weight: 2.35164e+09
+
+Generated flowNet:
+ DiGraph with 4594 nodes and 13990 edges
+Generation took 0.115989 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 394 / 501
+   took 0.093306 secs
+Constructing A_ub...
+Estimated number of inequalities: 747 (nr of connected target nodes).
+True number of inequalities is 747.
+   took 0.0468369 secs
+Running linprog()...
+   took 0.0161159 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.172936 secs
+Collecting stats...
+Total absorbed flow: 2.14351e+09
+Total flows:
+   absorbed: 2.14351e+09
+   assigned: 2.08128e+08
+Total costs:
+ assignment: 1.34084e+07
+ absorption: 2.14351e+15
+      total: 2.14351e+15
+Stats collection took 0.0260439 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.209705 secs
+containmentCheck: 0.0644611 secs
+flowNetGeneration: 0.115989 secs
+minCostFlow: 0.172936 secs
+statsCollection: 0.0260439 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.12on[0.02,0.03,0.04,0.05,0.06,0.08,0.1].pickle'
+Total time for MCF: 0.602758 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.12on[0.02,0.03,0.04,0.05,0.06,0.08,0.1].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.1on[0.02,0.03,0.04,0.05,0.06,0.08].pickle'
+
+Incremental fit:
+   total reserved capacity: 2.24114e+09
+    min/max: 0/5.57623e+07
+
+Making dist list for ar=0.15 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 15381
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.15.pickle'
+makeDistList() took 0.206622 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0653459 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 769
+Total target weight: 2.14351e+09
+
+Generated flowNet:
+ DiGraph with 4616 nodes and 19219 edges
+Generation took 0.121447 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 362 / 501
+   took 0.103333 secs
+Constructing A_ub...
+Estimated number of inequalities: 769 (nr of connected target nodes).
+True number of inequalities is 769.
+   took 0.052773 secs
+Running linprog()...
+   took 0.0219851 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.201772 secs
+Collecting stats...
+Total absorbed flow: 1.84345e+09
+Total flows:
+   absorbed: 1.84345e+09
+   assigned: 3.00061e+08
+Total costs:
+ assignment: 2.83899e+07
+ absorption: 1.84345e+15
+      total: 1.84345e+15
+Stats collection took 0.0363997 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.206622 secs
+containmentCheck: 0.0653459 secs
+flowNetGeneration: 0.121447 secs
+minCostFlow: 0.201772 secs
+statsCollection: 0.0363997 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.15on[0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12].pickle'
+Total time for MCF: 0.645801 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.15on[0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.12on[0.02,0.03,0.04,0.05,0.06,0.08,0.1].pickle'
+Classification results:
+{'N925': {'classification': {'FN': ['108',
+                                    '158',
+                                    '172',
+                                    '177',
+                                    '191',
+                                    '195',
+                                    '300',
+                                    '357',
+                                    '641',
+                                    '72',
+                                    '812'],
+                             'FP': ['1511', '1721', '251', '258', '473', '50'],
+                             'TP': ['122',
+                                    '159',
+                                    '161',
+                                    '162',
+                                    '167',
+                                    '182',
+                                    '190',
+                                    '214',
+                                    '43',
+                                    '517',
+                                    '62',
+                                    '687',
+                                    '696',
+                                    '883',
+                                    '929',
+                                    '97'],
+                             'compound_df':     compound target  ... intensity scaling  expected concentration factor
+0          1   N925  ...              None                           None
+1        101   N925  ...              None                           None
+2       1044   N925  ...              None                           None
+3       1046   N925  ...              None                           None
+4       1049   N925  ...              None                           None
+..       ...    ...  ...               ...                            ...
+496       97   N925  ...              None                           None
+497      975   N925  ...              None                           None
+498       98   N925  ...              None                           None
+499       99   N925  ...              None                           None
+500      995   N925  ...              None                           None
+
+[501 rows x 15 columns],
+                             'fscore': 0.6530612244897959,
+                             'precision': 0.7272727272727273,
+                             'recall': 0.5925925925925926},
+          'classificationThreshold': 0.007}}
+
+ Total run time: 4.880025625228882 secs

@@ -1,0 +1,50 @@
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.05Aug102555.13025/mcfnmr/user_interface/spec2csv/spec2csv_help
+
+config:
+{'help': True, 'task': 'spec2csv'}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.05Aug102555.13025/mcfnmr/user_interface/spec2csv/spec2csv_help/output
+
+Data directory: /home/leo/repos/mcfnmr/data
+usage: spec2csv [-h] --inputfile INFILE [--outputfile OUTFILE]
+                [--bindims BINDIMS] [--override] [--peaklist]
+
+spec2csv - part of MCFNMR (v0.1.0). Tool to convert a different types of
+spectrum files into a csv (or csv.gz) file usable as target for mcfnmr. Usage:
+spec2csv --file=INPUT_FILE [--rangex=X1,X2 --rangey=Y1,Y2 --irange=I1,I2
+--bindims=NX,NY]
+
+options:
+  -h, --help            show this help message and exit
+  --inputfile INFILE, -f INFILE
+                        Spectrum file describing the intensity distribution.
+                        Currently supported: ucsf-files, bruker-txt-files, and
+                        bitmaps encoding intensity as greyscale. For the
+                        latter, the options 'rangex|y', and 'irange' have to
+                        be specified. (default: None)
+  --outputfile OUTFILE, -o OUTFILE
+                        Destination file for generated csv document. Defaults
+                        to '<inputfile's basename>.csv.gz'. (default: None)
+  --bindims BINDIMS, -b BINDIMS
+                        Integer number of grid points on x- and y-axis to be
+                        summarized in NXxNY bins. Determines the resolution of
+                        the input as =~original_resolution./bindims. Note:
+                        high resolutions may entail long computation times.
+                        (default: 1,1)
+  --override, -w        Flag to indicate whether any existing destination file
+                        should be overridden. (default: False)
+  --peaklist            Flag to indicate whether infile is a peak list. Such
+                        should be a table with headers indicating dimensions
+                        (e.g., '1H' and '13C'), which can be resolved by
+                        comparing to config.csv_column_name_links. If peak
+                        weights are included, add a column 'weight'. File must
+                        be readable by pandas.read_csv() with default
+                        arguments, see https://pandas.pydata.org/pandas-
+                        docs/stable/reference/api/pandas.read_csv.html
+                        (default: False)

@@ -1,0 +1,16 @@
+COLMAR results with parameters
+ppm H: 0.04
+ppm C: 0.3
+Matching ratio: 0.6
+
+The deep picker peak (N907(dp)_hsqc.txt and N926(dp)_hsqc.txt) lists were picked automatically from the grid spectra provided by MetaboMiner and then referenced with all components that were recognized when matching the unreferenced list. This resulted in the following adjustments:
+
+N907 (referenced to leucine, glucose, and lactic acid):
+1H: 0.00937
+13C: -0.2825
+
+N926 (referenced to alanine, leucine, glucose, and lactic acid):
+1H: -0.0227
+13C: -0.14613
+
+

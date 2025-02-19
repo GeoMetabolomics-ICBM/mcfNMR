@@ -1,0 +1,8 @@
+# Task to perform
+task = "spec2csv"
+# target spectrum file
+target = "data/MetaboMiner/ucsf/N988_hsqc.ucsf"
+# resolution for serialized file
+bindims = "16,32"
+# output
+outfile = "target.csv"

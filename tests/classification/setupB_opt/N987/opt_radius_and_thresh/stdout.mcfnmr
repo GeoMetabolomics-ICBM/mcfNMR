@@ -1,0 +1,657 @@
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/classification/setupB_opt/N987/opt_radius_and_thresh
+
+config:
+{'ar': 0.05,
+ 'lib': 'MetaboMiner',
+ 'mix': 'N987',
+ 'setup': 'B',
+ 'task': 'classification',
+ 'th': 0.003}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/classification/setupB_opt/N987/opt_radius_and_thresh/output
+
+Data directory: /home/leo/repos/mcfnmr-release/data
+Loaded mix 'N926' content list of length 35
+Loaded mix 'N907' content list of length 35
+Loaded mix 'N987' content list of length 21
+Loaded mix 'N925' content list of length 27
+Loaded mix 'N988' content list of length 24
+Loaded mix 'N880' content list of length 27
+Loading MM lib 'Biofluid ( all )' containing 502 compounds...
+Removing duplicate entry for D-Lactic Acid (HMDB 1311)
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Converting raster to peaks, nbin=(1, 2), signal-to-noise threshold=None)
+   (original raster dimensions: (512, 1024))
+   (binned grid dimensions: (512, 512))
+runMetaboMinerFits(): Binning for mix N987: (1, 2)
+Making dist list for ar=0.05 ...
+len(distList): 40923
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N987(raster, (1x2)-bins)_MetaboMiner_ar0.05.pickle'
+makeDistList() took 0.449364 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N987(raster, (1x2)-bins)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N987(raster, (1x2)-bins)_region_ix.pickle
+Containment checking took 3.93333 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 16392
+Total target weight: 1.40188e+07
+
+Generated flowNet:
+ DiGraph with 20242 nodes and 44747 edges
+Generation took 0.311481 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 7 / 501
+   took 0.409652 secs
+Constructing A_ub...
+Compound 1 has 63 connected target nodes.
+Compound 101 has 82 connected target nodes.
+Compound 1044 has 74 connected target nodes.
+Compound 1046 has 74 connected target nodes.
+Compound 1049 has 63 connected target nodes.
+Compound 1051 has 49 connected target nodes.
+Compound 1058 has 103 connected target nodes.
+Compound 1065 has 69 connected target nodes.
+Compound 107 has 37 connected target nodes.
+Compound 1078 has 124 connected target nodes.
+Compound 108 has 23 connected target nodes.
+Compound 1107 has 114 connected target nodes.
+Compound 112 has 35 connected target nodes.
+Compound 1138 has 61 connected target nodes.
+Compound 1149 has 39 connected target nodes.
+Compound 115 has 14 connected target nodes.
+Compound 1151 has 88 connected target nodes.
+Compound 1169 has 24 connected target nodes.
+Compound 118 has 63 connected target nodes.
+Compound 1186 has 111 connected target nodes.
+Compound 119 has 13 connected target nodes.
+Compound 12 has 84 connected target nodes.
+Compound 1201 has 68 connected target nodes.
+Compound 1209 has 13 connected target nodes.
+Compound 121 has 80 connected target nodes.
+Compound 122 has 122 connected target nodes.
+Compound 1227 has 79 connected target nodes.
+Compound 123 has 12 connected target nodes.
+Compound 1232 has 27 connected target nodes.
+Compound 124 has 100 connected target nodes.
+Compound 125 has 74 connected target nodes.
+Compound 1254 has 135 connected target nodes.
+Compound 1256 has 62 connected target nodes.
+Compound 1257 has 84 connected target nodes.
+Compound 126 has 53 connected target nodes.
+Compound 1262 has 219 connected target nodes.
+Compound 1266 has 80 connected target nodes.
+Compound 127 has 107 connected target nodes.
+Compound 128 has 12 connected target nodes.
+Compound 1294 has 23 connected target nodes.
+Compound 130 has 49 connected target nodes.
+Compound 131 has 38 connected target nodes.
+Compound 1316 has 58 connected target nodes.
+Compound 132 has 0 connected target nodes.
+Compound 133 has 55 connected target nodes.
+Compound 1336 has 49 connected target nodes.
+Compound 134 has 12 connected target nodes.
+Compound 1342 has 71 connected target nodes.
+Compound 1366 has 0 connected target nodes.
+Compound 1370 has 60 connected target nodes.
+Compound 1372 has 73 connected target nodes.
+Compound 138 has 482 connected target nodes.
+Compound 139 has 34 connected target nodes.
+Compound 1392 has 23 connected target nodes.
+Compound 14 has 101 connected target nodes.
+Compound 1401 has 128 connected target nodes.
+Compound 1406 has 25 connected target nodes.
+Compound 1409 has 71 connected target nodes.
+Compound 1414 has 25 connected target nodes.
+Compound 142 has 0 connected target nodes.
+Compound 143 has 127 connected target nodes.
+Compound 1431 has 52 connected target nodes.
+Compound 1432 has 49 connected target nodes.
+Compound 1460 has 21 connected target nodes.
+Compound 1470 has 36 connected target nodes.
+Compound 1476 has 37 connected target nodes.
+Compound 148 has 41 connected target nodes.
+Compound 1487 has 173 connected target nodes.
+Compound 1488 has 12 connected target nodes.
+Compound 149 has 24 connected target nodes.
+Compound 1491 has 34 connected target nodes.
+Compound 1494 has 26 connected target nodes.
+Compound 15 has 285 connected target nodes.
+Compound 150 has 72 connected target nodes.
+Compound 1511 has 24 connected target nodes.
+Compound 1514 has 139 connected target nodes.
+Compound 152 has 37 connected target nodes.
+Compound 1520 has 107 connected target nodes.
+Compound 1522 has 15 connected target nodes.
+Compound 1525 has 24 connected target nodes.
+Compound 1537 has 49 connected target nodes.
+Compound 1544 has 52 connected target nodes.
+Compound 1545 has 66 connected target nodes.
+Compound 1547 has 285 connected target nodes.
+Compound 1548 has 118 connected target nodes.
+Compound 156 has 39 connected target nodes.
+Compound 1563 has 80 connected target nodes.
+Compound 1565 has 35 connected target nodes.
+Compound 1569 has 359 connected target nodes.
+Compound 157 has 0 connected target nodes.
+Compound 158 has 64 connected target nodes.
+Compound 1586 has 84 connected target nodes.
+Compound 159 has 77 connected target nodes.
+Compound 161 has 31 connected target nodes.
+Compound 162 has 77 connected target nodes.
+Compound 1624 has 61 connected target nodes.
+Compound 163 has 258 connected target nodes.
+Compound 164 has 13 connected target nodes.
+Compound 1645 has 48 connected target nodes.
+Compound 1659 has 11 connected target nodes.
+Compound 167 has 37 connected target nodes.
+Compound 168 has 37 connected target nodes.
+Compound 169 has 95 connected target nodes.
+Compound 17 has 24 connected target nodes.
+Compound 1713 has 61 connected target nodes.
+Compound 172 has 69 connected target nodes.
+Compound 1721 has 37 connected target nodes.
+Compound 174 has 144 connected target nodes.
+Compound 175 has 62 connected target nodes.
+Compound 176 has 12 connected target nodes.
+Compound 177 has 61 connected target nodes.
+Compound 181 has 73 connected target nodes.
+Compound 182 has 73 connected target nodes.
+Compound 1830 has 280 connected target nodes.
+Compound 1844 has 49 connected target nodes.
+Compound 1846 has 121 connected target nodes.
+Compound 1847 has 35 connected target nodes.
+Compound 1849 has 142 connected target nodes.
+Compound 1851 has 64 connected target nodes.
+Compound 1852 has 174 connected target nodes.
+Compound 1857 has 25 connected target nodes.
+Compound 1859 has 41 connected target nodes.
+Compound 186 has 191 connected target nodes.
+Compound 1860 has 26 connected target nodes.
+Compound 1862 has 23 connected target nodes.
+Compound 1864 has 37 connected target nodes.
+Compound 1866 has 47 connected target nodes.
+Compound 1867 has 44 connected target nodes.
+Compound 1868 has 46 connected target nodes.
+Compound 187 has 23 connected target nodes.
+Compound 1870 has 38 connected target nodes.
+Compound 1871 has 202 connected target nodes.
+Compound 1873 has 23 connected target nodes.
+Compound 1874 has 51 connected target nodes.
+Compound 1875 has 11 connected target nodes.
+Compound 1877 has 49 connected target nodes.
+Compound 1878 has 72 connected target nodes.
+Compound 1879 has 61 connected target nodes.
+Compound 1885 has 74 connected target nodes.
+Compound 1889 has 26 connected target nodes.
+Compound 189 has 64 connected target nodes.
+Compound 1890 has 37 connected target nodes.
+Compound 1891 has 46 connected target nodes.
+Compound 1893 has 245 connected target nodes.
+Compound 1894 has 118 connected target nodes.
+Compound 1895 has 52 connected target nodes.
+Compound 19 has 25 connected target nodes.
+Compound 190 has 24 connected target nodes.
+Compound 1900 has 49 connected target nodes.
+Compound 1901 has 61 connected target nodes.
+Compound 1906 has 13 connected target nodes.
+Compound 191 has 55 connected target nodes.
+Compound 1919 has 50 connected target nodes.
+Compound 192 has 37 connected target nodes.
+Compound 1921 has 12 connected target nodes.
+Compound 1924 has 108 connected target nodes.
+Compound 1925 has 70 connected target nodes.
+Compound 1926 has 213 connected target nodes.
+Compound 1927 has 84 connected target nodes.
+Compound 193 has 47 connected target nodes.
+Compound 1930 has 95 connected target nodes.
+Compound 1932 has 146 connected target nodes.
+Compound 1936 has 128 connected target nodes.
+Compound 1937 has 82 connected target nodes.
+Compound 1938 has 193 connected target nodes.
+Compound 1941 has 114 connected target nodes.
+Compound 1942 has 70 connected target nodes.
+Compound 1943 has 84 connected target nodes.
+Compound 1944 has 108 connected target nodes.
+Compound 195 has 71 connected target nodes.
+Compound 1955 has 70 connected target nodes.
+Compound 1964 has 47 connected target nodes.
+Compound 197 has 74 connected target nodes.
+Compound 1972 has 38 connected target nodes.
+Compound 1975 has 25 connected target nodes.
+Compound 1987 has 37 connected target nodes.
+Compound 2 has 24 connected target nodes.
+Compound 20 has 37 connected target nodes.
+Compound 2001 has 13 connected target nodes.
+Compound 2005 has 56 connected target nodes.
+Compound 2006 has 33 connected target nodes.
+Compound 201 has 86 connected target nodes.
+Compound 202 has 25 connected target nodes.
+Compound 2024 has 35 connected target nodes.
+Compound 2039 has 35 connected target nodes.
+Compound 2043 has 81 connected target nodes.
+Compound 205 has 88 connected target nodes.
+Compound 206 has 73 connected target nodes.
+Compound 2064 has 64 connected target nodes.
+Compound 207 has 95 connected target nodes.
+Compound 2072 has 51 connected target nodes.
+Compound 2074 has 25 connected target nodes.
+Compound 208 has 26 connected target nodes.
+Compound 2085 has 28 connected target nodes.
+Compound 2086 has 568 connected target nodes.
+Compound 209 has 49 connected target nodes.
+Compound 2092 has 36 connected target nodes.
+Compound 2097 has 47 connected target nodes.
+Compound 21 has 65 connected target nodes.
+Compound 210 has 73 connected target nodes.
+Compound 2107 has 22 connected target nodes.
+Compound 2108 has 47 connected target nodes.
+Compound 211 has 52 connected target nodes.
+Compound 2128 has 13 connected target nodes.
+Compound 214 has 58 connected target nodes.
+Compound 2141 has 23 connected target nodes.
+Compound 215 has 161 connected target nodes.
+Compound 216 has 55 connected target nodes.
+Compound 217 has 128 connected target nodes.
+Compound 2182 has 82 connected target nodes.
+Compound 2199 has 50 connected target nodes.
+Compound 22 has 74 connected target nodes.
+Compound 220 has 77 connected target nodes.
+Compound 2229 has 62 connected target nodes.
+Compound 223 has 12 connected target nodes.
+Compound 224 has 22 connected target nodes.
+Compound 226 has 13 connected target nodes.
+Compound 227 has 89 connected target nodes.
+Compound 228 has 37 connected target nodes.
+Compound 232 has 23 connected target nodes.
+Compound 2327 has 37 connected target nodes.
+Compound 2339 has 100 connected target nodes.
+Compound 234 has 271 connected target nodes.
+Compound 235 has 60 connected target nodes.
+Compound 2359 has 34 connected target nodes.
+Compound 2362 has 40 connected target nodes.
+Compound 237 has 24 connected target nodes.
+Compound 239 has 62 connected target nodes.
+Compound 2390 has 48 connected target nodes.
+Compound 2393 has 50 connected target nodes.
+Compound 2428 has 12 connected target nodes.
+Compound 243 has 13 connected target nodes.
+Compound 2434 has 11 connected target nodes.
+Compound 244 has 137 connected target nodes.
+Compound 247 has 92 connected target nodes.
+Compound 251 has 27 connected target nodes.
+Compound 2511 has 47 connected target nodes.
+Compound 254 has 11 connected target nodes.
+Compound 2545 has 120 connected target nodes.
+Compound 256 has 97 connected target nodes.
+Compound 258 has 134 connected target nodes.
+Compound 259 has 71 connected target nodes.
+Compound 26 has 22 connected target nodes.
+Compound 262 has 13 connected target nodes.
+Compound 263 has 25 connected target nodes.
+Compound 267 has 49 connected target nodes.
+Compound 271 has 26 connected target nodes.
+Compound 272 has 35 connected target nodes.
+Compound 273 has 97 connected target nodes.
+Compound 279 has 102 connected target nodes.
+Compound 283 has 183 connected target nodes.
+Compound 286 has 191 connected target nodes.
+Compound 2873 has 181 connected target nodes.
+Compound 288 has 83 connected target nodes.
+Compound 290 has 165 connected target nodes.
+Compound 291 has 65 connected target nodes.
+Compound 2917 has 46 connected target nodes.
+Compound 292 has 0 connected target nodes.
+Compound 2923 has 195 connected target nodes.
+Compound 2928 has 151 connected target nodes.
+Compound 296 has 82 connected target nodes.
+Compound 299 has 84 connected target nodes.
+Compound 2994 has 38 connected target nodes.
+Compound 300 has 12 connected target nodes.
+Compound 301 has 37 connected target nodes.
+Compound 3012 has 38 connected target nodes.
+Compound 303 has 85 connected target nodes.
+Compound 306 has 47 connected target nodes.
+Compound 3070 has 73 connected target nodes.
+Compound 31 has 250 connected target nodes.
+Compound 310 has 37 connected target nodes.
+Compound 3164 has 132 connected target nodes.
+Compound 318 has 62 connected target nodes.
+Compound 32 has 371 connected target nodes.
+Compound 3219 has 76 connected target nodes.
+Compound 3269 has 37 connected target nodes.
+Compound 329 has 61 connected target nodes.
+Compound 33 has 83 connected target nodes.
+Compound 3355 has 50 connected target nodes.
+Compound 34 has 0 connected target nodes.
+Compound 3431 has 73 connected target nodes.
+Compound 3464 has 36 connected target nodes.
+Compound 355 has 23 connected target nodes.
+Compound 357 has 47 connected target nodes.
+Compound 370 has 57 connected target nodes.
+Compound 374 has 267 connected target nodes.
+Compound 378 has 129 connected target nodes.
+Compound 3828 has 97 connected target nodes.
+Compound 39 has 38 connected target nodes.
+Compound 3911 has 49 connected target nodes.
+Compound 392 has 70 connected target nodes.
+Compound 393 has 25 connected target nodes.
+Compound 397 has 36 connected target nodes.
+Compound 398 has 38 connected target nodes.
+Compound 407 has 36 connected target nodes.
+Compound 408 has 57 connected target nodes.
+Compound 4095 has 88 connected target nodes.
+Compound 4110 has 26 connected target nodes.
+Compound 42 has 12 connected target nodes.
+Compound 422 has 57 connected target nodes.
+Compound 43 has 27 connected target nodes.
+Compound 434 has 64 connected target nodes.
+Compound 439 has 40 connected target nodes.
+Compound 44 has 37 connected target nodes.
+Compound 440 has 62 connected target nodes.
+Compound 4437 has 25 connected target nodes.
+Compound 444 has 13 connected target nodes.
+Compound 446 has 90 connected target nodes.
+Compound 448 has 23 connected target nodes.
+Compound 45 has 60 connected target nodes.
+Compound 450 has 108 connected target nodes.
+Compound 452 has 38 connected target nodes.
+Compound 461 has 24 connected target nodes.
+Compound 462 has 12 connected target nodes.
+Compound 466 has 68 connected target nodes.
+Compound 469 has 12 connected target nodes.
+Compound 472 has 85 connected target nodes.
+Compound 473 has 11 connected target nodes.
+Compound 474 has 48 connected target nodes.
+Compound 475 has 50 connected target nodes.
+Compound 479 has 60 connected target nodes.
+Compound 48 has 196 connected target nodes.
+Compound 4811 has 41 connected target nodes.
+Compound 4815 has 55 connected target nodes.
+Compound 4816 has 0 connected target nodes.
+Compound 484 has 49 connected target nodes.
+Compound 491 has 59 connected target nodes.
+Compound 4983 has 12 connected target nodes.
+Compound 4987 has 99 connected target nodes.
+Compound 50 has 54 connected target nodes.
+Compound 500 has 26 connected target nodes.
+Compound 501 has 316 connected target nodes.
+Compound 508 has 50 connected target nodes.
+Compound 509 has 35 connected target nodes.
+Compound 510 has 115 connected target nodes.
+Compound 511 has 71 connected target nodes.
+Compound 517 has 47 connected target nodes.
+Compound 518 has 358 connected target nodes.
+Compound 53 has 231 connected target nodes.
+Compound 532 has 24 connected target nodes.
+Compound 535 has 50 connected target nodes.
+Compound 538 has 66 connected target nodes.
+Compound 546 has 286 connected target nodes.
+Compound 549 has 35 connected target nodes.
+Compound 55 has 212 connected target nodes.
+Compound 555 has 72 connected target nodes.
+Compound 56 has 24 connected target nodes.
+Compound 561 has 166 connected target nodes.
+Compound 562 has 23 connected target nodes.
+Compound 563 has 76 connected target nodes.
+Compound 564 has 159 connected target nodes.
+Compound 568 has 63 connected target nodes.
+Compound 574 has 23 connected target nodes.
+Compound 576 has 38 connected target nodes.
+Compound 577 has 346 connected target nodes.
+Compound 58 has 77 connected target nodes.
+Compound 60 has 26 connected target nodes.
+Compound 607 has 516 connected target nodes.
+Compound 61 has 62 connected target nodes.
+Compound 610 has 619 connected target nodes.
+Compound 617 has 25 connected target nodes.
+Compound 619 has 351 connected target nodes.
+Compound 62 has 41 connected target nodes.
+Compound 620 has 25 connected target nodes.
+Compound 622 has 23 connected target nodes.
+Compound 625 has 75 connected target nodes.
+Compound 626 has 332 connected target nodes.
+Compound 628 has 255 connected target nodes.
+Compound 630 has 12 connected target nodes.
+Compound 634 has 24 connected target nodes.
+Compound 635 has 48 connected target nodes.
+Compound 639 has 23 connected target nodes.
+Compound 64 has 24 connected target nodes.
+Compound 640 has 88 connected target nodes.
+Compound 641 has 38 connected target nodes.
+Compound 646 has 133 connected target nodes.
+Compound 6544 has 25 connected target nodes.
+Compound 656 has 117 connected target nodes.
+Compound 660 has 83 connected target nodes.
+Compound 661 has 26 connected target nodes.
+Compound 665 has 59 connected target nodes.
+Compound 666 has 64 connected target nodes.
+Compound 669 has 60 connected target nodes.
+Compound 67 has 318 connected target nodes.
+Compound 670 has 61 connected target nodes.
+Compound 671 has 95 connected target nodes.
+Compound 673 has 126 connected target nodes.
+Compound 678 has 50 connected target nodes.
+Compound 679 has 58 connected target nodes.
+Compound 68 has 73 connected target nodes.
+Compound 682 has 62 connected target nodes.
+Compound 684 has 73 connected target nodes.
+Compound 687 has 36 connected target nodes.
+Compound 689 has 38 connected target nodes.
+Compound 691 has 11 connected target nodes.
+Compound 694 has 50 connected target nodes.
+Compound 695 has 35 connected target nodes.
+Compound 696 has 47 connected target nodes.
+Compound 699 has 23 connected target nodes.
+Compound 70 has 80 connected target nodes.
+Compound 700 has 25 connected target nodes.
+Compound 703 has 46 connected target nodes.
+Compound 706 has 112 connected target nodes.
+Compound 707 has 37 connected target nodes.
+Compound 711 has 90 connected target nodes.
+Compound 714 has 51 connected target nodes.
+Compound 715 has 60 connected target nodes.
+Compound 718 has 23 connected target nodes.
+Compound 719 has 48 connected target nodes.
+Compound 72 has 25 connected target nodes.
+Compound 720 has 35 connected target nodes.
+Compound 725 has 75 connected target nodes.
+Compound 729 has 12 connected target nodes.
+Compound 73 has 61 connected target nodes.
+Compound 736 has 96 connected target nodes.
+Compound 738 has 71 connected target nodes.
+Compound 740 has 246 connected target nodes.
+Compound 744 has 37 connected target nodes.
+Compound 745 has 100 connected target nodes.
+Compound 746 has 60 connected target nodes.
+Compound 750 has 62 connected target nodes.
+Compound 752 has 51 connected target nodes.
+Compound 753 has 59 connected target nodes.
+Compound 754 has 23 connected target nodes.
+Compound 755 has 62 connected target nodes.
+Compound 757 has 120 connected target nodes.
+Compound 759 has 51 connected target nodes.
+Compound 76 has 24 connected target nodes.
+Compound 763 has 61 connected target nodes.
+Compound 764 has 57 connected target nodes.
+Compound 765 has 51 connected target nodes.
+Compound 766 has 37 connected target nodes.
+Compound 77 has 253 connected target nodes.
+Compound 772 has 71 connected target nodes.
+Compound 779 has 70 connected target nodes.
+Compound 8 has 34 connected target nodes.
+Compound 805 has 50 connected target nodes.
+Compound 806 has 71 connected target nodes.
+Compound 812 has 37 connected target nodes.
+Compound 819 has 83 connected target nodes.
+Compound 82 has 77 connected target nodes.
+Compound 821 has 57 connected target nodes.
+Compound 827 has 74 connected target nodes.
+Compound 828 has 23 connected target nodes.
+Compound 840 has 59 connected target nodes.
+Compound 842 has 74 connected target nodes.
+Compound 849 has 105 connected target nodes.
+Compound 85 has 90 connected target nodes.
+Compound 852 has 318 connected target nodes.
+Compound 857 has 34 connected target nodes.
+Compound 858 has 45 connected target nodes.
+Compound 86 has 93 connected target nodes.
+Compound 866 has 74 connected target nodes.
+Compound 87 has 11 connected target nodes.
+Compound 870 has 49 connected target nodes.
+Compound 871 has 309 connected target nodes.
+Compound 873 has 47 connected target nodes.
+Compound 875 has 24 connected target nodes.
+Compound 881 has 49 connected target nodes.
+Compound 883 has 49 connected target nodes.
+Compound 884 has 99 connected target nodes.
+Compound 885 has 397 connected target nodes.
+Compound 888 has 37 connected target nodes.
+Compound 89 has 85 connected target nodes.
+Compound 892 has 51 connected target nodes.
+Compound 893 has 38 connected target nodes.
+Compound 895 has 47 connected target nodes.
+Compound 896 has 376 connected target nodes.
+Compound 899 has 249 connected target nodes.
+Compound 902 has 143 connected target nodes.
+Compound 904 has 50 connected target nodes.
+Compound 905 has 63 connected target nodes.
+Compound 906 has 11 connected target nodes.
+Compound 908 has 302 connected target nodes.
+Compound 910 has 73 connected target nodes.
+Compound 918 has 320 connected target nodes.
+Compound 92 has 25 connected target nodes.
+Compound 920 has 255 connected target nodes.
+Compound 921 has 333 connected target nodes.
+Compound 925 has 11 connected target nodes.
+Compound 926 has 12 connected target nodes.
+Compound 929 has 95 connected target nodes.
+Compound 930 has 44 connected target nodes.
+Compound 937 has 326 connected target nodes.
+Compound 94 has 24 connected target nodes.
+Compound 943 has 49 connected target nodes.
+Compound 947 has 70 connected target nodes.
+Compound 95 has 89 connected target nodes.
+Compound 952 has 397 connected target nodes.
+Compound 954 has 63 connected target nodes.
+Compound 955 has 60 connected target nodes.
+Compound 956 has 12 connected target nodes.
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+2378 rows, 13118 cols, 15486 nonzeros
+1794 rows, 11269 cols, 13028 nonzeros
+1794 rows, 11269 cols, 13028 nonzeros
+Presolve : Reductions: rows 1794(-44684); columns 11269(-33478); elements 13028(-78812)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     3.2100510036e+15 Pr: 1533(7.94342e+11) 0s
+       2561     6.9203993431e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 2561
+Objective value     :  6.9203993431e+15
+HiGHS run time      :          0.12
+Compound 957 has 23 connected target nodes.
+Compound 958 has 25 connected target nodes.
+Compound 959 has 49 connected target nodes.
+Compound 965 has 24 connected target nodes.
+Compound 97 has 37 connected target nodes.
+Compound 975 has 85 connected target nodes.
+Compound 98 has 154 connected target nodes.
+Compound 99 has 59 connected target nodes.
+Compound 995 has 240 connected target nodes.
+Total estimated number of inequalities is 39782.
+True number of inequalities is 39782.
+   took 1.5109 secs
+Running linprog()...
+   took 0.145074 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 2.11719 secs
+Collecting stats...
+Total absorbed flow: 6.9204e+09
+Total flows:
+   absorbed: 6.9204e+09
+   assigned: 4.86383e+06
+Total costs:
+ assignment: 105603
+ absorption: 6.9204e+15
+      total: 6.9204e+15
+Stats collection took 0.0793259 secs
+
+
+Timings (at nX=3486, nY=262144):
+distList: 0.449364 secs
+containmentCheck: 3.93333 secs
+flowNetGeneration: 0.311481 secs
+minCostFlow: 2.11719 secs
+statsCollection: 0.0793259 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_isolated_in_N987(raster, (1x2)-bins)_lib_MetaboMiner_ar0.05.pickle'
+Total time for MCF: 7.03866 secs
+
+Classification results:
+{'N987': {'classification': {'FN': ['142', '201', '883'],
+                             'FP': ['1414', '473', '943'],
+                             'TP': ['108',
+                                    '112',
+                                    '162',
+                                    '167',
+                                    '182',
+                                    '1844',
+                                    '211',
+                                    '214',
+                                    '42',
+                                    '45',
+                                    '660',
+                                    '687',
+                                    '696',
+                                    '714',
+                                    '8',
+                                    '812',
+                                    '875',
+                                    '904'],
+                             'compound_df':     compound target  ... intensity scaling  expected concentration factor
+0          1   N987  ...              None                           None
+1        101   N987  ...              None                           None
+2       1044   N987  ...              None                           None
+3       1046   N987  ...              None                           None
+4       1049   N987  ...              None                           None
+..       ...    ...  ...               ...                            ...
+496       97   N987  ...              None                           None
+497      975   N987  ...              None                           None
+498       98   N987  ...              None                           None
+499       99   N987  ...              None                           None
+500      995   N987  ...              None                           None
+
+[501 rows x 15 columns],
+                             'fscore': 0.8571428571428571,
+                             'precision': 0.8571428571428571,
+                             'recall': 0.8571428571428571},
+          'classificationThreshold': 0.003}}
+
+ Total run time: 9.64794135093689 secs

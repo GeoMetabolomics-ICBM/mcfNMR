@@ -1,0 +1,226 @@
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+5745 rows, 24591 cols, 38769 nonzeros
+5744 rows, 24580 cols, 38748 nonzeros
+Presolve : Reductions: rows 5744(-25177); columns 24580(-21737); elements 38748(-54008)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     4.8355992825e+14 Pr: 187(1.30576e+12) 0s
+       5156     5.3257593120e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 5156
+Objective value     :  5.3257593120e+15
+HiGHS run time      :          0.44
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.19Feb141932.5822/mcfnmr/quantification/setupB_opt/IIa_opt_radius
+
+config:
+{'ar': 0.4,
+ 'lib': 'InHouse',
+ 'mix': 'II.a',
+ 'setup': 'B',
+ 'task': 'quantification'}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.19Feb141932.5822/mcfnmr/quantification/setupB_opt/IIa_opt_radius/output
+
+Data directory: /home/leo/repos/mcfnmr-release/data
+Loading data 'peaklists_compounds' ...
+{'IIIa_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_IIIa_01.txt.gz'),
+ 'IIIb_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_IIIb_01.txt.gz'),
+ 'IIIc_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_IIIc_01.txt.gz'),
+ 'IIa_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_IIa_01.txt.gz'),
+ 'IIb_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_IIb_01.txt.gz'),
+ 'IIc_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_IIc_01.txt.gz'),
+ 'Ia_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_Ia_01.txt.gz'),
+ 'Ib_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_Ib_01.txt.gz'),
+ 'Ic_01': PosixPath('/home/leo/repos/mcfnmr-release/data/OLDBdata/fullspectra/nmr_Ic_01.txt.gz')}
+ACD.2DNMR ASCII
+Version = 1.00
+
+======================== Parameters ========================
+Title = HSQCETGPSIWT DMSO /opt/topspin4.0.3/data/save/nmr nmr {4  G6 - 447} Reference-1D    : undefined Signal-to-noise : No reference --> 2D STARTED Solvent(s)      : 1 Off-resonance @ 2.498ppm with SR = 0.00Hz
+Comment = HSQCETGPSIWT DMSO /opt/topspin4.0.3/data/save/nmr nmr {4  G6 - 447} Reference-1D    : undefined Signal-to-noise : No reference --> 2D STARTED Solvent(s)      : 1 Off-resonance @ 2.498ppm with SR = 0.00Hz
+Solvent = DMSO-d6
+Date = 18 Apr 2022 15:14:32
+DateStamp = 
+PulseSequence = hsqcetgpsiwt
+Origin = Avance NEO 600
+Owner = nmr
+ExpCount = 4
+Temperature = 2.50004997253418E+1
+Transposed = 0
+Reversed = 0 0
+PointsCount = 1024 1024
+OriginalPointsCount = 1024 256
+SweepWidth = 9.6059951171875E+3 2.5615984375E+4
+Frequency = 6.0025E+2 1.50932983398438E+2
+Offset = 1.51646984863281E+3 1.23071875E+4
+AcquisitionTime = 1.06495998799801E-1 9.98399965465069E-3
+DwellTime = 1.03999998827931E-4 3.89999986509793E-5
+Nucleus = 1H 13C
+Dataset = P-RR-RI-IR-II
+DataType = FT-t2-t1
+
+Loaded header data for 'nmr_IIa_01.txt.gz'
+Loaded spectrum data for 'nmr_IIa_01.txt.gz'
+Original grid dimension: (1024, 1024)
+Noise Std before processing: 310.142
+Noise Std after processing: 310.142
+   Total avg point intensity: 7.92016e+07
+   Max point intensity: 1.20448e+06
+   Noise std: 310.142
+   Signal to noise: 3883.64
+
+Converting raster to peaks, nbin=(2, 4), signal-to-noise threshold=None)
+   (original raster dimensions: (1024, 1024))
+   (binned grid dimensions: (512, 256))
+Making dist list for ar=0.4 ...
+len(distList): 46093
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_IIa_01(raster, (2x4)-bins)_OLDBcompoundLib_ar0.4.pickle'
+makeDistList() took 0.355226 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib OLDBcompoundLib in IIa_01(raster, (2x4)-bins)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/IIa_01(raster, (2x4)-bins)_region_ix.pickle
+Containment checking took 5.85465 secs
+Generating flow net...
+
+Total connected target nodes: 10827
+Total target weight: 1.61464e+08
+
+Generated flowNet:
+ DiGraph with 11052 nodes and 46317 edges
+Generation took 0.46439 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 0 / 34
+   took 0.0967294 secs
+Constructing A_ub...
+Compound (E)-Cinnamic acid has 883 connected target nodes.
+Compound 1,2,3-Benzenetricarboxylic acid has 442 connected target nodes.
+Compound 1,2,4-Benzenetricarboxylic acid has 480 connected target nodes.
+Compound 4-Hydroxybenzoic acid has 484 connected target nodes.
+Compound 4-Hydroxycinnamic acid has 931 connected target nodes.
+Compound 4-Phenylbutanoic acid has 1004 connected target nodes.
+Compound 9-Anthracenecarboxylic acid has 770 connected target nodes.
+Compound Anthranilic acid has 780 connected target nodes.
+Compound Benzoic acid has 529 connected target nodes.
+Compound Biotin has 1607 connected target nodes.
+Compound Citric acid has 273 connected target nodes.
+Compound D-Glucose has 1521 connected target nodes.
+Compound D-Mannose has 1417 connected target nodes.
+Compound D-Xylose has 1648 connected target nodes.
+Compound L-Cysteine has 532 connected target nodes.
+Compound L-Glutamic acid has 715 connected target nodes.
+Compound L-Glutamine has 702 connected target nodes.
+Compound L-Isoleucine has 1157 connected target nodes.
+Compound L-Leucine has 981 connected target nodes.
+Compound L-Methionine has 948 connected target nodes.
+Compound L-Phenylalanine has 826 connected target nodes.
+Compound L-Proline has 1022 connected target nodes.
+Compound L-Rhamnose has 1201 connected target nodes.
+Compound L-Tartaric acid has 242 connected target nodes.
+Compound L-Tryptophane has 1388 connected target nodes.
+Compound L-Tyrosine has 979 connected target nodes.
+Compound Malonic acid has 238 connected target nodes.
+Compound Nicotinic acid has 880 connected target nodes.
+Compound Octanoic acid has 1121 connected target nodes.
+Compound Pimelic acid has 642 connected target nodes.
+Compound Raffinose has 1904 connected target nodes.
+Compound Succinic acid has 241 connected target nodes.
+Compound Tetradecanoic acid has 1115 connected target nodes.
+Compound Vanillic acid has 938 connected target nodes.
+Total estimated number of inequalities is 30541.
+True number of inequalities is 30541.
+   took 3.6959 secs
+Running linprog()...
+   took 0.488926 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 4.40008 secs
+Collecting stats...
+Total absorbed flow: 5.32576e+09
+Total flows:
+   absorbed: 5.32576e+09
+   assigned: 1.64015e+08
+Total costs:
+ assignment: 2.22137e+07
+ absorption: 5.32576e+15
+      total: 5.32576e+15
+Stats collection took 0.168435 secs
+
+
+Timings (at nX=190, nY=131072):
+distList: 0.355226 secs
+containmentCheck: 5.85465 secs
+flowNetGeneration: 0.46439 secs
+minCostFlow: 4.40008 secs
+statsCollection: 0.168435 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/quantification/mcfResult_isolated_in_IIa_01(raster, (2x4)-bins)_lib_OLDBcompoundLib_ar0.4.pickle'
+Total time for MCF: 11.4033 secs
+
+Loading data 'peaklists_compounds' ...
+
+
+#### IIa_01((2, 4),rst)_smooth0_libOLDBcompoundLib(iso)_ar[0.4] ####
+
+Assignment Radius 0.4:
+    totalWeightY = 161463948.94391406
+    totalExpected = 3793200000000.0
+    totalDetected = 6930139428145.62
+Bnz3: cf/ex = 1.10723
+Gluc: cf/ex = 0.913961
+Tyr: cf/ex = 0.979926
+Pim: cf/ex = 0.907315
+Found false positive detection for IIa_01: 0      CinA
+2      Bnz4
+3       HBz
+4      HCin
+5      PheB
+6     AntCx
+7       Ant
+8       Bnz
+9       Bio
+10      Cit
+12      Man
+13      Xyl
+14      Cys
+15     GluA
+16      Glu
+17     ILeu
+18     LLeu
+19      Met
+20     PheA
+21      Pro
+22      Rha
+23      Tar
+24      Try
+26      Mal
+27      Nic
+28      Oct
+30      Raf
+31      Suc
+32     TDec
+33      Van
+Name: compound, dtype: object
+Saved fig /home/leo/repos/mcfnmr-release/output/figs/assignment and prediction_err IIa_01((2, 4),rst)_smooth0_libOLDBcompoundLib(iso)_ar[0.4].svg
+Saved fig /home/leo/repos/mcfnmr-release/output/figs/compoundAssignment to expected IIa_01((2, 4),rst)_smooth0_libOLDBcompoundLib(iso)_ar[0.4].svg
+error_stats["IIa_01"] = \
+{'assignment radius': [0.4],
+ 'false positives': [30],
+ 'matching': ['indep. fit'],
+ 'mean relative error': [0.07650756186901621],
+ 'mixture': ['IIa_01'],
+ 'percentage mid range': [100.0],
+ 'std(err)': [0.0803103370986673]}
+Saved  '/home/leo/repos/mcfnmr-release/output/cache/IIa_01((2, 4),rst)_smooth0_libOLDBcompoundLib(iso)_ar[0.4].pickle'
+
+ Total run time: 16.049893379211426 secs

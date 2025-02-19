@@ -1,0 +1,9 @@
+task = "mcfNMR"
+config = "data/user_templates/config_basic.toml"
+assignment_radius = [0.02, 0.04, 0.06]
+detection_threshold = 0.005
+isolated_fit = false
+incremental_fit = true
+lib = "../MetaboMiner/csv/MetaboMiner - Biofluid ( all ).csv"
+target = "../MetaboMiner/csv/N988(peaklist).csv"
+name = "test"

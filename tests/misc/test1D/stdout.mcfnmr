@@ -1,0 +1,30 @@
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/misc/test1D
+
+config:
+{'task': 'test1D'}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/misc/test1D/output
+
+Data directory: /home/leo/repos/mcfnmr-release/data
+Loading data 'peaklists_compounds' ...
+Loaded MCF result from '/home/leo/repos/mcfnmr-release/output/cache/mcf/mcfResult_1D_test_binsize10_by_inhouse_extended_ar0.1.pickle'
+Saved results table to 'output/mcfresult_test.csv'
+Result:
+{'recall': 0.7142857142857143,
+ 'precision': 0.7142857142857143,
+ 'fscore': 0.7142857142857143,
+ 'TP': ['1,2,3-Benzenetricarboxylic acid',
+        'D-Glucose',
+        'DMSO',
+        'L-Tyrosine',
+        'Pimelic acid'],
+ 'FP': ['D-Mannose', 'Raffinose'],
+ 'FN': ['TMSP', 'Water']}
+
+ Total run time: 0.1923236846923828 secs

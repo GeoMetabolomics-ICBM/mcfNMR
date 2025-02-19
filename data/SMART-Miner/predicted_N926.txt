@@ -1,0 +1,61 @@
+1-Methyladenine
+2-Amino-5-ethyl-1,3,4-thiadiazole
+2-Aminobutyric acid
+2-Heptanone
+3,4,5-Trimethoxycinnamic acid
+3-Hexenedioic acid
+3-Hydroxybutyric acid
+3-Mercaptopyruvic acid
+3-Methyladenine
+3-Methylcrotonaldehyde
+3-Pyridylacetic acid
+4-Hydroxyproline
+5-Hydroxymethyluracil
+7-Methyladenine
+7-Methylguanosine
+Alanine
+Allothreonine
+Arginine
+Asparagine
+Aspartic acid
+Betaine
+Carnitine
+Citicoline
+Citric acid
+Creatinine
+Cystine
+Diethanolamine
+Dihydrouracil
+Epicatechin
+Fucose
+Glutamic acid
+Heptanoic acid
+Histidine
+Indolelactic acid
+Isocaproic acid
+Isoleucine
+Ketoleucine
+L-Valine
+Leucine
+Methanol
+Metoprolol
+Monomethyl glutaric acid
+Muramic acid
+N-Acetylaspartic acid
+Nalidixic acid sodium salt
+Pantethine
+Phenylalanine
+Proline
+Propylene glycol
+Pyroglutamic acid
+Ribothymidine
+Saccharopine
+Senecioic acid
+Taurine
+Threonine
+Thymol
+Trimethylamine N-oxide
+Unknown
+Xylulose
+alpha-Ketoisovaleric acid
+beta-Gentiobiose

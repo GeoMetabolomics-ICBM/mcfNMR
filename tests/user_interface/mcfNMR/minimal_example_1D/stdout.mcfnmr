@@ -1,0 +1,87 @@
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+2 rows, 3 cols, 5 nonzeros
+2 rows, 3 cols, 5 nonzeros
+Presolve : Reductions: rows 2(-10); columns 3(-8); elements 5(-18)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(6) 0s
+          3     5.0000015000e+05 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 3
+Objective value     :  5.0000015000e+05
+HiGHS run time      :          0.00
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/minimal_example_1D
+
+config:
+{'config': 'data/user_templates/config_basic_1D.toml', 'task': 'mcfNMR'}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/minimal_example_1D/output
+
+Data directory: /home/leo/repos/mcfnmr/data
+
+MCFNMR, version 0.1.0
+
+Option '--outdir' given. Overrides config entry 'output_dir'.
+Found 2 compounds in library lib_1D
+Making dist list for ar=0.2 ...
+Could not deduce grid for spectrum.
+   (No variation of coords in one direction)
+len(distList): 4
+Saved distlists to '/home/leo/repos/mcfnmr/output/cache/mcf/dist_list_target_1D_lib_1D_ar0.2.pickle'
+makeDistList() took 0.000847378 secs
+Checking containment...
+Containment checking took 0.000127328 secs
+Generating flow net...
+
+Total connected target nodes: 3
+Total target weight: 6
+
+Generated flowNet:
+ DiGraph with 11 nodes and 11 edges
+Generation took 0.00070705 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 0 / 2
+   took 0.00314519 secs
+Constructing A_ub...
+Estimated number of inequalities: 3 (nr of connected target nodes).
+True number of inequalities is 3.
+   took 0.00123182 secs
+Running linprog()...
+   took 0.00491215 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.00955811 secs
+Collecting stats...
+Total absorbed flow: 0.5
+Total flows:
+   absorbed: 0.5
+   assigned: 5.5
+Total costs:
+ assignment: 0.15
+ absorption: 500000
+      total: 500000
+Stats collection took 0.00384082 secs
+
+
+Timings (at nX=4, nY=3):
+distList: 0.000847378 secs
+containmentCheck: 0.000127328 secs
+flowNetGeneration: 0.00070705 secs
+minCostFlow: 0.00955811 secs
+statsCollection: 0.00384082 secs
+Saved MCF result to '/home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/minimal_example_1D/output/mcfresult_test.pickle'
+Saved results table to '/home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/minimal_example_1D/output/mcfresult_test.csv'
+
+ Total run time: 0.04205036163330078 secs

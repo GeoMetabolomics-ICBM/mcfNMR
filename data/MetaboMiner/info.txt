@@ -1,0 +1,18 @@
+This should contain several data files which were provided on by the MetaboMiner Website 
+(http://wishart.biology.ualberta.ca/metabominer/downloads/) before it went offline. 
+We provide a script, which downloads this data from web.archive.org (see also demodata/metabominer.py)
+
+After executing this script by
+
+> source scripts/download_demodata.sh metabominer
+
+this directory should contain the following additional subdirectories:
+
+- ucsf: original raster data for different mixtures provided with MetaboMiner
+- sparky: A program to extract data from ucsf files (https://www.cgl.ucsf.edu/home/sparky/)
+- processedUCSF: grid data used by our code for benchmarking
+- metabominer: the MetaboMiner program. For our purposes, we only use the HSQC compound lib (metabominer/lib/hsqc.xml)
+- examples: automatically picked peaklists for the different mixtures and spectrum images. We use the peaklists in examples/peaklist.
+- csv: Converted data to be used as input for mcfNMR
+
+The tests will use the *.pickle files in the processedUCSF directory.

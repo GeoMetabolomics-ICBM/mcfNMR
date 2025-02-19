@@ -1,0 +1,17 @@
+These are results from [Xia et al., 2008] https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-507
+
+Identification of mixes:
+Table I (pH ~ 7.2):
+"Cocktail"
+A → N925
+B → N987
+C → N988
+"Plasma"
+D → N926
+
+
+Table III:
+"Cocktail"
+A → N880 (pH4.2) / N925 (pH 7.2)
+"Plasma"
+D → N907 (pH8.8) / N926 (pH 7.3)

@@ -1,0 +1,3 @@
+task = "mcfNMR"
+config = "data/user_templates/config_basic.toml"
+

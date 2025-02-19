@@ -1,0 +1,24 @@
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.19Feb113306.24050/mcfnmr/user_interface/mcfNMR/help
+
+config:
+{'help': True, 'task': 'mcfNMR'}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.19Feb113306.24050/mcfnmr/user_interface/mcfNMR/help/output
+
+Data directory: /home/leo/repos/mcfnmr/data
+usage: mcfnmr [-h] --config CONFIG
+
+MCFNMR (v0.1.0). A Minimum Cost Flow NMR recombinator.
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG, -c CONFIG
+                        Configuration file for the run. See
+                        https://github.com/GeoMetabolomics-
+                        ICBM/mcfNMR#configuration-file. (default: None)

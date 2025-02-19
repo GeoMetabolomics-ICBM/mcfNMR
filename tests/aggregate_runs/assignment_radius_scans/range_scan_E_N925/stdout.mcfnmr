@@ -1,0 +1,3534 @@
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+544 rows, 471 cols, 510 nonzeros
+6 rows, 23 cols, 28 nonzeros
+Presolve : Reductions: rows 6(-1299); columns 23(-4221); elements 28(-5337)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(2.80618e+11) 0s
+          7     3.6976206205e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 7
+Objective value     :  3.6976206205e+15
+HiGHS run time      :          0.00
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+607 rows, 465 cols, 497 nonzeros
+5 rows, 21 cols, 25 nonzeros
+Presolve : Reductions: rows 5(-1441); columns 21(-4626); elements 25(-5811)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(4.73295e+11) 0s
+          6     3.3450035264e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 6
+Objective value     :  3.3450035264e+15
+HiGHS run time      :          0.00
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+663 rows, 462 cols, 527 nonzeros
+10 rows, 24 cols, 41 nonzeros
+10 rows, 24 cols, 41 nonzeros
+Presolve : Reductions: rows 10(-1606); columns 24(-5111); elements 41(-6454)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(4.2816e+11) 0s
+         11     3.1757901069e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 11
+Objective value     :  3.1757901069e+15
+HiGHS run time      :          0.00
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/aggregate_runs/assignment_radius_scans/range_scan_E_N925
+
+config:
+{'ar': [0.02, 0.03, 0.04, 0.05, 0.06, 0.08, 0.1, 0.12, 0.15, 0.175, 0.2, 0.25],
+ 'lib': 'MetaboMiner',
+ 'mix': 'N925',
+ 'nth': 51,
+ 'recompute': True,
+ 'setup': 'E',
+ 'task': 'scan',
+ 'th': [0.0, 0.05]}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/aggregate_runs/assignment_radius_scans/range_scan_E_N925/output
+
+Data directory: /home/leo/repos/mcfnmr-release/data
+Loaded mix 'N926' content list of length 35
+Loaded mix 'N907' content list of length 35
+Loaded mix 'N987' content list of length 21
+Loaded mix 'N925' content list of length 27
+Loaded mix 'N988' content list of length 24
+Loaded mix 'N880' content list of length 27
+Loading MM lib 'Biofluid ( all )' containing 502 compounds...
+Removing duplicate entry for D-Lactic Acid (HMDB 1311)
+Loaded point spectrum for mix 'N926(dp)' with 2664 peaks.
+Loaded point spectrum for mix 'N907(dp)' with 1861 peaks.
+Loaded point spectrum for mix 'N907' with 591 peaks.
+Loaded point spectrum for mix 'N988' with 565 peaks.
+Loaded point spectrum for mix 'N880' with 1088 peaks.
+Loaded point spectrum for mix 'N926' with 728 peaks.
+Loaded point spectrum for mix 'N925' with 807 peaks.
+Loaded point spectrum for mix 'N987' with 597 peaks.
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+
+Incremental fit:
+   total reserved capacity: 0
+    min/max: 0/0
+
+Making dist list for ar=0.02 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 398
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.02.pickle'
+makeDistList() took 0.20906 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0639352 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 237
+Total target weight: 4.38465e+09
+
+Generated flowNet:
+ DiGraph with 4084 nodes and 4244 edges
+Generation took 0.0784879 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 490 / 501
+   took 0.0678284 secs
+Constructing A_ub...
+Estimated number of inequalities: 237 (nr of connected target nodes).
+True number of inequalities is 237.
+   took 0.0109621 secs
+Running linprog()...
+   took 0.00710344 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.0913731 secs
+Collecting stats...
+Total absorbed flow: 3.69762e+09
+Total flows:
+   absorbed: 3.69762e+09
+   assigned: 6.87029e+08
+Total costs:
+ assignment: 7.49813e+06
+ absorption: 3.69762e+15
+      total: 3.69762e+15
+Stats collection took 0.00746705 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.20906 secs
+containmentCheck: 0.0639352 secs
+flowNetGeneration: 0.0784879 secs
+minCostFlow: 0.0913731 secs
+statsCollection: 0.00746705 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.02on[].pickle'
+Total time for MCF: 0.464025 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.02on[].pickle'
+
+Incremental fit:
+   total reserved capacity: 6.87029e+08
+    min/max: 0/3.70305e+07
+
+Making dist list for ar=0.03 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 801
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.03.pickle'
+makeDistList() took 0.206853 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0645803 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 346
+Total target weight: 3.69762e+09
+
+Generated flowNet:
+ DiGraph with 4193 nodes and 4647 edges
+Generation took 0.0315366 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 483 / 501
+   took 0.124705 secs
+Constructing A_ub...
+Estimated number of inequalities: 346 (nr of connected target nodes).
+True number of inequalities is 346.
+   took 0.016521 secs
+Running linprog()...
+   took 0.00588971 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.152196 secs
+Collecting stats...
+Total absorbed flow: 3.345e+09
+Total flows:
+   absorbed: 3.345e+09
+   assigned: 3.52617e+08
+Total costs:
+ assignment: 5.44446e+06
+ absorption: 3.345e+15
+      total: 3.345e+15
+Stats collection took 0.00816846 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.206853 secs
+containmentCheck: 0.0645803 secs
+flowNetGeneration: 0.0315366 secs
+minCostFlow: 0.152196 secs
+statsCollection: 0.00816846 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.03on[0.02].pickle'
+Total time for MCF: 0.476186 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.03on[0.02].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.02on[].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.03965e+09
+    min/max: 0/3.70305e+07
+
+Making dist list for ar=0.04 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 1289
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.04.pickle'
+makeDistList() took 0.207721 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0626192 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 430
+Total target weight: 3.345e+09
+
+Generated flowNet:
+ DiGraph with 4277 nodes and 5135 edges
+Generation took 0.0316643 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 467 / 501
+   took 0.0682156 secs
+Constructing A_ub...
+Estimated number of inequalities: 430 (nr of connected target nodes).
+True number of inequalities is 430.
+   took 0.0214909 secs
+Running linprog()...
+   took 0.00618484 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.102157 secs
+Collecting stats...
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+745 rows, 489 cols, 585 nonzeros
+18 rows, 44 cols, 71 nonzeros
+11 rows, 38 cols, 52 nonzeros
+Presolve : Reductions: rows 11(-1728); columns 38(-5772); elements 52(-7262)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(2.03251e+11) 0s
+         14     2.9416213553e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 14
+Objective value     :  2.9416213553e+15
+HiGHS run time      :          0.00
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+785 rows, 474 cols, 557 nonzeros
+7 rows, 25 cols, 35 nonzeros
+7 rows, 25 cols, 35 nonzeros
+Presolve : Reductions: rows 7(-1819); columns 25(-6542); elements 35(-8190)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(3.76528e+11) 0s
+          9     2.8099102079e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 9
+Objective value     :  2.8099102079e+15
+HiGHS run time      :          0.01
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+978 rows, 822 cols, 1342 nonzeros
+153 rows, 358 cols, 754 nonzeros
+137 rows, 321 cols, 676 nonzeros
+Presolve : Reductions: rows 137(-1873); columns 321(-8332); elements 676(-10197)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(1.79834e+11) 0s
+        117     2.5299235694e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 117
+Objective value     :  2.5299235694e+15
+HiGHS run time      :          0.01
+Total absorbed flow: 3.17579e+09
+Total flows:
+   absorbed: 3.17579e+09
+   assigned: 1.69213e+08
+Total costs:
+ assignment: 4.15707e+06
+ absorption: 3.17579e+15
+      total: 3.17579e+15
+Stats collection took 0.00930687 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.207721 secs
+containmentCheck: 0.0626192 secs
+flowNetGeneration: 0.0316643 secs
+minCostFlow: 0.102157 secs
+statsCollection: 0.00930687 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.04on[0.02,0.03].pickle'
+Total time for MCF: 0.42612 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.04on[0.02,0.03].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.03on[0.02].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.20886e+09
+    min/max: 0/4.40182e+07
+
+Making dist list for ar=0.05 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 1964
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.05.pickle'
+makeDistList() took 0.209073 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0643344 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 511
+Total target weight: 3.17579e+09
+
+Generated flowNet:
+ DiGraph with 4358 nodes and 5810 edges
+Generation took 0.091012 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 454 / 501
+   took 0.0734777 secs
+Constructing A_ub...
+Estimated number of inequalities: 511 (nr of connected target nodes).
+True number of inequalities is 511.
+   took 0.0269426 secs
+Running linprog()...
+   took 0.00684795 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.114328 secs
+Collecting stats...
+Total absorbed flow: 2.94162e+09
+Total flows:
+   absorbed: 2.94162e+09
+   assigned: 2.34169e+08
+Total costs:
+ assignment: 6.57596e+06
+ absorption: 2.94162e+15
+      total: 2.94162e+15
+Stats collection took 0.0105442 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.209073 secs
+containmentCheck: 0.0643344 secs
+flowNetGeneration: 0.091012 secs
+minCostFlow: 0.114328 secs
+statsCollection: 0.0105442 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.05on[0.02,0.03,0.04].pickle'
+Total time for MCF: 0.502587 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.05on[0.02,0.03,0.04].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.04on[0.02,0.03].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.44303e+09
+    min/max: 0/4.94419e+07
+
+Making dist list for ar=0.06 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 2721
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.06.pickle'
+makeDistList() took 0.209437 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0640586 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 570
+Total target weight: 2.94162e+09
+
+Generated flowNet:
+ DiGraph with 4417 nodes and 6567 edges
+Generation took 0.034763 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 448 / 501
+   took 0.134665 secs
+Constructing A_ub...
+Estimated number of inequalities: 570 (nr of connected target nodes).
+True number of inequalities is 570.
+   took 0.0306862 secs
+Running linprog()...
+   took 0.00773061 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.180476 secs
+Collecting stats...
+Total absorbed flow: 2.80991e+09
+Total flows:
+   absorbed: 2.80991e+09
+   assigned: 1.31711e+08
+Total costs:
+ assignment: 5.15316e+06
+ absorption: 2.80991e+15
+      total: 2.80991e+15
+Stats collection took 0.0119375 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.209437 secs
+containmentCheck: 0.0640586 secs
+flowNetGeneration: 0.034763 secs
+minCostFlow: 0.180476 secs
+statsCollection: 0.0119375 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.06on[0.02,0.03,0.04,0.05].pickle'
+Total time for MCF: 0.513668 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.06on[0.02,0.03,0.04,0.05].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.05on[0.02,0.03,0.04].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.57474e+09
+    min/max: 0/4.94419e+07
+
+Making dist list for ar=0.08 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 4807
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.08.pickle'
+makeDistList() took 0.209107 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0647067 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 652
+Total target weight: 2.80991e+09
+
+Generated flowNet:
+ DiGraph with 4499 nodes and 8653 edges
+Generation took 0.0403159 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 427 / 501
+   took 0.130839 secs
+Constructing A_ub...
+Estimated number of inequalities: 652 (nr of connected target nodes).
+True number of inequalities is 652.
+   took 0.0475589 secs
+Running linprog()...
+   took 0.0125356 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.201449 secs
+Collecting stats...
+Total absorbed flow: 2.52992e+09
+Total flows:
+   absorbed: 2.52992e+09
+   assigned: 2.79987e+08
+Total costs:
+ assignment: 1.31958e+07
+ absorption: 2.52992e+15
+      total: 2.52992e+15
+Stats collection took 0.0168781 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.209107 secs
+containmentCheck: 0.0647067 secs
+flowNetGeneration: 0.0403159 secs
+minCostFlow: 0.201449 secs
+statsCollection: 0.0168781 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.08on[0.02,0.03,0.04,0.05,0.06].pickle'
+Total time for MCF: 0.545904 secs
+
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+956 rows, 872 cols, 1445 nonzeros
+121 rows, 314 cols, 639 nonzeros
+111 rows, 291 cols, 587 nonzeros
+Presolve : Reductions: rows 111(-2025); columns 291(-10804); elements 587(-13366)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(1.61915e+11) 0s
+         82     2.3516380235e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 82
+Objective value     :  2.3516380235e+15
+HiGHS run time      :          0.01
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+934 rows, 950 cols, 1624 nonzeros
+182 rows, 482 cols, 987 nonzeros
+168 rows, 449 cols, 914 nonzeros
+Presolve : Reductions: rows 168(-2137); columns 449(-13541); elements 914(-17001)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(1.50505e+11) 0s
+        131     2.1435100369e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 131
+Objective value     :  2.1435100369e+15
+HiGHS run time      :          0.01
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+894 rows, 965 cols, 1699 nonzeros
+209 rows, 544 cols, 1186 nonzeros
+186 rows, 485 cols, 1076 nonzeros
+Presolve : Reductions: rows 186(-2317); columns 485(-18734); elements 1076(-23897)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(1.37185e+11) 0s
+        176     1.8434494446e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 176
+Objective value     :  1.8434494446e+15
+HiGHS run time      :          0.02
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.08on[0.02,0.03,0.04,0.05,0.06].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.06on[0.02,0.03,0.04,0.05].pickle'
+
+Incremental fit:
+   total reserved capacity: 1.85473e+09
+    min/max: 0/4.94419e+07
+
+Making dist list for ar=0.1 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 7249
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.1.pickle'
+makeDistList() took 0.211397 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.064613 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 710
+Total target weight: 2.52992e+09
+
+Generated flowNet:
+ DiGraph with 4557 nodes and 11095 edges
+Generation took 0.0446769 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 415 / 501
+   took 0.0834673 secs
+Constructing A_ub...
+Estimated number of inequalities: 710 (nr of connected target nodes).
+True number of inequalities is 710.
+   took 0.0423972 secs
+Running linprog()...
+   took 0.0131911 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.152092 secs
+Collecting stats...
+Total absorbed flow: 2.35164e+09
+Total flows:
+   absorbed: 2.35164e+09
+   assigned: 1.78286e+08
+Total costs:
+ assignment: 1.00194e+07
+ absorption: 2.35164e+15
+      total: 2.35164e+15
+Stats collection took 0.0203175 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.211397 secs
+containmentCheck: 0.064613 secs
+flowNetGeneration: 0.0446769 secs
+minCostFlow: 0.152092 secs
+statsCollection: 0.0203175 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.1on[0.02,0.03,0.04,0.05,0.06,0.08].pickle'
+Total time for MCF: 0.506347 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.1on[0.02,0.03,0.04,0.05,0.06,0.08].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.08on[0.02,0.03,0.04,0.05,0.06].pickle'
+
+Incremental fit:
+   total reserved capacity: 2.03301e+09
+    min/max: 0/5.31818e+07
+
+Making dist list for ar=0.12 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 10144
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.12.pickle'
+makeDistList() took 0.21139 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0647238 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 747
+Total target weight: 2.35164e+09
+
+Generated flowNet:
+ DiGraph with 4594 nodes and 13990 edges
+Generation took 0.116506 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 394 / 501
+   took 0.0919831 secs
+Constructing A_ub...
+Estimated number of inequalities: 747 (nr of connected target nodes).
+True number of inequalities is 747.
+   took 0.0463557 secs
+Running linprog()...
+   took 0.0160985 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.171207 secs
+Collecting stats...
+Total absorbed flow: 2.14351e+09
+Total flows:
+   absorbed: 2.14351e+09
+   assigned: 2.08128e+08
+Total costs:
+ assignment: 1.34084e+07
+ absorption: 2.14351e+15
+      total: 2.14351e+15
+Stats collection took 0.026172 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.21139 secs
+containmentCheck: 0.0647238 secs
+flowNetGeneration: 0.116506 secs
+minCostFlow: 0.171207 secs
+statsCollection: 0.026172 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.12on[0.02,0.03,0.04,0.05,0.06,0.08,0.1].pickle'
+Total time for MCF: 0.604131 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.12on[0.02,0.03,0.04,0.05,0.06,0.08,0.1].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.1on[0.02,0.03,0.04,0.05,0.06,0.08].pickle'
+
+Incremental fit:
+   total reserved capacity: 2.24114e+09
+    min/max: 0/5.57623e+07
+
+Making dist list for ar=0.15 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 15381
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.15.pickle'
+makeDistList() took 0.20587 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0639695 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 769
+Total target weight: 2.14351e+09
+
+Generated flowNet:
+ DiGraph with 4616 nodes and 19219 edges
+Generation took 0.12018 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 362 / 501
+   took 0.101216 secs
+Constructing A_ub...
+Estimated number of inequalities: 769 (nr of connected target nodes).
+True number of inequalities is 769.
+   took 0.0516921 secs
+Running linprog()...
+   took 0.0224952 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.199283 secs
+Collecting stats...
+Total absorbed flow: 1.84345e+09
+Total flows:
+   absorbed: 1.84345e+09
+   assigned: 3.00061e+08
+Total costs:
+ assignment: 2.83899e+07
+ absorption: 1.84345e+15
+      total: 1.84345e+15
+Stats collection took 0.0365236 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.20587 secs
+containmentCheck: 0.0639695 secs
+flowNetGeneration: 0.12018 secs
+minCostFlow: 0.199283 secs
+statsCollection: 0.0365236 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.15on[0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12].pickle'
+Total time for MCF: 0.640046 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.15on[0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.12on[0.02,0.03,0.04,0.05,0.06,0.08,0.1].pickle'
+
+Incremental fit:
+   total reserved capacity: 2.5412e+09
+    min/max: 0/5.57623e+07
+
+Making dist list for ar=0.175 ...
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+763 rows, 743 cols, 1242 nonzeros
+180 rows, 410 cols, 872 nonzeros
+176 rows, 401 cols, 853 nonzeros
+Presolve : Reductions: rows 176(-2548); columns 401(-23612); elements 853(-31252)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(2.35962e+11) 0s
+         90     1.6955947458e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 90
+Objective value     :  1.6955947458e+15
+HiGHS run time      :          0.02
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+684 rows, 634 cols, 1006 nonzeros
+79 rows, 224 cols, 438 nonzeros
+79 rows, 219 cols, 428 nonzeros
+Presolve : Reductions: rows 79(-2747); columns 219(-29094); elements 428(-39093)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(4.34072e+11) 0s
+         25     1.6393726878e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 25
+Objective value     :  1.6393726878e+15
+HiGHS run time      :          0.03
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+707 rows, 1336 cols, 2538 nonzeros
+311 rows, 1048 cols, 2285 nonzeros
+305 rows, 1020 cols, 2229 nonzeros
+Presolve : Reductions: rows 305(-2958); columns 1020(-40489); elements 2229(-56418)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(2.0984e+11) 0s
+        227     1.3789381938e+15 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 227
+Objective value     :  1.3789381938e+15
+HiGHS run time      :          0.05
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 20185
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.175.pickle'
+makeDistList() took 0.21043 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0631915 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 776
+Total target weight: 1.84345e+09
+
+Generated flowNet:
+ DiGraph with 4623 nodes and 24013 edges
+Generation took 0.132884 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 336 / 501
+   took 0.113098 secs
+Constructing A_ub...
+Estimated number of inequalities: 776 (nr of connected target nodes).
+True number of inequalities is 776.
+   took 0.0545791 secs
+Running linprog()...
+   took 0.0283937 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.225835 secs
+Collecting stats...
+Total absorbed flow: 1.69559e+09
+Total flows:
+   absorbed: 1.69559e+09
+   assigned: 1.47855e+08
+Total costs:
+ assignment: 1.75572e+07
+ absorption: 1.69559e+15
+      total: 1.69559e+15
+Stats collection took 0.0454136 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.21043 secs
+containmentCheck: 0.0631915 secs
+flowNetGeneration: 0.132884 secs
+minCostFlow: 0.225835 secs
+statsCollection: 0.0454136 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.175on[0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12,0.15].pickle'
+Total time for MCF: 0.692554 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.175on[0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12,0.15].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.15on[0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12].pickle'
+
+Incremental fit:
+   total reserved capacity: 2.68906e+09
+    min/max: 0/5.66606e+07
+
+Making dist list for ar=0.2 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 25489
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.2.pickle'
+makeDistList() took 0.212164 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0634476 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 784
+Total target weight: 1.69559e+09
+
+Generated flowNet:
+ DiGraph with 4631 nodes and 29313 edges
+Generation took 0.0805457 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 321 / 501
+   took 0.189757 secs
+Constructing A_ub...
+Estimated number of inequalities: 784 (nr of connected target nodes).
+True number of inequalities is 784.
+   took 0.0575367 secs
+Running linprog()...
+   took 0.0337308 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.311465 secs
+Collecting stats...
+Total absorbed flow: 1.63937e+09
+Total flows:
+   absorbed: 1.63937e+09
+   assigned: 5.6222e+07
+Total costs:
+ assignment: 7.84747e+06
+ absorption: 1.63937e+15
+      total: 1.63937e+15
+Stats collection took 0.0520497 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.212164 secs
+containmentCheck: 0.0634476 secs
+flowNetGeneration: 0.0805457 secs
+minCostFlow: 0.311465 secs
+statsCollection: 0.0520497 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.2on[0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12,0.15,0.175].pickle'
+Total time for MCF: 0.734396 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.2on[0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12,0.15,0.175].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.175on[0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12,0.15].pickle'
+
+Incremental fit:
+   total reserved capacity: 2.74528e+09
+    min/max: 0/5.66606e+07
+
+Making dist list for ar=0.25 ...
+Could not deduce grid for spectrum.
+   (The first step of a serialized grid should only increase one coordinate )
+len(distList): 37705
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(peaklist)_MetaboMiner_ar0.25.pickle'
+makeDistList() took 0.211463 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(peaklist)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(peaklist)_region_ix.pickle
+Containment checking took 0.0637292 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 791
+Total target weight: 1.63937e+09
+
+Generated flowNet:
+ DiGraph with 4638 nodes and 41509 edges
+Generation took 0.100991 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 266 / 501
+   took 0.142832 secs
+Constructing A_ub...
+Estimated number of inequalities: 791 (nr of connected target nodes).
+True number of inequalities is 791.
+   took 0.0670916 secs
+Running linprog()...
+   took 0.0569257 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.314183 secs
+Collecting stats...
+Total absorbed flow: 1.37894e+09
+Total flows:
+   absorbed: 1.37894e+09
+   assigned: 2.60435e+08
+Total costs:
+ assignment: 4.11424e+07
+ absorption: 1.37894e+15
+      total: 1.37894e+15
+Stats collection took 0.074968 secs
+
+
+Timings (at nX=3486, nY=807):
+distList: 0.211463 secs
+containmentCheck: 0.0637292 secs
+flowNetGeneration: 0.100991 secs
+minCostFlow: 0.314183 secs
+statsCollection: 0.074968 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.25on[0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12,0.15,0.175,0.2].pickle'
+Total time for MCF: 0.779373 secs
+
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.25on[0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12,0.15,0.175,0.2].pickle'
+Saved updated result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(peaklist)_lib_MetaboMiner_0.2on[0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12,0.15,0.175].pickle'
+
+ar=0.02
+th=0
+fscore=0.421053
+recall=0.296296
+precision=0.727273
+th=0.001
+fscore=0.421053
+recall=0.296296
+precision=0.727273
+th=0.002
+fscore=0.388889
+recall=0.259259
+precision=0.777778
+th=0.003
+fscore=0.388889
+recall=0.259259
+precision=0.777778
+th=0.004
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.005
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.006
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.007
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.008
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.009
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.01
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.011
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.012
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.013
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.014
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.015
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.016
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.017
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.018
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.019
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.02
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.021
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.022
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.023
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.024
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.025
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.026
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.027
+fscore=0
+recall=0
+precision=0
+th=0.028
+fscore=0
+recall=0
+precision=0
+th=0.029
+fscore=0
+recall=0
+precision=0
+th=0.03
+fscore=0
+recall=0
+precision=0
+th=0.031
+fscore=0
+recall=0
+precision=0
+th=0.032
+fscore=0
+recall=0
+precision=0
+th=0.033
+fscore=0
+recall=0
+precision=0
+th=0.034
+fscore=0
+recall=0
+precision=0
+th=0.035
+fscore=0
+recall=0
+precision=0
+th=0.036
+fscore=0
+recall=0
+precision=0
+th=0.037
+fscore=0
+recall=0
+precision=0
+th=0.038
+fscore=0
+recall=0
+precision=0
+th=0.039
+fscore=0
+recall=0
+precision=0
+th=0.04
+fscore=0
+recall=0
+precision=0
+th=0.041
+fscore=0
+recall=0
+precision=0
+th=0.042
+fscore=0
+recall=0
+precision=0
+th=0.043
+fscore=0
+recall=0
+precision=0
+th=0.044
+fscore=0
+recall=0
+precision=0
+th=0.045
+fscore=0
+recall=0
+precision=0
+th=0.046
+fscore=0
+recall=0
+precision=0
+th=0.047
+fscore=0
+recall=0
+precision=0
+th=0.048
+fscore=0
+recall=0
+precision=0
+th=0.049
+fscore=0
+recall=0
+precision=0
+th=0.05
+fscore=0
+recall=0
+precision=0
+
+ar=0.03
+th=0
+fscore=0.577778
+recall=0.481481
+precision=0.722222
+th=0.001
+fscore=0.571429
+recall=0.444444
+precision=0.8
+th=0.002
+fscore=0.55
+recall=0.407407
+precision=0.846154
+th=0.003
+fscore=0.55
+recall=0.407407
+precision=0.846154
+th=0.004
+fscore=0.55
+recall=0.407407
+precision=0.846154
+th=0.005
+fscore=0.512821
+recall=0.37037
+precision=0.833333
+th=0.006
+fscore=0.473684
+recall=0.333333
+precision=0.818182
+th=0.007
+fscore=0.473684
+recall=0.333333
+precision=0.818182
+th=0.008
+fscore=0.473684
+recall=0.333333
+precision=0.818182
+th=0.009
+fscore=0.432432
+recall=0.296296
+precision=0.8
+th=0.01
+fscore=0.432432
+recall=0.296296
+precision=0.8
+th=0.011
+fscore=0.388889
+recall=0.259259
+precision=0.777778
+th=0.012
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.013
+fscore=0.294118
+recall=0.185185
+precision=0.714286
+th=0.014
+fscore=0.294118
+recall=0.185185
+precision=0.714286
+th=0.015
+fscore=0.294118
+recall=0.185185
+precision=0.714286
+th=0.016
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.017
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.018
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.019
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.02
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.021
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.022
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.023
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.024
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.025
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.026
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.027
+fscore=0
+recall=0
+precision=0
+th=0.028
+fscore=0
+recall=0
+precision=0
+th=0.029
+fscore=0
+recall=0
+precision=0
+th=0.03
+fscore=0
+recall=0
+precision=0
+th=0.031
+fscore=0
+recall=0
+precision=0
+th=0.032
+fscore=0
+recall=0
+precision=0
+th=0.033
+fscore=0
+recall=0
+precision=0
+th=0.034
+fscore=0
+recall=0
+precision=0
+th=0.035
+fscore=0
+recall=0
+precision=0
+th=0.036
+fscore=0
+recall=0
+precision=0
+th=0.037
+fscore=0
+recall=0
+precision=0
+th=0.038
+fscore=0
+recall=0
+precision=0
+th=0.039
+fscore=0
+recall=0
+precision=0
+th=0.04
+fscore=0
+recall=0
+precision=0
+th=0.041
+fscore=0
+recall=0
+precision=0
+th=0.042
+fscore=0
+recall=0
+precision=0
+th=0.043
+fscore=0
+recall=0
+precision=0
+th=0.044
+fscore=0
+recall=0
+precision=0
+th=0.045
+fscore=0
+recall=0
+precision=0
+th=0.046
+fscore=0
+recall=0
+precision=0
+th=0.047
+fscore=0
+recall=0
+precision=0
+th=0.048
+fscore=0
+recall=0
+precision=0
+th=0.049
+fscore=0
+recall=0
+precision=0
+th=0.05
+fscore=0
+recall=0
+precision=0
+
+ar=0.04
+th=0
+fscore=0.561404
+recall=0.592593
+precision=0.533333
+th=0.001
+fscore=0.653061
+recall=0.592593
+precision=0.727273
+th=0.002
+fscore=0.636364
+recall=0.518519
+precision=0.823529
+th=0.003
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.004
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.005
+fscore=0.585366
+recall=0.444444
+precision=0.857143
+th=0.006
+fscore=0.55
+recall=0.407407
+precision=0.846154
+th=0.007
+fscore=0.55
+recall=0.407407
+precision=0.846154
+th=0.008
+fscore=0.55
+recall=0.407407
+precision=0.846154
+th=0.009
+fscore=0.512821
+recall=0.37037
+precision=0.833333
+th=0.01
+fscore=0.512821
+recall=0.37037
+precision=0.833333
+th=0.011
+fscore=0.473684
+recall=0.333333
+precision=0.818182
+th=0.012
+fscore=0.388889
+recall=0.259259
+precision=0.777778
+th=0.013
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.014
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.015
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.016
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.017
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.018
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.019
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.02
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.021
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.022
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.023
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.024
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.025
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.026
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.027
+fscore=0
+recall=0
+precision=0
+th=0.028
+fscore=0
+recall=0
+precision=0
+th=0.029
+fscore=0
+recall=0
+precision=0
+th=0.03
+fscore=0
+recall=0
+precision=0
+th=0.031
+fscore=0
+recall=0
+precision=0
+th=0.032
+fscore=0
+recall=0
+precision=0
+th=0.033
+fscore=0
+recall=0
+precision=0
+th=0.034
+fscore=0
+recall=0
+precision=0
+th=0.035
+fscore=0
+recall=0
+precision=0
+th=0.036
+fscore=0
+recall=0
+precision=0
+th=0.037
+fscore=0
+recall=0
+precision=0
+th=0.038
+fscore=0
+recall=0
+precision=0
+th=0.039
+fscore=0
+recall=0
+precision=0
+th=0.04
+fscore=0
+recall=0
+precision=0
+th=0.041
+fscore=0
+recall=0
+precision=0
+th=0.042
+fscore=0
+recall=0
+precision=0
+th=0.043
+fscore=0
+recall=0
+precision=0
+th=0.044
+fscore=0
+recall=0
+precision=0
+th=0.045
+fscore=0
+recall=0
+precision=0
+th=0.046
+fscore=0
+recall=0
+precision=0
+th=0.047
+fscore=0
+recall=0
+precision=0
+th=0.048
+fscore=0
+recall=0
+precision=0
+th=0.049
+fscore=0
+recall=0
+precision=0
+th=0.05
+fscore=0
+recall=0
+precision=0
+
+ar=0.05
+th=0
+fscore=0.537313
+recall=0.666667
+precision=0.45
+th=0.001
+fscore=0.62963
+recall=0.62963
+precision=0.62963
+th=0.002
+fscore=0.638298
+recall=0.555556
+precision=0.75
+th=0.003
+fscore=0.636364
+recall=0.518519
+precision=0.823529
+th=0.004
+fscore=0.651163
+recall=0.518519
+precision=0.875
+th=0.005
+fscore=0.651163
+recall=0.518519
+precision=0.875
+th=0.006
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.007
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.008
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.009
+fscore=0.585366
+recall=0.444444
+precision=0.857143
+th=0.01
+fscore=0.585366
+recall=0.444444
+precision=0.857143
+th=0.011
+fscore=0.55
+recall=0.407407
+precision=0.846154
+th=0.012
+fscore=0.512821
+recall=0.37037
+precision=0.833333
+th=0.013
+fscore=0.432432
+recall=0.296296
+precision=0.8
+th=0.014
+fscore=0.432432
+recall=0.296296
+precision=0.8
+th=0.015
+fscore=0.388889
+recall=0.259259
+precision=0.777778
+th=0.016
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.017
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.018
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.019
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.02
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.021
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.022
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.023
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.024
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.025
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.026
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.027
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.028
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.029
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.03
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.031
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.032
+fscore=0
+recall=0
+precision=0
+th=0.033
+fscore=0
+recall=0
+precision=0
+th=0.034
+fscore=0
+recall=0
+precision=0
+th=0.035
+fscore=0
+recall=0
+precision=0
+th=0.036
+fscore=0
+recall=0
+precision=0
+th=0.037
+fscore=0
+recall=0
+precision=0
+th=0.038
+fscore=0
+recall=0
+precision=0
+th=0.039
+fscore=0
+recall=0
+precision=0
+th=0.04
+fscore=0
+recall=0
+precision=0
+th=0.041
+fscore=0
+recall=0
+precision=0
+th=0.042
+fscore=0
+recall=0
+precision=0
+th=0.043
+fscore=0
+recall=0
+precision=0
+th=0.044
+fscore=0
+recall=0
+precision=0
+th=0.045
+fscore=0
+recall=0
+precision=0
+th=0.046
+fscore=0
+recall=0
+precision=0
+th=0.047
+fscore=0
+recall=0
+precision=0
+th=0.048
+fscore=0
+recall=0
+precision=0
+th=0.049
+fscore=0
+recall=0
+precision=0
+th=0.05
+fscore=0
+recall=0
+precision=0
+
+ar=0.06
+th=0
+fscore=0.547945
+recall=0.740741
+precision=0.434783
+th=0.001
+fscore=0.644068
+recall=0.703704
+precision=0.59375
+th=0.002
+fscore=0.653061
+recall=0.592593
+precision=0.727273
+th=0.003
+fscore=0.652174
+recall=0.555556
+precision=0.789474
+th=0.004
+fscore=0.666667
+recall=0.555556
+precision=0.833333
+th=0.005
+fscore=0.666667
+recall=0.555556
+precision=0.833333
+th=0.006
+fscore=0.651163
+recall=0.518519
+precision=0.875
+th=0.007
+fscore=0.651163
+recall=0.518519
+precision=0.875
+th=0.008
+fscore=0.651163
+recall=0.518519
+precision=0.875
+th=0.009
+fscore=0.651163
+recall=0.518519
+precision=0.875
+th=0.01
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.011
+fscore=0.55
+recall=0.407407
+precision=0.846154
+th=0.012
+fscore=0.512821
+recall=0.37037
+precision=0.833333
+th=0.013
+fscore=0.473684
+recall=0.333333
+precision=0.818182
+th=0.014
+fscore=0.473684
+recall=0.333333
+precision=0.818182
+th=0.015
+fscore=0.432432
+recall=0.296296
+precision=0.8
+th=0.016
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.017
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.018
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.019
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.02
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.021
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.022
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.023
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.024
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.025
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.026
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.027
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.028
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.029
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.03
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.031
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.032
+fscore=0
+recall=0
+precision=0
+th=0.033
+fscore=0
+recall=0
+precision=0
+th=0.034
+fscore=0
+recall=0
+precision=0
+th=0.035
+fscore=0
+recall=0
+precision=0
+th=0.036
+fscore=0
+recall=0
+precision=0
+th=0.037
+fscore=0
+recall=0
+precision=0
+th=0.038
+fscore=0
+recall=0
+precision=0
+th=0.039
+fscore=0
+recall=0
+precision=0
+th=0.04
+fscore=0
+recall=0
+precision=0
+th=0.041
+fscore=0
+recall=0
+precision=0
+th=0.042
+fscore=0
+recall=0
+precision=0
+th=0.043
+fscore=0
+recall=0
+precision=0
+th=0.044
+fscore=0
+recall=0
+precision=0
+th=0.045
+fscore=0
+recall=0
+precision=0
+th=0.046
+fscore=0
+recall=0
+precision=0
+th=0.047
+fscore=0
+recall=0
+precision=0
+th=0.048
+fscore=0
+recall=0
+precision=0
+th=0.049
+fscore=0
+recall=0
+precision=0
+th=0.05
+fscore=0
+recall=0
+precision=0
+
+ar=0.08
+th=0
+fscore=0.482759
+recall=0.777778
+precision=0.35
+th=0.001
+fscore=0.584615
+recall=0.703704
+precision=0.5
+th=0.002
+fscore=0.653846
+recall=0.62963
+precision=0.68
+th=0.003
+fscore=0.6
+recall=0.555556
+precision=0.652174
+th=0.004
+fscore=0.612245
+recall=0.555556
+precision=0.681818
+th=0.005
+fscore=0.638298
+recall=0.555556
+precision=0.75
+th=0.006
+fscore=0.636364
+recall=0.518519
+precision=0.823529
+th=0.007
+fscore=0.636364
+recall=0.518519
+precision=0.823529
+th=0.008
+fscore=0.636364
+recall=0.518519
+precision=0.823529
+th=0.009
+fscore=0.651163
+recall=0.518519
+precision=0.875
+th=0.01
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.011
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.012
+fscore=0.585366
+recall=0.444444
+precision=0.857143
+th=0.013
+fscore=0.585366
+recall=0.444444
+precision=0.857143
+th=0.014
+fscore=0.55
+recall=0.407407
+precision=0.846154
+th=0.015
+fscore=0.473684
+recall=0.333333
+precision=0.818182
+th=0.016
+fscore=0.432432
+recall=0.296296
+precision=0.8
+th=0.017
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.018
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.019
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.02
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.021
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.022
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.023
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.024
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.025
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.026
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.027
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.028
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.029
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.03
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.031
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.032
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.033
+fscore=0
+recall=0
+precision=0
+th=0.034
+fscore=0
+recall=0
+precision=0
+th=0.035
+fscore=0
+recall=0
+precision=0
+th=0.036
+fscore=0
+recall=0
+precision=0
+th=0.037
+fscore=0
+recall=0
+precision=0
+th=0.038
+fscore=0
+recall=0
+precision=0
+th=0.039
+fscore=0
+recall=0
+precision=0
+th=0.04
+fscore=0
+recall=0
+precision=0
+th=0.041
+fscore=0
+recall=0
+precision=0
+th=0.042
+fscore=0
+recall=0
+precision=0
+th=0.043
+fscore=0
+recall=0
+precision=0
+th=0.044
+fscore=0
+recall=0
+precision=0
+th=0.045
+fscore=0
+recall=0
+precision=0
+th=0.046
+fscore=0
+recall=0
+precision=0
+th=0.047
+fscore=0
+recall=0
+precision=0
+th=0.048
+fscore=0
+recall=0
+precision=0
+th=0.049
+fscore=0
+recall=0
+precision=0
+th=0.05
+fscore=0
+recall=0
+precision=0
+
+ar=0.1
+th=0
+fscore=0.463158
+recall=0.814815
+precision=0.323529
+th=0.001
+fscore=0.520548
+recall=0.703704
+precision=0.413043
+th=0.002
+fscore=0.62069
+recall=0.666667
+precision=0.580645
+th=0.003
+fscore=0.615385
+recall=0.592593
+precision=0.64
+th=0.004
+fscore=0.627451
+recall=0.592593
+precision=0.666667
+th=0.005
+fscore=0.666667
+recall=0.592593
+precision=0.761905
+th=0.006
+fscore=0.695652
+recall=0.592593
+precision=0.842105
+th=0.007
+fscore=0.636364
+recall=0.518519
+precision=0.823529
+th=0.008
+fscore=0.636364
+recall=0.518519
+precision=0.823529
+th=0.009
+fscore=0.651163
+recall=0.518519
+precision=0.875
+th=0.01
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.011
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.012
+fscore=0.585366
+recall=0.444444
+precision=0.857143
+th=0.013
+fscore=0.585366
+recall=0.444444
+precision=0.857143
+th=0.014
+fscore=0.585366
+recall=0.444444
+precision=0.857143
+th=0.015
+fscore=0.512821
+recall=0.37037
+precision=0.833333
+th=0.016
+fscore=0.512821
+recall=0.37037
+precision=0.833333
+th=0.017
+fscore=0.432432
+recall=0.296296
+precision=0.8
+th=0.018
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.019
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.02
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.021
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.022
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.023
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.024
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.025
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.026
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.027
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.028
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.029
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.03
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.031
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.032
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.033
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.034
+fscore=0
+recall=0
+precision=0
+th=0.035
+fscore=0
+recall=0
+precision=0
+th=0.036
+fscore=0
+recall=0
+precision=0
+th=0.037
+fscore=0
+recall=0
+precision=0
+th=0.038
+fscore=0
+recall=0
+precision=0
+th=0.039
+fscore=0
+recall=0
+precision=0
+th=0.04
+fscore=0
+recall=0
+precision=0
+th=0.041
+fscore=0
+recall=0
+precision=0
+th=0.042
+fscore=0
+recall=0
+precision=0
+th=0.043
+fscore=0
+recall=0
+precision=0
+th=0.044
+fscore=0
+recall=0
+precision=0
+th=0.045
+fscore=0
+recall=0
+precision=0
+th=0.046
+fscore=0
+recall=0
+precision=0
+th=0.047
+fscore=0
+recall=0
+precision=0
+th=0.048
+fscore=0
+recall=0
+precision=0
+th=0.049
+fscore=0
+recall=0
+precision=0
+th=0.05
+fscore=0
+recall=0
+precision=0
+
+ar=0.12
+th=0
+fscore=0.423077
+recall=0.814815
+precision=0.285714
+th=0.001
+fscore=0.512821
+recall=0.740741
+precision=0.392157
+th=0.002
+fscore=0.603175
+recall=0.703704
+precision=0.527778
+th=0.003
+fscore=0.631579
+recall=0.666667
+precision=0.6
+th=0.004
+fscore=0.615385
+recall=0.592593
+precision=0.64
+th=0.005
+fscore=0.666667
+recall=0.592593
+precision=0.761905
+th=0.006
+fscore=0.680851
+recall=0.592593
+precision=0.8
+th=0.007
+fscore=0.652174
+recall=0.555556
+precision=0.789474
+th=0.008
+fscore=0.622222
+recall=0.518519
+precision=0.777778
+th=0.009
+fscore=0.651163
+recall=0.518519
+precision=0.875
+th=0.01
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.011
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.012
+fscore=0.585366
+recall=0.444444
+precision=0.857143
+th=0.013
+fscore=0.585366
+recall=0.444444
+precision=0.857143
+th=0.014
+fscore=0.585366
+recall=0.444444
+precision=0.857143
+th=0.015
+fscore=0.55
+recall=0.407407
+precision=0.846154
+th=0.016
+fscore=0.512821
+recall=0.37037
+precision=0.833333
+th=0.017
+fscore=0.473684
+recall=0.333333
+precision=0.818182
+th=0.018
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.019
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.02
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.021
+fscore=0.352941
+recall=0.222222
+precision=0.857143
+th=0.022
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.023
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.024
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.025
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.026
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.027
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.028
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.029
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.03
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.031
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.032
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.033
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.034
+fscore=0
+recall=0
+precision=0
+th=0.035
+fscore=0
+recall=0
+precision=0
+th=0.036
+fscore=0
+recall=0
+precision=0
+th=0.037
+fscore=0
+recall=0
+precision=0
+th=0.038
+fscore=0
+recall=0
+precision=0
+th=0.039
+fscore=0
+recall=0
+precision=0
+th=0.04
+fscore=0
+recall=0
+precision=0
+th=0.041
+fscore=0
+recall=0
+precision=0
+th=0.042
+fscore=0
+recall=0
+precision=0
+th=0.043
+fscore=0
+recall=0
+precision=0
+th=0.044
+fscore=0
+recall=0
+precision=0
+th=0.045
+fscore=0
+recall=0
+precision=0
+th=0.046
+fscore=0
+recall=0
+precision=0
+th=0.047
+fscore=0
+recall=0
+precision=0
+th=0.048
+fscore=0
+recall=0
+precision=0
+th=0.049
+fscore=0
+recall=0
+precision=0
+th=0.05
+fscore=0
+recall=0
+precision=0
+
+ar=0.15
+th=0
+fscore=0.396396
+recall=0.814815
+precision=0.261905
+th=0.001
+fscore=0.488372
+recall=0.777778
+precision=0.355932
+th=0.002
+fscore=0.57971
+recall=0.740741
+precision=0.47619
+th=0.003
+fscore=0.612903
+recall=0.703704
+precision=0.542857
+th=0.004
+fscore=0.610169
+recall=0.666667
+precision=0.5625
+th=0.005
+fscore=0.679245
+recall=0.666667
+precision=0.692308
+th=0.006
+fscore=0.68
+recall=0.62963
+precision=0.73913
+th=0.007
+fscore=0.653061
+recall=0.592593
+precision=0.727273
+th=0.008
+fscore=0.625
+recall=0.555556
+precision=0.714286
+th=0.009
+fscore=0.608696
+recall=0.518519
+precision=0.736842
+th=0.01
+fscore=0.622222
+recall=0.518519
+precision=0.777778
+th=0.011
+fscore=0.636364
+recall=0.518519
+precision=0.823529
+th=0.012
+fscore=0.604651
+recall=0.481481
+precision=0.8125
+th=0.013
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.014
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.015
+fscore=0.585366
+recall=0.444444
+precision=0.857143
+th=0.016
+fscore=0.585366
+recall=0.444444
+precision=0.857143
+th=0.017
+fscore=0.55
+recall=0.407407
+precision=0.846154
+th=0.018
+fscore=0.388889
+recall=0.259259
+precision=0.777778
+th=0.019
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.02
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.021
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.022
+fscore=0.294118
+recall=0.185185
+precision=0.714286
+th=0.023
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.024
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.025
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.026
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.027
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.028
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.029
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.03
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.031
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.032
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.033
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.034
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.035
+fscore=0
+recall=0
+precision=0
+th=0.036
+fscore=0
+recall=0
+precision=0
+th=0.037
+fscore=0
+recall=0
+precision=0
+th=0.038
+fscore=0
+recall=0
+precision=0
+th=0.039
+fscore=0
+recall=0
+precision=0
+th=0.04
+fscore=0
+recall=0
+precision=0
+th=0.041
+fscore=0
+recall=0
+precision=0
+th=0.042
+fscore=0
+recall=0
+precision=0
+th=0.043
+fscore=0
+recall=0
+precision=0
+th=0.044
+fscore=0
+recall=0
+precision=0
+th=0.045
+fscore=0
+recall=0
+precision=0
+th=0.046
+fscore=0
+recall=0
+precision=0
+th=0.047
+fscore=0
+recall=0
+precision=0
+th=0.048
+fscore=0
+recall=0
+precision=0
+th=0.049
+fscore=0
+recall=0
+precision=0
+th=0.05
+fscore=0
+recall=0
+precision=0
+
+ar=0.175
+th=0
+fscore=0.376068
+recall=0.814815
+precision=0.244444
+th=0.001
+fscore=0.47191
+recall=0.777778
+precision=0.33871
+th=0.002
+fscore=0.555556
+recall=0.740741
+precision=0.444444
+th=0.003
+fscore=0.59375
+recall=0.703704
+precision=0.513514
+th=0.004
+fscore=0.590164
+recall=0.666667
+precision=0.529412
+th=0.005
+fscore=0.631579
+recall=0.666667
+precision=0.6
+th=0.006
+fscore=0.641509
+recall=0.62963
+precision=0.653846
+th=0.007
+fscore=0.627451
+recall=0.592593
+precision=0.666667
+th=0.008
+fscore=0.64
+recall=0.592593
+precision=0.695652
+th=0.009
+fscore=0.608696
+recall=0.518519
+precision=0.736842
+th=0.01
+fscore=0.622222
+recall=0.518519
+precision=0.777778
+th=0.011
+fscore=0.636364
+recall=0.518519
+precision=0.823529
+th=0.012
+fscore=0.636364
+recall=0.518519
+precision=0.823529
+th=0.013
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.014
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.015
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.016
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.017
+fscore=0.55
+recall=0.407407
+precision=0.846154
+th=0.018
+fscore=0.432432
+recall=0.296296
+precision=0.8
+th=0.019
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.02
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.021
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.022
+fscore=0.294118
+recall=0.185185
+precision=0.714286
+th=0.023
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.024
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.025
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.026
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.027
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.028
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.029
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.03
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.031
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.032
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.033
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.034
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.035
+fscore=0
+recall=0
+precision=0
+th=0.036
+fscore=0
+recall=0
+precision=0
+th=0.037
+fscore=0
+recall=0
+precision=0
+th=0.038
+fscore=0
+recall=0
+precision=0
+th=0.039
+fscore=0
+recall=0
+precision=0
+th=0.04
+fscore=0
+recall=0
+precision=0
+th=0.041
+fscore=0
+recall=0
+precision=0
+th=0.042
+fscore=0
+recall=0
+precision=0
+th=0.043
+fscore=0
+recall=0
+precision=0
+th=0.044
+fscore=0
+recall=0
+precision=0
+th=0.045
+fscore=0
+recall=0
+precision=0
+th=0.046
+fscore=0
+recall=0
+precision=0
+th=0.047
+fscore=0
+recall=0
+precision=0
+th=0.048
+fscore=0
+recall=0
+precision=0
+th=0.049
+fscore=0
+recall=0
+precision=0
+th=0.05
+fscore=0
+recall=0
+precision=0
+
+ar=0.2
+th=0
+fscore=0.360656
+recall=0.814815
+precision=0.231579
+th=0.001
+fscore=0.468085
+recall=0.814815
+precision=0.328358
+th=0.002
+fscore=0.547945
+recall=0.740741
+precision=0.434783
+th=0.003
+fscore=0.59375
+recall=0.703704
+precision=0.513514
+th=0.004
+fscore=0.590164
+recall=0.666667
+precision=0.529412
+th=0.005
+fscore=0.62069
+recall=0.666667
+precision=0.580645
+th=0.006
+fscore=0.641509
+recall=0.62963
+precision=0.653846
+th=0.007
+fscore=0.627451
+recall=0.592593
+precision=0.666667
+th=0.008
+fscore=0.64
+recall=0.592593
+precision=0.695652
+th=0.009
+fscore=0.608696
+recall=0.518519
+precision=0.736842
+th=0.01
+fscore=0.622222
+recall=0.518519
+precision=0.777778
+th=0.011
+fscore=0.636364
+recall=0.518519
+precision=0.823529
+th=0.012
+fscore=0.636364
+recall=0.518519
+precision=0.823529
+th=0.013
+fscore=0.651163
+recall=0.518519
+precision=0.875
+th=0.014
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.015
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.016
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.017
+fscore=0.55
+recall=0.407407
+precision=0.846154
+th=0.018
+fscore=0.432432
+recall=0.296296
+precision=0.8
+th=0.019
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.02
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.021
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.022
+fscore=0.294118
+recall=0.185185
+precision=0.714286
+th=0.023
+fscore=0.294118
+recall=0.185185
+precision=0.714286
+th=0.024
+fscore=0.294118
+recall=0.185185
+precision=0.714286
+th=0.025
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.026
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.027
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.028
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.029
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.03
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.031
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.032
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.033
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.034
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.035
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.036
+fscore=0
+recall=0
+precision=0
+th=0.037
+fscore=0
+recall=0
+precision=0
+th=0.038
+fscore=0
+recall=0
+precision=0
+th=0.039
+fscore=0
+recall=0
+precision=0
+th=0.04
+fscore=0
+recall=0
+precision=0
+th=0.041
+fscore=0
+recall=0
+precision=0
+th=0.042
+fscore=0
+recall=0
+precision=0
+th=0.043
+fscore=0
+recall=0
+precision=0
+th=0.044
+fscore=0
+recall=0
+precision=0
+th=0.045
+fscore=0
+recall=0
+precision=0
+th=0.046
+fscore=0
+recall=0
+precision=0
+th=0.047
+fscore=0
+recall=0
+precision=0
+th=0.048
+fscore=0
+recall=0
+precision=0
+th=0.049
+fscore=0
+recall=0
+precision=0
+th=0.05
+fscore=0
+recall=0
+precision=0
+
+ar=0.25
+th=0
+fscore=0.335878
+recall=0.814815
+precision=0.211538
+th=0.001
+fscore=0.44
+recall=0.814815
+precision=0.30137
+th=0.002
+fscore=0.481928
+recall=0.740741
+precision=0.357143
+th=0.003
+fscore=0.535211
+recall=0.703704
+precision=0.431818
+th=0.004
+fscore=0.567164
+recall=0.703704
+precision=0.475
+th=0.005
+fscore=0.603175
+recall=0.703704
+precision=0.527778
+th=0.006
+fscore=0.631579
+recall=0.666667
+precision=0.6
+th=0.007
+fscore=0.62963
+recall=0.62963
+precision=0.62963
+th=0.008
+fscore=0.666667
+recall=0.62963
+precision=0.708333
+th=0.009
+fscore=0.608696
+recall=0.518519
+precision=0.736842
+th=0.01
+fscore=0.622222
+recall=0.518519
+precision=0.777778
+th=0.011
+fscore=0.636364
+recall=0.518519
+precision=0.823529
+th=0.012
+fscore=0.636364
+recall=0.518519
+precision=0.823529
+th=0.013
+fscore=0.651163
+recall=0.518519
+precision=0.875
+th=0.014
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.015
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.016
+fscore=0.619048
+recall=0.481481
+precision=0.866667
+th=0.017
+fscore=0.55
+recall=0.407407
+precision=0.846154
+th=0.018
+fscore=0.512821
+recall=0.37037
+precision=0.833333
+th=0.019
+fscore=0.388889
+recall=0.259259
+precision=0.777778
+th=0.02
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.021
+fscore=0.342857
+recall=0.222222
+precision=0.75
+th=0.022
+fscore=0.294118
+recall=0.185185
+precision=0.714286
+th=0.023
+fscore=0.294118
+recall=0.185185
+precision=0.714286
+th=0.024
+fscore=0.294118
+recall=0.185185
+precision=0.714286
+th=0.025
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.026
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.027
+fscore=0.30303
+recall=0.185185
+precision=0.833333
+th=0.028
+fscore=0.25
+recall=0.148148
+precision=0.8
+th=0.029
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.03
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.031
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.032
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.033
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.034
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.035
+fscore=0.193548
+recall=0.111111
+precision=0.75
+th=0.036
+fscore=0.133333
+recall=0.0740741
+precision=0.666667
+th=0.037
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.038
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.039
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.04
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.041
+fscore=0.0689655
+recall=0.037037
+precision=0.5
+th=0.042
+fscore=0
+recall=0
+precision=0
+th=0.043
+fscore=0
+recall=0
+precision=0
+th=0.044
+fscore=0
+recall=0
+precision=0
+th=0.045
+fscore=0
+recall=0
+precision=0
+th=0.046
+fscore=0
+recall=0
+precision=0
+th=0.047
+fscore=0
+recall=0
+precision=0
+th=0.048
+fscore=0
+recall=0
+precision=0
+th=0.049
+fscore=0
+recall=0
+precision=0
+th=0.05
+fscore=0
+recall=0
+precision=0
+
+### Maximal fscore: 0.695652 (at: ar=0.1, th=0.006)
+    recall: 0.592593, precision: 0.842105
+  mix N925:
+      recall: 0.592593
+      precision: 0.842105
+      fscore: 0.695652
+Saved fig '/home/leo/repos/mcfnmr-release/output/figs/classification MM/mixes['N925'](pt), incrFit, lib metabominer(jointfit).png'
+Saved fig '/home/leo/repos/mcfnmr-release/output/figs/classification MM/mixes['N925'](pt), incrFit, lib metabominer(jointfit).svg'
+
+ Total run time: 10.079528093338013 secs

@@ -1,0 +1,12 @@
+black==24.4.2
+tqdm==4.66.4
+waybackpack==0.6.4
+wget==3.2
+build==1.2.1
+setuptools==70.3.0
+bs4==0.0.2
+nmrpystar==1.0.0
+
+TextTest==4.3.1
+pycairo==1.26.1
+PyGObject==3.48.2

@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcfNMR"
+
+version = "0.1.1"
+
+dependencies = [
+  "numpy",
+  "scipy",
+  "pandas",
+  "matplotlib",
+  "seaborn",
+  "networkx",
+  "shapely",
+  "toml",
+  "svglib",
+  "reportlab",
+]
+
+requires-python = ">= 3.11"
+
+authors = [
+  {name = "Leonhard Lücken"}
+]
+
+description = "A Minimum Cost Flow NMR recombinator."
+
+readme = "README.md"
+
+license = {file = "LICENSE.txt"}
+
+keywords = ["NMR", "compound identification", "mixture reconstruction"]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Topic :: Scientific/Engineering :: Image Processing",
+  "Topic :: Scientific/Engineering :: Chemistry",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+
+[project.optional-dependencies]
+tests = [
+   "texttest",
+   "pycairo",
+   "PyGObject",
+   ]
+formatter = [
+   "black"
+   ]
+
+[project.scripts]
+mcfNMR = "mcfnmr.__main__:main"
+spec2csv = "mcfnmr.utils.spec2csv:main"
+
+[project.urls]
+Repository = "https://github.com/leoluecken/mcfnmr.git"
+Issues = "https://github.com/leoluecken/mcfnmr/issues"
+
+[tool.setuptools]
+packages = ["mcfnmr", "mcfnmr.core", "mcfnmr.demodata", "mcfnmr.routines", "mcfnmr.utils"]

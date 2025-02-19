@@ -1,0 +1,17 @@
+Method Sample Cmpds TP FN FP Precision Recall F-score 
+MetaboMiner-sp A 27 23 4 4 85.2 85.2 85.2
+MetaboMiner-all A 27 21 6 6 77.8 77.8 77.8
+HMDB A 27 2 25 25 7.4 7.4 7.4
+MMCD A 27 1 26 26 3.7 3.7 3.7
+MetaboMiner-sp B 21 16 5 5 76.2 76.2 76.2
+MetaboMiner-all B 21 12 9 2 85.7 57.1 68.5
+HMDB B 21 2 19 19 9.5 9.5 9.5
+MMCD B 21 2 19 19 9.5 9.5 9.5
+MetaboMiner-sp C 24 17 7 7 70.8 70.8 70.8
+MetaboMiner-all C 24 15 9 8 65.2 62.5 63.8
+HMDB C 24 4 20 20 16.7 16.7 16.7
+MMCD C 24 2 22 22 8.3 8.3 8.3
+MetaboMiner-sp D 35 30 5 5 85.7 85.7 85.7
+MetaboMiner-all D 35 23 12 12 65.7 65.7 65.7
+HMDB D 35 3 32 32 8.6 8.6 8.6
+MMCD D 35 2 33 33 5.7 5.7 5.7

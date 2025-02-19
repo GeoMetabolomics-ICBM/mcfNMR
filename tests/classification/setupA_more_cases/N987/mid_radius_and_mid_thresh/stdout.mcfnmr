@@ -1,0 +1,157 @@
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+10466 rows, 44741 cols, 87533 nonzeros
+10305 rows, 44506 cols, 87674 nonzeros
+Presolve : Reductions: rows 10305(-21396); columns 44506(-51500); elements 87674(-107191)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(4.486e+08) 0s
+       9918     1.0550316921e+06 Pr: 1941(3.52209e+08) 5s
+      24478     7.7894073434e+12 Pr: 0(0); Du: 0(9.3129e-08) 9s
+      24478     7.7894073434e+12 Pr: 0(0); Du: 0(9.3129e-08) 9s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 24478
+Objective value     :  7.7894073434e+12
+HiGHS run time      :          9.78
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/classification/setupA_more_cases/N987/mid_radius_and_mid_thresh
+
+config:
+{'ar': 0.075,
+ 'lib': 'MetaboMiner',
+ 'mix': 'N987',
+ 'setup': 'A',
+ 'task': 'classification',
+ 'th': 0.005}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/classification/setupA_more_cases/N987/mid_radius_and_mid_thresh/output
+
+Data directory: /home/leo/repos/mcfnmr-release/data
+Loaded mix 'N926' content list of length 35
+Loaded mix 'N907' content list of length 35
+Loaded mix 'N987' content list of length 21
+Loaded mix 'N925' content list of length 27
+Loaded mix 'N988' content list of length 24
+Loaded mix 'N880' content list of length 27
+Loading MM lib 'Biofluid ( all )' containing 502 compounds...
+Removing duplicate entry for D-Lactic Acid (HMDB 1311)
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N987.pickle'
+Original grid dimension: (512, 1024)
+Noise Std before processing: 9.70559
+Noise Std after processing: 9.70559
+   Total avg point intensity: 6.8398e+06
+   Max point intensity: 46585.5
+   Noise std: 9.70559
+   Signal to noise: 4799.86
+
+Converting raster to peaks, nbin=(1, 2), signal-to-noise threshold=None)
+   (original raster dimensions: (512, 1024))
+   (binned grid dimensions: (512, 512))
+runMetaboMinerFits(): Binning for mix N987: (1, 2)
+Making dist list for ar=0.075 ...
+len(distList): 92234
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N987(raster, (1x2)-bins)_MetaboMiner_ar0.075.pickle'
+makeDistList() took 0.571475 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N987(raster, (1x2)-bins)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N987(raster, (1x2)-bins)_region_ix.pickle
+Containment checking took 4.00683 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 24997
+Total target weight: 1.40188e+07
+
+Generated flowNet:
+ DiGraph with 28848 nodes and 96006 edges
+Generation took 0.364357 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 7 / 501
+   took 0.465079 secs
+Constructing A_ub...
+Estimated number of inequalities: 24997 (nr of connected target nodes).
+True number of inequalities is 24997.
+   took 1.38509 secs
+Running linprog()...
+   took 9.81457 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 11.7802 secs
+Collecting stats...
+Total absorbed flow: 7.78941e+06
+Total flows:
+   absorbed: 7.78941e+06
+   assigned: 6.22934e+06
+Total costs:
+ assignment: 179888
+ absorption: 7.78941e+12
+      total: 7.78941e+12
+Stats collection took 0.140426 secs
+
+
+Timings (at nX=3486, nY=262144):
+distList: 0.571475 secs
+containmentCheck: 4.00683 secs
+flowNetGeneration: 0.364357 secs
+minCostFlow: 11.7802 secs
+statsCollection: 0.140426 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N987(raster, (1x2)-bins)_lib_MetaboMiner_ar0.075.pickle'
+Total time for MCF: 17.0133 secs
+
+Classification results:
+{'N987': {'classification': {'FN': ['142', '201', '883'],
+                             'FP': ['1414', '473', '943'],
+                             'TP': ['108',
+                                    '112',
+                                    '162',
+                                    '167',
+                                    '182',
+                                    '1844',
+                                    '211',
+                                    '214',
+                                    '42',
+                                    '45',
+                                    '660',
+                                    '687',
+                                    '696',
+                                    '714',
+                                    '8',
+                                    '812',
+                                    '875',
+                                    '904'],
+                             'compound_df':     compound target  ... intensity scaling  expected concentration factor
+0          1   N987  ...              None                           None
+1        101   N987  ...              None                           None
+2       1044   N987  ...              None                           None
+3       1046   N987  ...              None                           None
+4       1049   N987  ...              None                           None
+..       ...    ...  ...               ...                            ...
+496       97   N987  ...              None                           None
+497      975   N987  ...              None                           None
+498       98   N987  ...              None                           None
+499       99   N987  ...              None                           None
+500      995   N987  ...              None                           None
+
+[501 rows x 15 columns],
+                             'fscore': 0.8571428571428571,
+                             'precision': 0.8571428571428571,
+                             'recall': 0.8571428571428571},
+          'classificationThreshold': 0.005}}
+
+ Total run time: 19.596434354782104 secs

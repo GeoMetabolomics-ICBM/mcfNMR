@@ -1,0 +1,8 @@
+# This tests the serialization of the N988 ucsf spectrum
+spec2csv_ucsf_N988
+
+# This tests the serialization of the Ia bruker spectrum
+spec2csv_bruker_Ia
+
+# This tests the help output of spec2csv
+spec2csv_help

@@ -1,0 +1,164 @@
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+498 rows, 448 cols, 451 nonzeros
+1 rows, 15 cols, 15 nonzeros
+Presolve : Reductions: rows 1(-2217); columns 15(-5166); elements 15(-6322)
+Solving the presolved LP
+Using EKK dual simplex solver - serial
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 1(4.48216e+07) 0s
+          1     4.4638764154e+13 Pr: 0(0) 0s
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Simplex   iterations: 1
+Objective value     :  4.4638764154e+13
+HiGHS run time      :          0.00
+config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
+Test run ...
+
+args:
+Namespace(outdir='output', config='test_config.toml')
+
+Working directory: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/classification/setupA_more_cases/N925/small_radius_and_mid_thresh
+
+config:
+{'ar': 0.01,
+ 'lib': 'MetaboMiner',
+ 'mix': 'N925',
+ 'setup': 'A',
+ 'task': 'classification',
+ 'th': 0.005}
+
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.19Feb193500.14106/mcfnmr/classification/setupA_more_cases/N925/small_radius_and_mid_thresh/output
+
+Data directory: /home/leo/repos/mcfnmr-release/data
+Loaded mix 'N926' content list of length 35
+Loaded mix 'N907' content list of length 35
+Loaded mix 'N987' content list of length 21
+Loaded mix 'N925' content list of length 27
+Loaded mix 'N988' content list of length 24
+Loaded mix 'N880' content list of length 27
+Loading MM lib 'Biofluid ( all )' containing 502 compounds...
+Removing duplicate entry for D-Lactic Acid (HMDB 1311)
+Loaded data from '/home/leo/repos/mcfnmr-release/data/MetaboMiner/processedUCSF/N925.pickle'
+Original grid dimension: (1024, 2048)
+Noise Std before processing: 10.4142
+Noise Std after processing: 10.4142
+   Total avg point intensity: 2.48352e+07
+   Max point intensity: 153965
+   Noise std: 10.4142
+   Signal to noise: 14784.1
+
+Converting raster to peaks, nbin=(2, 4), signal-to-noise threshold=None)
+   (original raster dimensions: (1024, 2048))
+   (binned grid dimensions: (512, 512))
+runMetaboMinerFits(): Binning for mix N925: (2, 4)
+Making dist list for ar=0.01 ...
+len(distList): 1335
+Saved distlists to '/home/leo/repos/mcfnmr-release/output/cache/mcf/dist_list_N925(raster, (2x4)-bins)_MetaboMiner_ar0.01.pickle'
+makeDistList() took 0.359824 secs
+Checking containment...
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/lib MetaboMiner in N925(raster, (2x4)-bins)_region_ix.pickle
+Saved indices to /home/leo/repos/mcfnmr-release/output/cache/mcf/N925(raster, (2x4)-bins)_region_ix.pickle
+Containment checking took 3.95959 secs
+Generating flow net...
+No peak of 132 in considered region.
+No peak of 1366 in considered region.
+No peak of 142 in considered region.
+No peak of 157 in considered region.
+No peak of 292 in considered region.
+No peak of 34 in considered region.
+No peak of 4816 in considered region.
+
+Total connected target nodes: 1140
+Total target weight: 4.48216e+07
+
+Generated flowNet:
+ DiGraph with 4987 nodes and 5181 edges
+Generation took 0.20485 secs
+Calculating min cost flow...
+Constructing A_eq...
+Number of dead end compounds: 463 / 501
+   took 0.0644183 secs
+Constructing A_ub...
+Estimated number of inequalities: 1140 (nr of connected target nodes).
+True number of inequalities is 1140.
+   took 0.0937448 secs
+Running linprog()...
+   took 0.00667062 secs
+
+linprog:
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Min-cost-flow calculation took 0.171001 secs
+Collecting stats...
+Total absorbed flow: 4.46388e+07
+Total flows:
+   absorbed: 4.46388e+07
+   assigned: 182810
+Total costs:
+ assignment: 1375.27
+ absorption: 4.46388e+13
+      total: 4.46388e+13
+Stats collection took 0.0283162 secs
+
+
+Timings (at nX=3486, nY=262144):
+distList: 0.359824 secs
+containmentCheck: 3.95959 secs
+flowNetGeneration: 0.20485 secs
+minCostFlow: 0.171001 secs
+statsCollection: 0.0283162 secs
+Saved MCF result to '/home/leo/repos/mcfnmr-release/output/cache_demo_routines/mcfResult_joint_in_N925(raster, (2x4)-bins)_lib_MetaboMiner_ar0.01.pickle'
+Total time for MCF: 4.86608 secs
+
+Classification results:
+{'N925': {'classification': {'FN': ['108',
+                                    '122',
+                                    '158',
+                                    '159',
+                                    '161',
+                                    '162',
+                                    '167',
+                                    '172',
+                                    '177',
+                                    '182',
+                                    '190',
+                                    '191',
+                                    '195',
+                                    '214',
+                                    '300',
+                                    '357',
+                                    '43',
+                                    '517',
+                                    '62',
+                                    '641',
+                                    '687',
+                                    '696',
+                                    '72',
+                                    '812',
+                                    '883',
+                                    '929',
+                                    '97'],
+                             'FP': [],
+                             'TP': [],
+                             'compound_df':     compound target  ... intensity scaling  expected concentration factor
+0          1   N925  ...              None                           None
+1        101   N925  ...              None                           None
+2       1044   N925  ...              None                           None
+3       1046   N925  ...              None                           None
+4       1049   N925  ...              None                           None
+..       ...    ...  ...               ...                            ...
+496       97   N925  ...              None                           None
+497      975   N925  ...              None                           None
+498       98   N925  ...              None                           None
+499       99   N925  ...              None                           None
+500      995   N925  ...              None                           None
+
+[501 rows x 15 columns],
+                             'fscore': 0.0,
+                             'precision': 0.0,
+                             'recall': 0.0},
+          'classificationThreshold': 0.005}}
+
+ Total run time: 7.5493128299713135 secs
