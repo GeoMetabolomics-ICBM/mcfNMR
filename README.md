@@ -2,7 +2,7 @@
 
 mcfNMR is a tool for recovering constituent compounds from an NMR spectrum of a mixture sample.
 It constructs an optimal approximation ([in terms of the Earth Mover's Distance](https://en.wikipedia.org/wiki/Wasserstein_metric)) of the 
-mixture spectrum by combining single compound spectra from a library. For details, see [our publication on mcfNMR](https://doi.org/10.1021/acs.analchem.4c01652).
+mixture spectrum by combining single compound spectra from a library. For details, see [our publication on mcfNMR](https://pubs.acs.org/doi/10.1021/acs.analchem.4c01652).
 
 ![mcfNMR flowchart](data/img/flowchart.svg)
 
