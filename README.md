@@ -49,17 +49,17 @@ If you have performed the above installation, the next time you use mcfNMR, you 
 This should activate the environment `.mcfnmr_venv` (indicated by the prefix to the prompt in your termnal). Currently, you can execute a 
 user-configured classification run by 
 
-    (.mcfnmr_venv)> python -m mcfnmr -c config_file
+    (.mcfnmr_venv)> python -m mcfnmr -c <config_file>
     
 If mcfnmr was installed with pip, this script can be started simply by 
 
-    (.mcfnmr_venv)> mcfNMR -c config_file
+    (.mcfnmr_venv)> mcfNMR -c <config_file>
         
 (Installation via pip/PyPI in under development, see [Developer Notes](#build-distribution) below)
 
 #### Configuration file
 
-The configuration file (`config_file`) is a toml-file (see 'data/user\_templates/config\_basic.toml') with the following obligatory fields:
+The configuration file (placeholder `<config_file>` above) is a toml-file (see 'data/user\_templates/config\_basic.toml') with the following obligatory fields:
 
 - `lib`: Path to a library-file containing the names, peak-weights, and -coords of the spectra a set of compounds. The path should 
 either be absolute or relative to this configuration file. The filename's root is used as the lib's name (e.g. 'lib.csv' → lib_name='lib').
