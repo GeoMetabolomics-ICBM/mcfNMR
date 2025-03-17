@@ -439,7 +439,7 @@ def main():
         config, config_fn = load_config(args)
         run(config, config_fn)
     except Exception as e:
-        print(f"\nmcfNMR failed with error:\n  {e.msg}")
+        print(f"\nmcfNMR failed with error:\n  {str(e)}")
         sys.exit(1)
 
 
