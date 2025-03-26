@@ -39,8 +39,8 @@ if [ -d "$MCFNMR_HOME"/dist ]; then
     rm "$MCFNMR_HOME"/dist -r;
 fi
 
-# Ensure, we have build
-pip install build
+# Ensure, we have build and twine
+pip install build twine
 
 # Build
 python -m build

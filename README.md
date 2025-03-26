@@ -168,7 +168,7 @@ executed in parallel or on moderately fast CPUs.
     
 ### Build distribution
 
-PyPI distribution is currently under development. The build should be tested in a separate virtual env .build\_env. 
+The build should be tested in a separate virtual env .build\_env. 
 To set this up (if it does not exist, yet) and to rebuild the distribution package, run
 
     > cd "$MCFNMR_HOME"
