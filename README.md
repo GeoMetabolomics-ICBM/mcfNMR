@@ -6,7 +6,15 @@ mixture spectrum by combining single compound spectra from a library. For detail
 
 ![mcfNMR flowchart](data/img/flowchart.svg)
 
-## Setting up mcfNMR
+## Install mcfNMR
+
+To install `mcfNMR` for an existing Python environment:
+
+	> pip install mcfNMR
+
+makes the commands ['mcfNMR'](#configuration-file) and ['spec2csv'](#preparing-target-spectra) available.
+
+## Setting up development version mcfNMR
 
 ### Pre-requisites
 
@@ -46,16 +54,14 @@ If you have performed the above installation, the next time you use mcfNMR, you 
 
     > source scripts/activate_env.sh
     
-This should activate the environment `.mcfnmr_venv` (indicated by the prefix to the prompt in your termnal). Currently, you can execute a 
-user-configured classification run by 
+This should activate the environment `.mcfnmr_venv` (indicated by the prefix to the prompt in your termnal). If working with the development version, you can execute a user-configured classification run by 
 
     (.mcfnmr_venv)> python -m mcfnmr -c <config_file>
     
-If mcfnmr was installed with pip, this script can be started simply by 
+If mcfNMR was installed with pip, this script can be started by 
 
     (.mcfnmr_venv)> mcfNMR -c <config_file>
-        
-(Installation via pip/PyPI in under development, see [Developer Notes](#build-distribution) below)
+
 
 #### Configuration file
 
@@ -180,4 +186,13 @@ To activate .build\_env:
 
     > cd "$MCFNMR_HOME"
     > source scripts/activate_env.sh .build_env
+
+The .build\_env environment also has [twine](https://pypi.org/project/twine/), which can be used 
+to upload a new mcfNMR version to [PyPI](https://pypi.org/project/mcfNMR) - see 
+[packaging guide](https://packaging.python.org/en/latest/guides/section-build-and-publish/).
+
+Before each release, the version number has to be incremented. This should be done using
+
+    > python "$MCFNMR_HOME"/scripts/version_update.py <NEW_VERSION>
+
 

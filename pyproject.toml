@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "mcfNMR"
 
-version = "0.1.0"
+version ="0.1.1"
 
 license = "MIT"
 
@@ -62,8 +62,8 @@ mcfNMR = "mcfnmr.__main__:main"
 spec2csv = "mcfnmr.utils.spec2csv:main"
 
 [project.urls]
-Repository = "https://github.com/leoluecken/mcfnmr.git"
-Issues = "https://github.com/leoluecken/mcfnmr/issues"
+Repository = "https://github.com/GeoMetabolomics-ICBM/mcfNMR"
+Issues = "https://github.com/GeoMetabolomics-ICBM/mcfNMR/issues"
 
 [tool.setuptools]
 packages = ["mcfnmr", "mcfnmr.core", "mcfnmr.demodata", "mcfnmr.routines", "mcfnmr.utils"]
