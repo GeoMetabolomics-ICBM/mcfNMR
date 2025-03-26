@@ -41,7 +41,8 @@ def parse_args():
     return arg_parser.parse_args()
 
 
-def check_config_consistency(config, config_fn):
+def check_config_consistency(config):
+    config_fn = config["config_path"]
     config_dir = config_fn.parent
     config.setdefault("isolated_fit", False)
     config.setdefault("incremental_fit", False)
@@ -249,10 +250,11 @@ def make_output_filename(config, outdir, target_name, libname):
     return savefn
 
 
-def make_mcf_parameters(config, wdir, target_name, libname):
+def make_mcf_parameters(config, target_name, libname):
     outdir = config["output_dir"]
     if not outdir.is_absolute():
-        outdir = wdir / outdir
+        config_dir = config["config_path"].parent
+        outdir = config_dir / outdir
     savefn = make_output_filename(config, outdir, target_name, libname)
 
     pars = dict(
@@ -353,19 +355,52 @@ def incremental_series(
 
 def load_config(args):
     print(f"\nMCFNMR, version {__version__}")
-
     config_fn = Path(args.config).absolute()
     config = toml.load(config_fn)
     if getattr(args, "outdir", None) is not None:
         # Only used by test_runner.py, not exposed
         config["output_dir"] = Path(args.outdir).absolute()
         print("\nOption '--outdir' given. Overrides config entry 'output_dir'.")
-    return config, config_fn
+    config["config_path"] = config_fn
+    return config
 
 
-def run(config, config_fn):
+def run(config):
+    mcf_setup = load(config)
 
-    check_config_consistency(config, config_fn)
+    mcf_result = run_mcf(target_spec=mcf_setup["target_spec"], 
+            lib=mcf_setup["lib"],
+            mcf_pars=mcf_setup["pars"],
+            incremental_fit=config["incremental_fit"],
+            load=config["load"])
+    detection_result = run_detection(mcf_result, 
+                                     th=config["detection_threshold"], 
+                                     normalize_assignment=config["normalize_assignment"])
+    save_as_text(detection_result, config["output_file"])
+
+    if config["plot"]:
+        outdir = config["output_file"].parent
+        figname = (
+            ".".join(config["output_file"].name.split(".")[:-1])
+            + "_detections."
+            + config["gfxformat"]
+        )
+        assignment_radius = config["assignment_radius"]
+        if config["incremental_fit"]:
+            assignment_radius = assignment_radius[-1]
+        plot_detected(
+            detection_result,
+            mcf_setup["lib"],
+            mcf_setup["target_spec"],
+            assignment_radius,
+            outdir / figname,
+            mcf_setup["libname"],
+            show=config["show"],
+        )
+
+
+def load(config):
+    check_config_consistency(config)
 
     target_spec, target_name = load_target(config["target"])
     nr_neg = np.count_nonzero(target_spec.weights < 0)
@@ -374,8 +409,7 @@ def run(config, config_fn):
         target_spec.weights = np.maximum(target_spec.weights, 0.0)
     lib, libname = load_lib(config["lib"])
 
-    config_dir = config_fn.parent
-    pars = make_mcf_parameters(config, config_dir, target_name, libname)
+    pars = make_mcf_parameters(config, target_name, libname)
 
     if config["output_file"] is None:
         config["output_file"] = ".".join(pars["savefn"].name.split(".")[:-1] + ["csv"])
@@ -389,55 +423,40 @@ def run(config, config_fn):
     if not config["output_file"].parent.exists():
         os.makedirs(config["output_file"].parent)
         print(f"Created directory '{config['output_file'].parent}'")
+    
+    return dict(pars=pars, target_spec=target_spec, lib=lib, libname=libname)
 
-    if config["incremental_fit"]:
+
+def run_mcf(target_spec, lib, mcf_pars, incremental_fit, load):
+    if incremental_fit:
         results = incremental_series(
             target_spectrum=target_spec,
             library=lib,
-            pars=pars,
-            load=config["load"],
+            pars=mcf_pars,
+            load=load,
         )
         result = results[max(results.keys())]
     else:
         result = mcf(
             target_spectrum=target_spec,
             library=lib,
-            **pars,
+            **mcf_pars,
         )
+    return result
 
-    th = config["detection_threshold"]
-    if config["normalize_assignment"]:
+
+def run_detection(result, th, normalize_assignment):
+    if normalize_assignment:
         th *= result.originalWeightY
     df = classify_result(result, th)
-
-    save_as_text(df, config["output_file"])
-
-    if config["plot"]:
-        outdir = config["output_file"].parent
-        figname = (
-            ".".join(config["output_file"].name.split(".")[:-1])
-            + "_detections."
-            + config["gfxformat"]
-        )
-        assignment_radius = config["assignment_radius"]
-        if config["incremental_fit"]:
-            assignment_radius = assignment_radius[-1]
-        plot_detected(
-            df,
-            lib,
-            target_spec,
-            assignment_radius,
-            outdir / figname,
-            libname,
-            show=config["show"],
-        )
-
+    return df
+    
 
 def main():
     try:
         args = parse_args()
-        config, config_fn = load_config(args)
-        run(config, config_fn)
+        config = load_config(args)
+        run(config)
     except Exception as e:
         print(f"\nmcfNMR failed with error:\n  {str(e)}")
         sys.exit(1)

@@ -19,7 +19,7 @@ from mcfnmr.config import (
 )
 from mcfnmr.utils.rasterspectrum import RasterSpectrum
 from mcfnmr.utils.pointspectrum import PointSpectrum
-from mcfnmr.demodata import metaboMinerLibNames, metaboMinerLibNameDict
+from mcfnmr.demodata import metaboMinerLibNames, metaboMinerLibNameDict, correctSubstrateNames
 from mcfnmr.utils.loading import parseBrukerSpectrum
 from copy import deepcopy
 
@@ -417,6 +417,7 @@ def loadOLDBCompoundLib(project_1D = False, add_extra = False):
             # print("   Peak at (%g, %g) with weight: %g"%(f1, f2, i))
             weights.append(i)
             coords.append((f1, f2))
+        s = correctSubstrateNames.get(s,s)
         spec = PointSpectrum(coords=coords, weights=weights, name=s)
         lib[s] = spec
     if project_1D:

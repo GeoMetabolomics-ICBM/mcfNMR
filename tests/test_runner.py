@@ -139,12 +139,12 @@ def run(args):
                 config=get_mcfnmr_home() / cfg["config"],
                 outdir=outdir,
             )
-            config, config_fn = mcfnmr.load_config(args)
+            config = mcfnmr.load_config(args)
             for k, v in cfg.items():
                 if k in ["outdir", "config"]:
                     continue
                 config[k] = v
-            mcfnmr.run(config, config_fn)
+            mcfnmr.run(config)
     else:
         raise Exception(f"Unknown task '{cfg['task']}'")
     elapsed = time.time() - start_time
