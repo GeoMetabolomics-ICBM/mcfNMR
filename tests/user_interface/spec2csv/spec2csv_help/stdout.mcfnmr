@@ -4,18 +4,18 @@ Test run ...
 args:
 Namespace(outdir='output', config='test_config.toml')
 
-Working directory: /home/leo/.texttest/tmp/mcfnmr.05Aug102555.13025/mcfnmr/user_interface/spec2csv/spec2csv_help
+Working directory: /home/leo/.texttest/tmp/mcfnmr.26Mar205147.53034/mcfnmr/user_interface/spec2csv/spec2csv_help
 
 config:
 {'help': True, 'task': 'spec2csv'}
 
-Writing output to: /home/leo/.texttest/tmp/mcfnmr.05Aug102555.13025/mcfnmr/user_interface/spec2csv/spec2csv_help/output
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.26Mar205147.53034/mcfnmr/user_interface/spec2csv/spec2csv_help/output
 
-Data directory: /home/leo/repos/mcfnmr/data
+Data directory: /home/leo/repos/mcfnmr-clean/data
 usage: spec2csv [-h] --inputfile INFILE [--outputfile OUTFILE]
                 [--bindims BINDIMS] [--override] [--peaklist]
 
-spec2csv - part of MCFNMR (v0.1.0). Tool to convert a different types of
+spec2csv - part of MCFNMR (v0.1.1). Tool to convert a different types of
 spectrum files into a csv (or csv.gz) file usable as target for mcfnmr. Usage:
 spec2csv --file=INPUT_FILE [--rangex=X1,X2 --rangey=Y1,Y2 --irange=I1,I2
 --bindims=NX,NY]

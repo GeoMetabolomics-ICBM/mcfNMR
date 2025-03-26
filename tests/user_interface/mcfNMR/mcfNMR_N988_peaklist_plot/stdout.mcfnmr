@@ -14,14 +14,14 @@ Solving the original LP from the solution after postsolve
 Model   status      : Optimal
 Simplex   iterations: 24
 Objective value     :  4.6800000294e+08
-HiGHS run time      :          0.02
+HiGHS run time      :          0.01
 config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
 Test run ...
 
 args:
 Namespace(outdir='output', config='test_config.toml')
 
-Working directory: /home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_peaklist_plot
+Working directory: /home/leo/.texttest/tmp/mcfnmr.26Mar205648.54049/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_peaklist_plot
 
 config:
 {'assignment_radius': 0.06,
@@ -37,11 +37,11 @@ config:
  'target': '../MetaboMiner/csv/N988(peaklist).csv',
  'task': 'mcfNMR'}
 
-Writing output to: /home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_peaklist_plot/output
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.26Mar205648.54049/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_peaklist_plot/output
 
-Data directory: /home/leo/repos/mcfnmr/data
+Data directory: /home/leo/repos/mcfnmr-clean/data
 
-MCFNMR, version 0.1.0
+MCFNMR, version 0.1.1
 
 Option '--outdir' given. Overrides config entry 'output_dir'.
 Found 501 compounds in library MetaboMiner - Biofluid ( all )
@@ -49,10 +49,10 @@ Making dist list for ar=0.06 ...
 Could not deduce grid for spectrum.
    (The first step of a serialized grid should only increase one coordinate )
 len(distList): 1241
-Saved distlists to '/home/leo/repos/mcfnmr/output/cache/mcf/dist_list_N988(peaklist)_MetaboMiner - Biofluid ( all )_ar0.06.pickle'
-makeDistList() took 0.443262 secs
+Saved distlists to '/home/leo/repos/mcfnmr-clean/output/cache/mcf/dist_list_N988(peaklist)_MetaboMiner - Biofluid ( all )_ar0.06.pickle'
+makeDistList() took 0.333912 secs
 Checking containment...
-Containment checking took 6.7746e-05 secs
+Containment checking took 9.5765e-05 secs
 Generating flow net...
 
 Total connected target nodes: 329
@@ -60,21 +60,21 @@ Total target weight: 565
 
 Generated flowNet:
  DiGraph with 4318 nodes and 5229 edges
-Generation took 0.0671806 secs
+Generation took 0.0485697 secs
 Calculating min cost flow...
 Constructing A_eq...
 Number of dead end compounds: 459 / 501
-   took 0.194448 secs
+   took 0.201124 secs
 Constructing A_ub...
 Estimated number of inequalities: 329 (nr of connected target nodes).
 True number of inequalities is 329.
-   took 0.0373044 secs
+   took 0.0258394 secs
 Running linprog()...
-   took 0.0221856 secs
+   took 0.0160924 secs
 
 linprog:
 Optimization terminated successfully. (HiGHS Status 7: Optimal)
-Min-cost-flow calculation took 0.265544 secs
+Min-cost-flow calculation took 0.255163 secs
 Collecting stats...
 Total absorbed flow: 468
 Total flows:
@@ -84,20 +84,20 @@ Total costs:
  assignment: 2.94491
  absorption: 4.68e+08
       total: 4.68e+08
-Stats collection took 0.018822 secs
+Stats collection took 0.0113364 secs
 
 
 Timings (at nX=3486, nY=565):
-distList: 0.443262 secs
-containmentCheck: 6.7746e-05 secs
-flowNetGeneration: 0.0671806 secs
-minCostFlow: 0.265544 secs
-statsCollection: 0.018822 secs
-Saved MCF result to '/home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_peaklist_plot/output/mcfresult_test.pickle'
-Saved results table to '/home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_peaklist_plot/output/mcfresult_test.csv'
+distList: 0.333912 secs
+containmentCheck: 9.5765e-05 secs
+flowNetGeneration: 0.0485697 secs
+minCostFlow: 0.255163 secs
+statsCollection: 0.0113364 secs
+Saved MCF result to '/home/leo/.texttest/tmp/mcfnmr.26Mar205648.54049/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_peaklist_plot/output/mcfresult_test.pickle'
+Saved results table to '/home/leo/.texttest/tmp/mcfnmr.26Mar205648.54049/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_peaklist_plot/output/mcfresult_test.csv'
 Could not deduce grid for spectrum.
    (The first step of a serialized grid should only increase one coordinate )
 Building HMDB-ID list ...
-Saved figure '/home/leo/.texttest/tmp/mcfnmr.11Nov142244.18013/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_peaklist_plot/output/mcfresult_test_detections.svg'
+Saved figure '/home/leo/.texttest/tmp/mcfnmr.26Mar205648.54049/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_peaklist_plot/output/mcfresult_test_detections.svg'
 
- Total run time: 5.6129045486450195 secs
+ Total run time: 3.274416208267212 secs
