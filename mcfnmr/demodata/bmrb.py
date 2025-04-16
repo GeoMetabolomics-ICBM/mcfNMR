@@ -422,6 +422,10 @@ def prepareBMRB():
         else:
             a=0
 
+    if not (BMRB_DIR).exists():
+        os.makedirs(BMRB_DIR)
+        print(f"Created directory {BMRB_DIR}")
+
     libfile = BMRB_DIR / "BMRBlib.csv"     
     if libfile.exists():
         a=0

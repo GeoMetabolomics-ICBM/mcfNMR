@@ -1,4 +1,5 @@
 import os
+import platform
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -156,7 +157,19 @@ def prepareMM():
     ucsf_url = "http://wishart.biology.ualberta.ca/metabominer/downloads/ucsf.zip"
     expls_url = "http://wishart.biology.ualberta.ca/metabominer/downloads/examples.zip"
     mm_url = "http://wishart.biology.ualberta.ca/metabominer/downloads/metabominer.zip"
-    sparky_url = "https://www.cgl.ucsf.edu/home/sparky/distrib-3.115/sparky-linux2.6-64bit.tar.gz"
+    if platform.system() == "Windows":
+        sparky_url = "https://www.cgl.ucsf.edu/home/sparky/distrib-3.114/sparky-win32.zip"
+        raise Exception("Sparky on Windows not supported yet")
+    elif platform.system() == "Linux":
+        sparky_url = "https://www.cgl.ucsf.edu/home/sparky/distrib-3.115/sparky-linux2.6-64bit.tar.gz"
+    elif platform.system() == "Darwin":
+        # MacOS
+        sparky_url = "https://www.cgl.ucsf.edu/home/sparky/distrib-3.115/sparky-mac10.4-intel.dmg"
+        raise Exception("Sparky on MacOS not supported yet")
+
+    if not (METABOMINER_DIR).exists():
+        os.makedirs(METABOMINER_DIR)
+        print(f"Created directory {METABOMINER_DIR}")
 
     download_metabominer_data(ucsf_url, expls_url, mm_url, sparky_url)
 

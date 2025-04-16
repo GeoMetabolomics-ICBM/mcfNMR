@@ -9,7 +9,15 @@ def get_mcfnmr_home():
     if mcfnmr_home is None:
         # home_candidate = Path(__file__).absolute().parent.parent.parent # only for dev
         # set_home_candidate = f"export MCFNMR_HOME='{home_candidate}'"
-        home_candidate = (Path(os.environ["HOME"])/".mcfnmr").absolute()
+        home_candidate = os.environ.get("HOME", None) 
+        if home_candidate is None:
+            # Probably on Windows
+            home_candidate = os.environ.get("HOMEPATH", None) 
+        if home_candidate is None:
+            raise Exception(
+                f"Environment variables MCFNMR_HOME and HOME (resp. HOME_PATH) not set."
+            )
+        home_candidate = Path(home_candidate) / ".mcfnmr"
         if home_candidate.exists():
             if not home_candidate.is_dir():
                 raise Exception(
@@ -36,7 +44,7 @@ def get_mcfnmr_home():
                 return home_candidate
     mcfnmr_home_abs = Path(mcfnmr_home).absolute()
     if not mcfnmr_home_abs.exists():
-        raise mcfnmr_home_abs(
+        raise Exception(
             f"Path '{mcfnmr_home_abs}' (derived from environment variable MCFNMR_HOME='{mcfnmr_home}') doesn't exist."
         )
     subdirs = [str(p.name) for p in mcfnmr_home_abs.iterdir()]

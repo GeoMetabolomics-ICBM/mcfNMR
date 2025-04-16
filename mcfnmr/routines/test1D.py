@@ -5,7 +5,7 @@ from mcfnmr.core.mcf import mcf
 from mcfnmr.routines.classification import classifyCompounds
 from mcfnmr.demodata import mix4
 from pprint import pp
-from mcfnmr.__main__ import classify_result, save_as_text
+from mcfnmr.main import classify_result, save_as_text
 
 
 def main():
