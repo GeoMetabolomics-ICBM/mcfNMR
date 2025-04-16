@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "mcfNMR"
 
-version ="0.1.1"
+version ="0.1.2"
 
 license = "MIT"
 
@@ -20,6 +20,9 @@ dependencies = [
   "toml",
   "svglib",
   "reportlab",
+  "nmrpystar",
+  "waybackpack",
+  "wget"
 ]
 
 requires-python = ">= 3.11"
@@ -60,6 +63,7 @@ formatter = [
 [project.scripts]
 mcfNMR = "mcfnmr.__main__:main"
 spec2csv = "mcfnmr.utils.spec2csv:main"
+downloadDemoData = "mcfnmr.demodata.download:main"
 
 [project.urls]
 Repository = "https://github.com/GeoMetabolomics-ICBM/mcfNMR"

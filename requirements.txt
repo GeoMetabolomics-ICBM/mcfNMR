@@ -11,3 +11,6 @@ matplotlib==3.9.2
 seaborn==0.13.2
 editdistance==0.8.1
 bs4==0.0.2
+waybackpack==0.6.4
+wget==3.2
+nmrpystar==1.0.0

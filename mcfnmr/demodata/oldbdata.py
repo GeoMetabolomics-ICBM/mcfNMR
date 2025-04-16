@@ -3,7 +3,7 @@ import wget
 
 from mcfnmr.config import OLDBFULLSPECTRADIR, OLDB1DTESTDIR, OLDBPEAKSDIR
 
-if __name__ == "__main__":
+def prepareOLDBdata():
     for DIR in [OLDB1DTESTDIR, OLDBFULLSPECTRADIR, OLDBPEAKSDIR]:
         if not (DIR).exists():
             os.makedirs(DIR)
@@ -47,3 +47,5 @@ if __name__ == "__main__":
     print("\nPreparing OLDB data done.\n")
 
 
+if __name__ == "__main__":
+    prepareOLDBdata()
