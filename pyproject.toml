@@ -22,7 +22,8 @@ dependencies = [
   "reportlab",
   "nmrpystar",
   "waybackpack",
-  "wget"
+  "wget",
+  "bs4"
 ]
 
 requires-python = ">= 3.11"
