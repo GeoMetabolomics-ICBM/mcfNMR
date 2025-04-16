@@ -17,9 +17,9 @@ def replace_version(file, version_str, newv):
 		ix = ll[i].find(version_str + " = ")
 		if ix != -1:
 			oldl = ll[i]
-			beg = oldl.split("=")[0]
+			beg = oldl.split("=")[0].strip()
 			print(f"Found\n  '{oldl[:-1]}'\nin '{file}'")
-			newl = "=".join([beg, '"'+newv+'"'])
+			newl = " = ".join([beg, '"'+newv+'"'])
 			print(f"\nReplacing with\n  '{newl}'\n")
 			ll[i] = newl + "\n"
 	
@@ -36,6 +36,7 @@ if __name__=="__main__":
 		print("version_update() takes exactly argument: the new version.")
 		sys.exit(1)
 	newv = sys.argv[1]
+	print(f"New version: {newv}")
 
 	# Update version in pyproject.toml
 	fn = home / "pyproject.toml"
