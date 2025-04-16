@@ -11,7 +11,7 @@ if [ -z ${MCFNMR_HOME+x} ]; then
 fi
 
 if ! [ -d "$MCFNMR_HOME/.build_env" ]; then
-    echo "Virtual environment $MCFNMR_HOME/.build_env doesn't exist. Try creating it." 
+    echo "Virtual environment $MCFNMR_HOME/.build_env doesn't exist. Trying to create it ..." 
     virtualenv "$MCFNMR_HOME/.build_env"
     rc=$?;
 else
