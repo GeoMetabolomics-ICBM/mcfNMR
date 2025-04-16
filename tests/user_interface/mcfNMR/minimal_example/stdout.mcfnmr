@@ -20,16 +20,16 @@ Test run ...
 args:
 Namespace(outdir='output', config='test_config.toml')
 
-Working directory: /home/leo/.texttest/tmp/mcfnmr.1_from_26Mar205648.54376/mcfnmr/user_interface/mcfNMR/minimal_example
+Working directory: /home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/minimal_example
 
 config:
 {'config': 'data/user_templates/config_basic.toml', 'task': 'mcfNMR'}
 
-Writing output to: /home/leo/.texttest/tmp/mcfnmr.1_from_26Mar205648.54376/mcfnmr/user_interface/mcfNMR/minimal_example/output
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/minimal_example/output
 
 Data directory: /home/leo/repos/mcfnmr-clean/data
 
-MCFNMR, version 0.1.1
+MCFNMR, version 0.1.2
 
 Option '--outdir' given. Overrides config entry 'output_dir'.
 Found 2 compounds in library lib
@@ -38,9 +38,9 @@ Could not deduce grid for spectrum.
    (The first step of a serialized grid should only increase one coordinate )
 len(distList): 4
 Saved distlists to '/home/leo/repos/mcfnmr-clean/output/cache/mcf/dist_list_target_lib_ar0.1.pickle'
-makeDistList() took 0.000497588 secs
+makeDistList() took 0.000998564 secs
 Checking containment...
-Containment checking took 5.5499e-05 secs
+Containment checking took 5.9864e-05 secs
 Generating flow net...
 
 Total connected target nodes: 3
@@ -48,21 +48,21 @@ Total target weight: 6
 
 Generated flowNet:
  DiGraph with 11 nodes and 11 edges
-Generation took 0.000486159 secs
+Generation took 0.000434977 secs
 Calculating min cost flow...
 Constructing A_eq...
 Number of dead end compounds: 0 / 2
-   took 0.00205938 secs
+   took 0.00201011 secs
 Constructing A_ub...
 Estimated number of inequalities: 3 (nr of connected target nodes).
 True number of inequalities is 3.
-   took 0.000620819 secs
+   took 0.00082489 secs
 Running linprog()...
-   took 0.00369418 secs
+   took 0.00479272 secs
 
 linprog:
 Optimization terminated successfully. (HiGHS Status 7: Optimal)
-Min-cost-flow calculation took 0.00660653 secs
+Min-cost-flow calculation took 0.0078189 secs
 Collecting stats...
 Total absorbed flow: 0.5
 Total flows:
@@ -72,16 +72,16 @@ Total costs:
  assignment: 0.0305
  absorption: 500000
       total: 500000
-Stats collection took 0.000996208 secs
+Stats collection took 0.00017522 secs
 
 
 Timings (at nX=4, nY=3):
-distList: 0.000497588 secs
-containmentCheck: 5.5499e-05 secs
-flowNetGeneration: 0.000486159 secs
-minCostFlow: 0.00660653 secs
-statsCollection: 0.000996208 secs
-Saved MCF result to '/home/leo/.texttest/tmp/mcfnmr.1_from_26Mar205648.54376/mcfnmr/user_interface/mcfNMR/minimal_example/output/mcfresult_test.pickle'
-Saved results table to '/home/leo/.texttest/tmp/mcfnmr.1_from_26Mar205648.54376/mcfnmr/user_interface/mcfNMR/minimal_example/output/mcfresult_test.csv'
+distList: 0.000998564 secs
+containmentCheck: 5.9864e-05 secs
+flowNetGeneration: 0.000434977 secs
+minCostFlow: 0.0078189 secs
+statsCollection: 0.00017522 secs
+Saved MCF result to '/home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/minimal_example/output/mcfresult_test.pickle'
+Saved results table to '/home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/minimal_example/output/mcfresult_test.csv'
 
- Total run time: 0.021741390228271484 secs
+ Total run time: 0.0274045467376709 secs

@@ -4,17 +4,17 @@ Test run ...
 args:
 Namespace(outdir='output', config='test_config.toml')
 
-Working directory: /home/leo/.texttest/tmp/mcfnmr.16Apr145853.14408/mcfnmr/user_interface/mcfNMR/help
+Working directory: /home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/help
 
 config:
 {'help': True, 'task': 'mcfNMR'}
 
-Writing output to: /home/leo/.texttest/tmp/mcfnmr.16Apr145853.14408/mcfnmr/user_interface/mcfNMR/help/output
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/help/output
 
 Data directory: /home/leo/repos/mcfnmr-clean/data
 usage: mcfnmr [-h] --config CONFIG
 
-MCFNMR (v0.1.1). A Minimum Cost Flow NMR recombinator.
+MCFNMR (v0.1.2). A Minimum Cost Flow NMR recombinator.
 
 options:
   -h, --help            show this help message and exit

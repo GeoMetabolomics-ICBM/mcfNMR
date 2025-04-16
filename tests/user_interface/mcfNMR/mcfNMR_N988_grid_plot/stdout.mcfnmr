@@ -13,14 +13,14 @@ Solving the original LP from the solution after postsolve
 Model   status      : Optimal
 Simplex   iterations: 2963
 Objective value     :  7.8430134022e+12
-HiGHS run time      :          0.41
+HiGHS run time      :          0.32
 config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
 Test run ...
 
 args:
 Namespace(outdir='output', config='test_config.toml')
 
-Working directory: /home/leo/.texttest/tmp/mcfnmr.26Mar205648.54049/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_plot
+Working directory: /home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_plot
 
 config:
 {'assignment_radius': 0.06,
@@ -36,11 +36,11 @@ config:
  'target': '../MetaboMiner/csv/N988(1x2).csv.gz',
  'task': 'mcfNMR'}
 
-Writing output to: /home/leo/.texttest/tmp/mcfnmr.26Mar205648.54049/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_plot/output
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_plot/output
 
 Data directory: /home/leo/repos/mcfnmr-clean/data
 
-MCFNMR, version 0.1.1
+MCFNMR, version 0.1.2
 
 Option '--outdir' given. Overrides config entry 'output_dir'.
 Setting 68194 negative peak weights to zero.
@@ -48,9 +48,9 @@ Found 501 compounds in library MetaboMiner - Biofluid ( all )
 Making dist list for ar=0.06 ...
 len(distList): 29487
 Saved distlists to '/home/leo/repos/mcfnmr-clean/output/cache/mcf/dist_list_N988(1x2)_MetaboMiner - Biofluid ( all )_ar0.06.pickle'
-makeDistList() took 0.875279 secs
+makeDistList() took 0.926158 secs
 Checking containment...
-Containment checking took 7.9667e-05 secs
+Containment checking took 7.6472e-05 secs
 Generating flow net...
 
 Total connected target nodes: 10054
@@ -58,21 +58,21 @@ Total target weight: 1.01957e+07
 
 Generated flowNet:
  DiGraph with 14043 nodes and 33475 edges
-Generation took 0.511212 secs
+Generation took 0.525185 secs
 Calculating min cost flow...
 Constructing A_eq...
 Number of dead end compounds: 70 / 501
-   took 0.606078 secs
+   took 0.674782 secs
 Constructing A_ub...
 Estimated number of inequalities: 10054 (nr of connected target nodes).
 True number of inequalities is 10054.
-   took 1.22884 secs
+   took 1.24175 secs
 Running linprog()...
-   took 0.443007 secs
+   took 0.34648 secs
 
 linprog:
 Optimization terminated successfully. (HiGHS Status 7: Optimal)
-Min-cost-flow calculation took 2.36154 secs
+Min-cost-flow calculation took 2.33573 secs
 Collecting stats...
 Total absorbed flow: 7.84301e+06
 Total flows:
@@ -82,22 +82,22 @@ Total costs:
  assignment: 67629
  absorption: 7.84301e+12
       total: 7.84301e+12
-Stats collection took 0.122671 secs
+Stats collection took 0.132459 secs
 
 
 Timings (at nX=3486, nY=131072):
-distList: 0.875279 secs
-containmentCheck: 7.9667e-05 secs
-flowNetGeneration: 0.511212 secs
-minCostFlow: 2.36154 secs
-statsCollection: 0.122671 secs
-Saved MCF result to '/home/leo/.texttest/tmp/mcfnmr.26Mar205648.54049/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_plot/output/mcfresult_test.pickle'
-Saved results table to '/home/leo/.texttest/tmp/mcfnmr.26Mar205648.54049/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_plot/output/mcfresult_test.csv'
+distList: 0.926158 secs
+containmentCheck: 7.6472e-05 secs
+flowNetGeneration: 0.525185 secs
+minCostFlow: 2.33573 secs
+statsCollection: 0.132459 secs
+Saved MCF result to '/home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_plot/output/mcfresult_test.pickle'
+Saved results table to '/home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_plot/output/mcfresult_test.csv'
 max(data) = 141125
 min(data) = 0
 max(Transform(data)) = 274.716
 min(Transform(data)) = 0
 Building HMDB-ID list ...
-Saved figure '/home/leo/.texttest/tmp/mcfnmr.26Mar205648.54049/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_plot/output/mcfresult_test_detections.svg'
+Saved figure '/home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/mcfNMR_N988_grid_plot/output/mcfresult_test_detections.svg'
 
- Total run time: 14.826880931854248 secs
+ Total run time: 15.23997950553894 secs
