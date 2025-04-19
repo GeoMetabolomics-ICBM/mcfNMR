@@ -8,17 +8,17 @@ import pandas as pd
 import numpy as np
 import matplotlib as mpl
 
-from mcfnmr.utils.pointspectrum import PointSpectrum
-from mcfnmr.core.mcf import mcf
+from utils.pointspectrum import PointSpectrum
+from core.mcf import mcf
 from mcfnmr import __version__
-from mcfnmr.config import REPO_URL
+from config import REPO_URL
 from copy import deepcopy
-from mcfnmr.routines.utils import (
+from routines.utils import (
     singleRun,
     incrementalMCFResultsUpdate,
     updateSavedMCFResult,
 )
-from mcfnmr.utils.plotting import plot_detected
+from utils.plotting import plot_detected
 from pprint import pp
 
 
@@ -273,7 +273,7 @@ def make_mcf_parameters(config, target_name, libname):
     return pars
 
 
-def classify_result(result, th):
+def classify_result(result, th, verb=0):
     df = dict(
         compound=[],
         # npeaks=[],
@@ -291,6 +291,11 @@ def classify_result(result, th):
         df["avg_cost"].append(result.specificCosts[i])
         df["original_weight"].append(result.compounds[cid]["total_weight"])
         df["detection"].append(result.assigned[i] >= th)
+        if verb:
+            print(f"\ncompound: {cid}")
+            print(f"assigned: {result.assigned[i]}")
+            print(f"detected: {result.assigned[i] >= th}")
+            print(f"threshold: {th}")
 
     return pd.DataFrame(df)
 
@@ -397,7 +402,6 @@ def run(config):
             mcf_setup["libname"],
             show=config["show"],
         )
-
 
 def load(config):
     check_config_consistency(config)
