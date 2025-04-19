@@ -606,12 +606,16 @@ def plot_detected(df, lib, target, assignment_radius, figname, libname, show=Fal
         )
 
     if libname == "MetaboMiner - Biofluid ( all )":
-        ID2name = buildHMDBID2NameMap(verb=0)
-        predictions = [
-            {ID2name[str(c)]: spec} for c, spec in lib.items() if c in predicted
-        ]
+        try:
+            ID2name = buildHMDBID2NameMap(verb=0)
+            predictions = [
+                {ID2name[str(c)]: spec} for c, spec in lib.items() if c in predicted
+            ]
+        except:
+            predictions = [{c: spec} for c, spec in lib.items() if c in predicted]
     else:
         predictions = [{c: spec} for c, spec in lib.items() if c in predicted]
+
     title = ".".join(figname.name.split(".")[:-1])
     plotLibOnTarget(
         predictions,
