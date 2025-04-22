@@ -1,3 +1,4 @@
+from functools import reduce
 import os
 import urllib.request as rq
 from urllib.error import HTTPError
@@ -72,10 +73,10 @@ peakIDField = {'Assigned_peak_chem_shift' : 'Peak_ID',
 
 def download_str_file(str_file, dest, download_existent):
         if (dest / str_file).exists() and not download_existent:
-            # Skipping download"
+            # Skipping download
             return -1, str_file
         url = "/".join((BMRB_FTP_URL, str_file))
-        print(f"Downloading {url} ...")
+        print(f"\nDownloading {url} ...")
         try:
             wget.download(url, str(dest / str_file))
             success = True
@@ -186,11 +187,11 @@ def reportExperimentList(data):
         df_exps = loopToDataFrame(explist)
         print("Experiment list:")
         pp([n for n in df_exps["Name"]])
-        HSQC_exp_available = np.any([n in df_exps["Name"] for n in HSQC_expnames])
+        HSQC_exp_available = np.any([n in list(df_exps["Name"]) for n in HSQC_expnames])
         
         # Debug
         if DEBUG:
-            newkeys = [n not in HSQC_expnames and n.lower().find("hsqc") != -1 for n in df_exps["Name"]]
+            newkeys = [n not in HSQC_expnames and n.lower().find("hsqc") != -1 for n in list(df_exps["Name"])]
             if np.any(newkeys):
                 print("print new HSQC key?")
                 print(df_exps["Name"][newkeys])
@@ -303,8 +304,9 @@ def parseBMRBEntry(fn):
         # Debug
         if DEBUG:
             if HSQC_exp_available:
-                print("HSQC experiment mentioned but not found.")
-                sys.exit()
+                entry.msg = f"  Couldn't find compound information for '%s' (NMR-START version {entry.version}) - skipping entry."%entry.name
+                print(entry.msg)
+                return False, entry
     else:
         shiftTable = None
         for k in shiftTableKeys:
@@ -332,7 +334,7 @@ def parseBMRBEntry(fn):
 
 
 def parseBMRBEntries(parallel=True):
-    file_list = list(DOWNLOAD_DIR.iterdir())
+    file_list = sorted(list(DOWNLOAD_DIR.iterdir()))
     offset = 0
     if parallel:
         pool = mp.Pool()
@@ -357,25 +359,64 @@ def entryAsDict(e):
     attrs = [attr for attr in dir(e) if attr[0]!="_"]
     return {a:getattr(e, a) for a in attrs}
 
+def makefloat(x):
+    try:
+        return float(x)
+    except:
+        return np.nan
+
 
 def spectrumFromEntry(e):
     print(f"\nEntry {e.name}")
     pp(e.peaks)
     df = pd.concat([pd.DataFrame(p) for p in e.peaks.values()])
-    
+
     if not np.all(np.isin(["1", "2"], list(df.columns))):
         print(f"peak ids '1' or '2' not found for {e.name}")
-        if ("?" in list(df.columns)):
-            print(f"Spectrum for {e.name} might be incomplete... skipping.")
-            return None
         print(df)
         if len(df.columns) < 2:
+            print(f"Spectrum for {e.name} might doesn't have two coords ... skipping.")
             return None
+        elif "?" in df.columns:
+            print(f"Spectrum for {e.name} might has inconsisitent coord specifications ... Trying to resolve ...")
         else:
             sys.exit(1)
     
+    if ("?" in list(df.columns)):
+        # Try to resolve shifted coords
+        ix1nan = np.isnan(np.array(df["1"], dtype=float))
+        ix2nan = np.isnan(np.array(df["2"], dtype=float))
+        if np.any(ix1nan & ix2nan):
+            print(f"Couldn't resolve NaN peaks for {e.name}. Skipping ...")
+            return None
+        if np.any(ix1nan):
+            candidates = [makefloat(x) for x in df.loc[ix1nan, "?"]]
+            if np.any(np.isnan(candidates)):
+                print(f"Couldn't resolve NaNs in coord 1 for {e.name}. Skipping ...")
+                return None
+            else:
+                print(f"Assuming missing values in coord 1 for {e.name} correspond to values under coord '?'.")
+                df.loc[ix1nan, "1"] = candidates
+        if np.any(ix2nan):
+            candidates = [makefloat(x) for x in df.loc[ix2nan, "?"]]
+            if np.any(np.isnan(candidates)):
+                print(f"Couldn't resolve NaNs in coord 2 for {e.name}. Skipping ...")
+                return None
+            else:
+                print(f"Assuming missing values in coord 2 for {e.name} correspond to values under coord '?'.")
+                df.loc[ix2nan, "2"] = candidates
+    
     coordsH, coordsC = [float(c) for c in df["1"]], [float(c) for c in df["2"]]
     
+    if np.any(np.isnan(coordsH)):
+        print(f"Found NaN in peak coords of {e.name}. Skipping ...")
+        return None
+
+    if np.any(np.isnan(coordsC)):
+        print(f"Found NaN in peak coords of {e.name}. Skipping ...")
+        return None
+
+
     # Debug
     if np.mean(coordsH) > np.mean(coordsC):
         print(f"coord order seems to be wrong for {e.name}. Switching '1' for '2'.")
@@ -414,7 +455,7 @@ def makeBMRBLib(entries):
 def prepareBMRB():
     a = 0
     while a==0:
-        a = input("\nPrepare BMRB lib? (This takes a few minutes) (Y/n) ")
+        a = input("\nPrepare BMRB lib? (This may take a few minutes) (Y/n) ")
         if a.strip() in ["", "Y", "y", "yes"]:
             break
         elif a.strip() in ["n", "N", "no"]:
