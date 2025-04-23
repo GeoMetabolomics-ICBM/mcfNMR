@@ -8,17 +8,17 @@ import pandas as pd
 import numpy as np
 import matplotlib as mpl
 
-from utils.pointspectrum import PointSpectrum
-from core.mcf import mcf
-from mcfnmr import __version__
-from config import REPO_URL
 from copy import deepcopy
-from routines.utils import (
+from mcfnmr.utils.pointspectrum import PointSpectrum
+from mcfnmr.core.mcf import mcf
+from mcfnmr import __version__
+from mcfnmr.config import REPO_URL
+from mcfnmr.routines.utils import (
     singleRun,
     incrementalMCFResultsUpdate,
     updateSavedMCFResult,
 )
-from utils.plotting import plot_detected
+from mcfnmr.utils.plotting import plot_detected
 from pprint import pp
 
 
@@ -34,7 +34,7 @@ def parse_args():
         "--config",
         "-c",
         dest="config",
-        help=f"Configuration file for the run. See README.md.",
+        help=f"Configuration file for the run. See README.",
         required=True,
         type=str,
     )
