@@ -24,7 +24,7 @@ from pprint import pp
 
 def parse_args():
     arg_parser = argparse.ArgumentParser(
-        prog="mcfnmr",
+        prog="mcfNMR",
         description=f"""
         MCFNMR  (v{__version__}). A Minimum Cost Flow NMR recombinator.
         """,
