@@ -14,7 +14,7 @@ from mcfnmr.config import (
     DEBUG,
 )
 from mcfnmr.utils.geometry import load_regions, getIndicesWithin
-from mcfnmr.utils.pointspectrum import detect_grid
+from mcfnmr.utils.pointspectrum import PointSpectrum, detect_grid
 
 
 class MCFResult(object):
@@ -754,8 +754,8 @@ def flowstats(flownet, includeYStats=False):
 
 
 def mcf(
-    target_spectrum,
-    library,
+    target_spectrum:PointSpectrum,
+    library:dict[str, PointSpectrum],
     assignment_radius=np.inf,
     absorption_cost=None,
     dist_pars={},
