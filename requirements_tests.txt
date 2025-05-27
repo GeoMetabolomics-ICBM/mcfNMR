@@ -3,7 +3,7 @@ tqdm==4.66.4
 waybackpack==0.6.4
 wget==3.2
 build==1.2.1
-setuptools==70.3.0
+setuptools==78.1.1
 bs4==0.0.2
 nmrpystar==1.0.0
 
