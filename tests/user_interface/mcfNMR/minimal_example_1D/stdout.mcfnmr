@@ -13,23 +13,23 @@ Solving the original LP from the solution after postsolve
 Model   status      : Optimal
 Simplex   iterations: 3
 Objective value     :  5.0000015000e+05
-HiGHS run time      :          0.00
+HiGHS run time      :          0.01
 config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information.
 Test run ...
 
 args:
 Namespace(outdir='output', config='test_config.toml')
 
-Working directory: /home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/minimal_example_1D
+Working directory: /home/leo/.texttest/tmp/mcfnmr.23Apr100738.9844/mcfnmr/user_interface/mcfNMR/minimal_example_1D
 
 config:
 {'config': 'data/user_templates/config_basic_1D.toml', 'task': 'mcfNMR'}
 
-Writing output to: /home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/minimal_example_1D/output
+Writing output to: /home/leo/.texttest/tmp/mcfnmr.23Apr100738.9844/mcfnmr/user_interface/mcfNMR/minimal_example_1D/output
 
 Data directory: /home/leo/repos/mcfnmr-clean/data
 
-MCFNMR, version 0.1.2
+MCFNMR, version 0.1.3
 
 Option '--outdir' given. Overrides config entry 'output_dir'.
 Found 2 compounds in library lib_1D
@@ -38,9 +38,9 @@ Could not deduce grid for spectrum.
    (No variation of coords in one direction)
 len(distList): 4
 Saved distlists to '/home/leo/repos/mcfnmr-clean/output/cache/mcf/dist_list_target_1D_lib_1D_ar0.2.pickle'
-makeDistList() took 0.00106506 secs
+makeDistList() took 0.00161468 secs
 Checking containment...
-Containment checking took 6.6106e-05 secs
+Containment checking took 5.9292e-05 secs
 Generating flow net...
 
 Total connected target nodes: 3
@@ -48,21 +48,21 @@ Total target weight: 6
 
 Generated flowNet:
  DiGraph with 11 nodes and 11 edges
-Generation took 0.000393383 secs
+Generation took 0.000488792 secs
 Calculating min cost flow...
 Constructing A_eq...
 Number of dead end compounds: 0 / 2
-   took 0.00186187 secs
+   took 0.00655975 secs
 Constructing A_ub...
 Estimated number of inequalities: 3 (nr of connected target nodes).
 True number of inequalities is 3.
-   took 0.000776006 secs
+   took 0.00105023 secs
 Running linprog()...
-   took 0.00391065 secs
+   took 0.0212105 secs
 
 linprog:
 Optimization terminated successfully. (HiGHS Status 7: Optimal)
-Min-cost-flow calculation took 0.00672844 secs
+Min-cost-flow calculation took 0.0290452 secs
 Collecting stats...
 Total absorbed flow: 0.5
 Total flows:
@@ -72,16 +72,16 @@ Total costs:
  assignment: 0.15
  absorption: 500000
       total: 500000
-Stats collection took 0.000170042 secs
+Stats collection took 0.000184671 secs
 
 
 Timings (at nX=4, nY=3):
-distList: 0.00106506 secs
-containmentCheck: 6.6106e-05 secs
-flowNetGeneration: 0.000393383 secs
-minCostFlow: 0.00672844 secs
-statsCollection: 0.000170042 secs
-Saved MCF result to '/home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/minimal_example_1D/output/mcfresult_test.pickle'
-Saved results table to '/home/leo/.texttest/tmp/mcfnmr.16Apr165412.21961/mcfnmr/user_interface/mcfNMR/minimal_example_1D/output/mcfresult_test.csv'
+distList: 0.00161468 secs
+containmentCheck: 5.9292e-05 secs
+flowNetGeneration: 0.000488792 secs
+minCostFlow: 0.0290452 secs
+statsCollection: 0.000184671 secs
+Saved MCF result to '/home/leo/.texttest/tmp/mcfnmr.23Apr100738.9844/mcfnmr/user_interface/mcfNMR/minimal_example_1D/output/mcfresult_test.pickle'
+Saved results table to '/home/leo/.texttest/tmp/mcfnmr.23Apr100738.9844/mcfnmr/user_interface/mcfNMR/minimal_example_1D/output/mcfresult_test.csv'
 
- Total run time: 0.02826404571533203 secs
+ Total run time: 0.07180905342102051 secs

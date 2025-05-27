@@ -34,7 +34,7 @@ def parse_args():
         "--config",
         "-c",
         dest="config",
-        help=f"Configuration file for the run. See README.md.",
+        help=f"Configuration file for the run. See README.",
         required=True,
         type=str,
     )
