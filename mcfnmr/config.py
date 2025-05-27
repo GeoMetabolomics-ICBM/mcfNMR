@@ -6,7 +6,7 @@ from mcfnmr.utils.system import get_mcfnmr_home
 # and runtime sanity checks
 DEBUG = 1
 
-if DEBUG:
+if DEBUG > 0:
     print(
         "config: Enforcing numpy legacy print mode to ensure that numpy floats are printed without type information."
     )
