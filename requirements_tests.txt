@@ -1,4 +1,4 @@
-black==24.4.2
+black
 tqdm==4.66.4
 waybackpack==0.6.4
 wget==3.2
